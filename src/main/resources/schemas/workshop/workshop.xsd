@@ -18,6 +18,54 @@
 		<xs:complexContent>
 			<xs:extension base="xnat:subjectAssessorData">
 				<xs:sequence>
+					<xs:element name="currSite">
+                        			<xs:annotation>
+                            				<xs:documentation>site information</xs:documentation>
+                        			</xs:annotation>
+                        			<xs:simpleType>
+                            				<xs:restriction base="xs:string"/>
+                        			</xs:simpleType>
+                   			</xs:element>
+					<xs:element name="subject_id">
+                        			<xs:annotation>
+                            				<xs:documentation>subject id</xs:documentation>
+                        			</xs:annotation>
+                       				<xs:simpleType>
+                            				<xs:restriction base="xs:integer"/>
+                       				</xs:simpleType>
+                   			</xs:element>
+                    			<xs:element name="scan_date">
+                        			<xs:annotation>
+                            				<xs:documentation>date of receiving scan</xs:documentation>
+                        			</xs:annotation>
+                        			<xs:simpleType>
+                            				<xs:restriction base="xs:date"/>
+                        			</xs:simpleType>
+                    			</xs:element>
+                   			<xs:element name="scan_time">
+                        			<xs:annotation>
+                            				<xs:documentation>hour:miunte:second of receiving scan</xs:documentation>
+                        			</xs:annotation>
+                        			<xs:simpleType>
+                            				<xs:restriction base="xs:time"/>
+                        			</xs:simpleType>
+                    			</xs:element>
+					<xs:element name="baseline">
+                        			<xs:annotation>
+                            				<xs:documentation>baseline</xs:documentation>
+                        			</xs:annotation>
+                        			<xs:simpleType>
+                            				<xs:restriction base="xs:boolean"/>
+                        			</xs:simpleType>
+                    			</xs:element>
+					<xs:element name="sequence">
+                        			<xs:annotation>
+                            				<xs:documentation>sequence </xs:documentation>
+                        			</xs:annotation>
+                        			<xs:simpleType>
+                           				 <xs:restriction base="xs:string"/>
+                        			</xs:simpleType>
+                   			</xs:element>
 					<xs:element name="dna">
 						<xs:annotation>
 							<xs:documentation>DNA</xs:documentation>
