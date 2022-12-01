@@ -72,6 +72,13 @@ $page.setVlinkColor($ui.vlink)
                     </td>
                 </tr>
                 <tr>
+                    <td>&nbsp;</td>
+                    #formLabel("Baseline")
+                    <td valign="top">
+                        #showBoolean("workshop:biosampleCollection/baseline" $item)
+                    </td>
+                </tr>
+                <tr>
 					<td valign="top">
 						#parse("/screens/ReportProjectSpecificFields.vm")
 					</td>

@@ -91,6 +91,12 @@ window.currentLabel="$!om.getLabel()";
                                  #xdatBooleanRadioYesNoWithoutDefault("workshop:biosampleCollection/CSF" $item $vr)
                              </td>
                          </tr>
+                         <tr>
+                             #formLabel("Baseline")
+                             <td>
+                                 #xdatBooleanRadioYesNoWithoutDefault("workshop:biosampleCollection/baseline" $item $vr)
+                             </td>
+                         </tr>
                      </table>
                  </td>
             </tr>
