@@ -42,7 +42,7 @@
 							<xs:restriction base="xs:boolean"/>
 						</xs:simpleType>
 					</xs:element>
-					<xs:element name="serum">
+					<xs:element name="serum_one">
 						<xs:annotation>
 							<xs:documentation>Serum_one</xs:documentation>
 						</xs:annotation>
