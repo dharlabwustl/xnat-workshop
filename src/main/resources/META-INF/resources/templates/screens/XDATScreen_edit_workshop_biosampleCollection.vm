@@ -80,9 +80,9 @@ window.currentLabel="$!om.getLabel()";
                              </td>
                          </tr>
                          <tr>
-                             #formLabel("Serum")
+                             #formLabel("Serum_one")
                              <td>
-                                 #xdatBooleanRadioYesNoWithoutDefault("workshop:biosampleCollection/serum" $item $vr)
+                                 #xdatBooleanRadioYesNoWithoutDefault("workshop:biosampleCollection/serum_one" $item $vr)
                              </td>
                          </tr>
                          <tr>

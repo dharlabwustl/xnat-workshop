@@ -59,9 +59,9 @@ $page.setVlinkColor($ui.vlink)
                 </tr>
                 <tr>
                     <td>&nbsp;</td>
-                    #formLabel("Serum")
+                    #formLabel("Serum_one")
                     <td valign="top">
-                        #showBoolean("workshop:biosampleCollection/serum" $item)
+                        #showBoolean("workshop:biosampleCollection/serum_one" $item)
                     </td>
                 </tr>
                 <tr>
