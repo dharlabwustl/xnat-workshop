@@ -45,6 +45,13 @@ $page.setVlinkColor($ui.vlink)
                 </tr>
                 <tr>
                     <td>&nbsp;</td>
+                    #formLabel("Currsite")
+                    <td valign="top">
+                        #showBoolean("workshop:biosampleCollection/currsite" $item)
+                    </td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
                     #formLabel("RNA")
                     <td valign="top">
                         #showBoolean("workshop:biosampleCollection/rna" $item)

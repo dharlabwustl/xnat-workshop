@@ -59,12 +59,18 @@ window.currentLabel="$!om.getLabel()";
                             <td colspan="2">#parse("/screens/EditProjectSpecificFields.vm")</td>
                         </tr>
                         <tr>
-                             <td colspan="2">Have the following biosamples be taken and stored as per protocol?</td>
+                             <td colspan="2">Have the following stroke information be taken and stored as per protocol?</td>
                          </tr>
                          <tr>
                              #formLabel("DNA")
                              <td>
                                  #xdatBooleanRadioYesNoWithoutDefault("workshop:biosampleCollection/dna" $item $vr)
+                             </td>
+                         </tr>
+                         <tr>
+                             #formLabel("Currsite")
+                             <td>
+                                 #xdatBooleanRadioYesNoWithoutDefault("workshop:biosampleCollection/currsite" $item $vr)
                              </td>
                          </tr>
                          <tr>
