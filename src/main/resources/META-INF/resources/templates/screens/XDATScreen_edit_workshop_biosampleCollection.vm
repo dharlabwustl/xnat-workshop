@@ -70,7 +70,7 @@ window.currentLabel="$!om.getLabel()";
                          <tr>
                              #formLabel("Currsite")
                              <td>
-                                 #xdatBooleanRadioYesNoWithoutDefault("workshop:biosampleCollection/currsite" $item $vr)
+                                 #xdatStringBox("workshop:biosampleCollection/currsite" $item $vr)
                              </td>
                          </tr>
                          <tr>
