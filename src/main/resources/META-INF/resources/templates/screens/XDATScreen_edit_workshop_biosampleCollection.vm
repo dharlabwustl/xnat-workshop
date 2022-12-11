@@ -64,7 +64,7 @@ window.currentLabel="$!om.getLabel()";
                          <tr>
                              #formLabel("DNA")
                              <td>
-                                 #xdatBooleanRadioYesNoWithoutDefault("workshop:biosampleCollection/dna" $item $vr)
+                                 #xdatBooleanRadioYesNo("workshop:biosampleCollection/dna" $item $vr)
                              </td>
                          </tr>
                          <tr>
@@ -75,7 +75,10 @@ window.currentLabel="$!om.getLabel()";
                          </tr>
                          <tr>
                              #formLabel("Subject_Identification")
-                             #xdatStringBox("workshop:biosampleCollection/subject_identification" $item $vr)
+                             <td>
+                                #xdatIntegerBox("workshop:biosampleCollection/subject_identification" $item $vr)
+                             </td>
+                            <input type="number" name="Subject_Identification" value="$!item.getProperty("Subject_Identification")" />
                          </tr>
                          <tr>
                              #formLabel("RNA")
