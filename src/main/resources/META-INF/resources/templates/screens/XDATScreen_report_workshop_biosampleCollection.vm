@@ -81,7 +81,7 @@ $page.setVlinkColor($ui.vlink)
                     <td>&nbsp;</td>
                     #formLabel("Subject_Identification")
                     <td valign="top">
-                        #showBoolean("workshop:biosampleCollection/subject_identification" $item)
+                        #showInteger("workshop:biosampleCollection/subject_identification" $item)
                     </td>
                 </tr>
                 <tr>
