@@ -75,9 +75,7 @@ window.currentLabel="$!om.getLabel()";
                          </tr>
                          <tr>
                              #formLabel("Subject_Identification")
-                             <td>
-                                 #xdatIntegerBox("workshop:biosampleCollection/subject_identification" $item $vr)
-                             </td>
+                             #xdatStringBox("workshop:biosampleCollection/subject_identification" $item $vr)
                          </tr>
                          <tr>
                              #formLabel("RNA")
