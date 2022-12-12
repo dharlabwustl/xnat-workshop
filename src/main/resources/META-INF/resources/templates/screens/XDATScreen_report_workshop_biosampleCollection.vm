@@ -132,7 +132,6 @@ $page.setVlinkColor($ui.vlink)
                     #formLabel("DICOM_pixel_size_x")
                     <td valign="top">
                         <#showString("workshop:biosampleCollection/dicom_pixel_size_x" $item)> 
-                        <!-- $item.getProperty("Scan_Date") --> 
                     </td>
                 </tr>
                 <tr>
@@ -140,7 +139,6 @@ $page.setVlinkColor($ui.vlink)
                     #formLabel("Z_Axial_Brain_Scan")
                     <td valign="top">
                         <#showString("workshop:biosampleCollection/z_axial_brain_scan" $item)> 
-                        <!-- $item.getProperty("Scan_Date") --> 
                     </td>
                 </tr>
                 <tr>
@@ -148,7 +146,6 @@ $page.setVlinkColor($ui.vlink)
                     #formLabel("Z_Brain_Thin_Scans")
                     <td valign="top">
                         <#showString("workshop:biosampleCollection/z_brain_thin_scans" $item)> 
-                        <!-- $item.getProperty("Scan_Date") --> 
                     </td>
                 </tr>
                 <tr>
@@ -156,7 +153,13 @@ $page.setVlinkColor($ui.vlink)
                     #formLabel("Selected_Scan_Number")
                     <td valign="top">
                         <#showString("workshop:biosampleCollection/selected_scan_number" $item)> 
-                        <!-- $item.getProperty("Scan_Date") --> 
+                    </td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    #formLabel("Sequence")
+                    <td valign="top">
+                        <#showString("workshop:biosampleCollection/sequence" $item)> 
                     </td>
                 </tr>
                 <tr>
