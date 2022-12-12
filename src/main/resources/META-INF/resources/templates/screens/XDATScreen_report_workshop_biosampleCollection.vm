@@ -108,9 +108,9 @@ $page.setVlinkColor($ui.vlink)
                 </tr>
                 <tr>
                     <td>&nbsp;</td>
-                    #formLabel("CSF")
+                    #formLabel("Tilt")
                     <td valign="top">
-                        #showBoolean("workshop:biosampleCollection/csf" $item)
+                        #showBoolean("workshop:biosampleCollection/tilt" $item)
                     </td>
                 </tr>
                 <tr>

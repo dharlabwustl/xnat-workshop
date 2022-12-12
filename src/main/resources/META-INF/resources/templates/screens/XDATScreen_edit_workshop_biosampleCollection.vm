@@ -64,7 +64,7 @@ window.currentLabel="$!om.getLabel()";
                          <tr>
                              #formLabel("DNA")
                              <td>
-                                 #xdatBooleanRadioYesNo("workshop:biosampleCollection/dna" $item $vr)
+                                 #xdatBooleanRadioYesNoWithoutDefault("workshop:biosampleCollection/dna" $item $vr)
                              </td>
                          </tr>
                          <tr>
@@ -76,15 +76,8 @@ window.currentLabel="$!om.getLabel()";
                          <tr>
                              #formLabel("Subject_Identification")
                              <td>
-                                #xdatNumericBox("workshop:biosampleCollection/subject_identification" $item $vr)
+                                #xdatStringBox("workshop:biosampleCollection/subject_identification" $item $vr)
                                 <input type="value" name="Subject_Identification" value="$item.getProperty("Subject_Identification")"/>
-                             </td>
-                         </tr>
-                         <tr>
-                             #formLabel("Trying")
-                             <td>
-                                #xdatStringBox("workshop:biosampleCollection/tryings" $item $vr)
-                                
                              </td>
                          </tr>
                          <tr>
@@ -106,9 +99,9 @@ window.currentLabel="$!om.getLabel()";
                              </td>
                          </tr>
                          <tr>
-                             #formLabel("CSF")
+                             #formLabel("Tilt")
                              <td>
-                                 #xdatBooleanRadioYesNoWithoutDefault("workshop:biosampleCollection/CSF" $item $vr)
+                                 #xdatBooleanRadioYesNoWithoutDefault("workshop:biosampleCollection/Tilt" $item $vr)
                              </td>
                          </tr>
                          <tr>

@@ -66,9 +66,9 @@
 							<xs:restriction base="xs:boolean"/>
 						</xs:simpleType>
 					</xs:element>
-					<xs:element name="csf">
+					<xs:element name="tilt">
 						<xs:annotation>
-							<xs:documentation>CSF</xs:documentation>
+							<xs:documentation>Tilt</xs:documentation>
 						</xs:annotation>
 						<xs:simpleType>
 							<xs:restriction base="xs:boolean"/>
