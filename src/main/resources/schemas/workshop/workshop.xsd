@@ -138,6 +138,22 @@
                             <xs:restriction base="xs:integer"/>
                         </xs:simpleType>
                     </xs:element>
+					<xs:element name="DICOM_Pixel_Size_X">
+                        <xs:annotation>
+                            <xs:documentation> x axis pixel size of DICOM</xs:documentation>
+                        </xs:annotation>
+                        <xs:simpleType>
+                            <xs:restriction base="xs:double"/>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="NIFTI_Pixel_Size_X">
+                        <xs:annotation>
+                            <xs:documentation> x axis pixel size of NIFTI</xs:documentation>
+                        </xs:annotation>
+                        <xs:simpleType>
+                            <xs:restriction base="xs:double"/>
+                        </xs:simpleType>
+                    </xs:element>
 					<xs:element name="rna">
 						<xs:annotation>
 							<xs:documentation>RNA</xs:documentation>
