@@ -156,27 +156,27 @@ window.currentLabel="$!om.getLabel()";
                              </td>
                          </tr>
                          <tr>
-                             #formLabel("DICOM_Pixel_Size_X")
+                             #formLabel("Dicom_Pixel_Size_X")
                              <td>
-                                #xdatStringBox("workshop:biosampleCollection/DICOM_pixel_size_x" $item $vr)
+                                #xdatStringBox("workshop:biosampleCollection/dicom_pixel_size_x" $item $vr)
                              </td>
                          </tr>
                          <tr>
-                             #formLabel("NIFTI_Pixel_Size_X")
+                             #formLabel("Nifti_Pixel_Size_X")
                              <td>
-                                #xdatStringBox("workshop:biosampleCollection/NIFTI_pixel_size_x" $item $vr)
+                                #xdatStringBox("workshop:biosampleCollection/nifti_pixel_size_x" $item $vr)
                              </td>
                          </tr>
                          <tr>
-                             #formLabel("DICOM_Pixel_Size_Y")
+                             #formLabel("Dicom_Pixel_Size_Y")
                              <td>
-                                #xdatStringBox("workshop:biosampleCollection/DICOM_pixel_size_y" $item $vr)
+                                #xdatStringBox("workshop:biosampleCollection/dicom_pixel_size_y" $item $vr)
                              </td>
                          </tr>
                          <tr>
-                             #formLabel("NIFTI_Pixel_Size_Y")
+                             #formLabel("Nifti_Pixel_Size_Y")
                              <td>
-                                #xdatStringBox("workshop:biosampleCollection/NIFTI_pixel_size_y" $item $vr)
+                                #xdatStringBox("workshop:biosampleCollection/nifti_pixel_size_y" $item $vr)
                              </td>
                          </tr>
                          <tr>

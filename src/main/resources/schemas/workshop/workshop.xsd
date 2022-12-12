@@ -138,7 +138,7 @@
                             <xs:restriction base="xs:integer"/>
                         </xs:simpleType>
                     </xs:element>
-					<xs:element name="DICOM_Pixel_Size_X">
+					<xs:element name="Dicom_Pixel_Size_X">
                         <xs:annotation>
                             <xs:documentation> x axis pixel size of DICOM</xs:documentation>
                         </xs:annotation>
@@ -146,7 +146,7 @@
                             <xs:restriction base="xs:double"/>
                         </xs:simpleType>
                     </xs:element>
-                    <xs:element name="NIFTI_Pixel_Size_X">
+                    <xs:element name="Nifti_Pixel_Size_X">
                         <xs:annotation>
                             <xs:documentation> x axis pixel size of NIFTI</xs:documentation>
                         </xs:annotation>
@@ -154,7 +154,7 @@
                             <xs:restriction base="xs:double"/>
                         </xs:simpleType>
                     </xs:element>
-					<xs:element name="DICOM_Pixel_Size_Y">
+					<xs:element name="Dicom_Pixel_Size_Y">
                         <xs:annotation>
                             <xs:documentation> y axis pixel size of DICOM</xs:documentation>
                         </xs:annotation>
@@ -162,7 +162,7 @@
                             <xs:restriction base="xs:double"/>
                         </xs:simpleType>
                     </xs:element>
-                    <xs:element name="NIFTI_Pixel_Size_Y">
+                    <xs:element name="Nifti_Pixel_Size_Y">
                         <xs:annotation>
                             <xs:documentation> y axis pixel size of NIFTI</xs:documentation>
                         </xs:annotation>
