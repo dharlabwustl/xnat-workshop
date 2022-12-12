@@ -64,7 +64,7 @@
                         </xs:annotation>
                         <xs:simpleType>
                             <xs:restriction base="xs:double"/>
-                        </xs:simpleType>
+                        </xs:simpleType> 
                     </xs:element>
 					<xs:element name="rna">
 						<xs:annotation>
