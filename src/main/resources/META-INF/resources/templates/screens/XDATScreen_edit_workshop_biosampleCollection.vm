@@ -2,6 +2,7 @@ $page.setTitle("Biosamples")
 $page.setLinkColor($ui.alink)
 $page.setVlinkColor($ui.vlink)
 #set($years = [ $!turbineUtils.getYear()..1900])
+#set($time = [ $!turbineUtils.getDate()])
 
 <script type="text/javascript">
 window.currentID="$!om.getId()";
@@ -84,19 +85,19 @@ window.currentLabel="$!om.getLabel()";
                           <tr>
                              #formLabel("Scan_Date")
                              <td>
-                                #xdatDateBox("workshop:biosampleCollection/Scan_Date" $item $vr $years)
+                                #xdatDateBox("workshop:biosampleCollection/scan_date" $item $vr $years)
                              </td>
                          </tr>
                          <tr>
                              #formLabel("Scan_Time")
                              <td>
-                                #xdatTimeBox("workshop:biosampleCollection/Scan_Time" $item $vr)
+                                #xdatTimeBox("workshop:biosampleCollection/scan_time" $item $vr $time)
                              </td>
                          </tr>
                          <tr>
                              #formLabel("DICOM_pixel_size_x")
                              <td>
-                                #xdatFloateBox("workshop:biosampleCollection/dicom_pixel_size_x" $item $vr)
+                                #xdatFloatBox("workshop:biosampleCollection/dicom_pixel_size_x" $item $vr)
                              </td>
                          </tr>
                          <tr>
