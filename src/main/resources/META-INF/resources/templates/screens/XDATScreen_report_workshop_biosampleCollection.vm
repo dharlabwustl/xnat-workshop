@@ -206,6 +206,20 @@ $page.setVlinkColor($ui.vlink)
                 </tr>
                 <tr>
                     <td>&nbsp;</td>
+                    #formLabel("DICOM_Pixel_Size_Y")
+                    <td valign="top">
+                        <#showString("workshop:biosampleCollection/ICOM_pixel_size_y" $item)> 
+                    </td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    #formLabel("NIFTI_Pixel_Size_Y")
+                    <td valign="top">
+                        <#showString("workshop:biosampleCollection/NIFTI_pixel_size_Y" $item)> 
+                    </td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
                     #formLabel("RNA")
                     <td valign="top">
                         #showBoolean("workshop:biosampleCollection/rna" $item)
