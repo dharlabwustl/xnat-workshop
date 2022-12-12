@@ -91,7 +91,7 @@ window.currentLabel="$!om.getLabel()";
                          <tr>
                              #formLabel("Scan_Time")
                              <td>
-                                <input type="time" name="scan_time" value="$!item.getProperty("scan_time")" />
+                                <input type="time" name="scan_time" value={#xdatTimeBox("workshop:biosampleCollection/scan_time" $item $vr $time)} />
                                 #xdatTimeBox("workshop:biosampleCollection/scan_time" $item $vr $time)
                              </td>
                          </tr>
