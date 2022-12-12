@@ -104,15 +104,16 @@ $page.setVlinkColor($ui.vlink)
                     <td>&nbsp;</td>
                     #formLabel("Scan_Date")
                     <td valign="top">
-                        <#showString("workshop:biosampleCollection/Scan_Date" $item)> 
-                        <!-- $item.getProperty("Scan_Date") --> 
+                        <!-- both method works !!! ^__^ -->
+                        <!--#showInteger("workshop:biosampleCollection/subject_identification" $item) --> 
+                        $item.getProperty("Subject_Identification")
                     </td>
                 </tr>
                 <tr>
                     <td>&nbsp;</td>
                     #formLabel("DICOM_pixel_size_x")
                     <td valign="top">
-                        <#showString("workshop:biosampleCollection/Scan_Tate" $item)> 
+                        <#showString("workshop:biosampleCollection/Scan_Time" $item)> 
                         <!-- $item.getProperty("Scan_Date") --> 
                     </td>
                 </tr>

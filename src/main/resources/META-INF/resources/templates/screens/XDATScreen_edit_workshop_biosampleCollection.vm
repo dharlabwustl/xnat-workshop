@@ -15,8 +15,6 @@ window.currentProject="$!project";
 
 window.currentSubject="$!om.getSubjectId()";
 window.currentLabel="$!om.getLabel()";
-#set($years = [ $!turbineUtils.getYear()..1900])
-//#set($seconds = [$!turbineUtils.getDate()...0])
 </script>
 #if ($data.message)
 <div class="error">$data.message</div>
