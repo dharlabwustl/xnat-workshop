@@ -74,9 +74,17 @@
                             <xs:restriction base="xs:double"/>
                         </xs:simpleType> 
                     </xs:element>
-					<xs:element name="Z_axial_brain_scan">
+					<xs:element name="Z_Axial_Brain_Scan">
                         <xs:annotation>
                             <xs:documentation>number of z axial brain scans </xs:documentation>
+                        </xs:annotation>
+                        <xs:simpleType>
+                            <xs:restriction base="xs:integer"/>
+                        </xs:simpleType>
+                    </xs:element>
+					<xs:element name="Z_brain_Thin_Scans">
+                        <xs:annotation>
+                            <xs:documentation>number of z brain thin scans </xs:documentation>
                         </xs:annotation>
                         <xs:simpleType>
                             <xs:restriction base="xs:integer"/>
