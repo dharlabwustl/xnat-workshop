@@ -42,6 +42,14 @@
                             <xs:restriction base="xs:integer"/>
                         </xs:simpleType>
                     </xs:element>
+					<xs:element name="Scan_Date">
+                        <xs:annotation>
+                            <xs:documentation>scan date</xs:documentation>
+                        </xs:annotation>
+                        <xs:simpleType>
+                            <xs:restriction base="xs:date"/>
+                        </xs:simpleType>
+                    </xs:element>
 					<xs:element name="rna">
 						<xs:annotation>
 							<xs:documentation>RNA</xs:documentation>
