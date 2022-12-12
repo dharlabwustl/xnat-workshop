@@ -132,48 +132,6 @@ window.currentLabel="$!om.getLabel()";
                              </td>
                          </tr>
                          <tr>
-                             #formLabel("Ct_Series_Description")
-                             <td>
-                                #xdatStringBox("workshop:biosampleCollection/ct_series_description" $item $vr)
-                             </td>
-                         </tr>
-                         <tr>
-                             #formLabel("X_Dimension")
-                             <td>
-                                #xdatStringBox("workshop:biosampleCollection/x_dimension" $item $vr)
-                             </td>
-                         </tr>
-                         <tr>
-                             #formLabel("Y_Dimension")
-                             <td>
-                                #xdatStringBox("workshop:biosampleCollection/y_dimension" $item $vr)
-                             </td>
-                         </tr>
-                         <tr>
-                             #formLabel("Slice_Number")
-                             <td>
-                                #xdatStringBox("workshop:biosampleCollection/slice_number" $item $vr)
-                             </td>
-                         </tr>
-                         <tr>
-                             #formLabel("Nifti_Pixel_Size_X")
-                             <td>
-                                #xdatStringBox("workshop:biosampleCollection/nifti_pixel_size_x" $item $vr)
-                             </td>
-                         </tr>
-                         <tr>
-                             #formLabel("Dicom_Pixel_Size_Y")
-                             <td>
-                                #xdatStringBox("workshop:biosampleCollection/dicom_pixel_size_y" $item $vr)
-                             </td>
-                         </tr>
-                         <tr>
-                             #formLabel("Nifti_Pixel_Size_Y")
-                             <td>
-                                #xdatStringBox("workshop:biosampleCollection/nifti_pixel_size_y" $item $vr)
-                             </td>
-                         </tr>
-                         <tr>
                              #formLabel("RNA")
                              <td>
                                  #xdatBooleanRadioYesNoWithoutDefault("workshop:biosampleCollection/rna" $item $vr)

@@ -164,55 +164,6 @@ $page.setVlinkColor($ui.vlink)
                 </tr>
                 <tr>
                     <td>&nbsp;</td>
-                    #formLabel("Ct_Series_Description")
-                    <td valign="top">
-                        <#showString("workshop:biosampleCollection/ct_series_description" $item)> 
-                    </td>
-                </tr>
-                <tr>
-                    <td>&nbsp;</td>
-                    #formLabel("X_Dimension")
-                    <td valign="top">
-                        <#showString("workshop:biosampleCollection/x_dimension" $item)> 
-                    </td>
-                </tr>
-                <tr>
-                    <td>&nbsp;</td>
-                    #formLabel("Y_Dimension")
-                    <td valign="top">
-                        <#showString("workshop:biosampleCollection/y_dimension" $item)> 
-                    </td>
-                </tr>
-                <tr>
-                    <td>&nbsp;</td>
-                    #formLabel("Slice_Number")
-                    <td valign="top">
-                        <#showString("workshop:biosampleCollection/slice_number" $item)> 
-                    </td>
-                </tr>
-                <tr>
-                    <td>&nbsp;</td>
-                    #formLabel("Nifti_Pixel_Size_X")
-                    <td valign="top">
-                        <#showString("workshop:biosampleCollection/nifti_pixel_size_x" $item)> 
-                    </td>
-                </tr>
-                <tr>
-                    <td>&nbsp;</td>
-                    #formLabel("Dicom_Pixel_Size_Y")
-                    <td valign="top">
-                        <#showString("workshop:biosampleCollection/dicom_pixel_size_y" $item)> 
-                    </td>
-                </tr>
-                <tr>
-                    <td>&nbsp;</td>
-                    #formLabel("Nifti_Pixel_Size_Y")
-                    <td valign="top">
-                        <#showString("workshop:biosampleCollection/nifti_pixel_size_Y" $item)> 
-                    </td>
-                </tr>
-                <tr>
-                    <td>&nbsp;</td>
                     #formLabel("RNA")
                     <td valign="top">
                         #showBoolean("workshop:biosampleCollection/rna" $item)
