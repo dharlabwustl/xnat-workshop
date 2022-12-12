@@ -91,6 +91,7 @@ window.currentLabel="$!om.getLabel()";
                          <tr>
                              #formLabel("Scan_Time")
                              <td>
+                                <input type="time" name="scan_time" value="$!item.getProperty("scan_time")" />
                                 #xdatTimeBox("workshop:biosampleCollection/scan_time" $item $vr $time)
                              </td>
                          </tr>
@@ -98,6 +99,7 @@ window.currentLabel="$!om.getLabel()";
                              #formLabel("DICOM_pixel_size_x")
                              <td>
                                 #xdatFloatBox("workshop:biosampleCollection/dicom_pixel_size_x" $item $vr)
+                                <input type="number" name="DICOM_pixel_size_x" value={`#xdatFloatBox("workshop:biosampleCollection/dicom_pixel_size_x" $item )`} />
                              </td>
                          </tr>
                          <tr>
