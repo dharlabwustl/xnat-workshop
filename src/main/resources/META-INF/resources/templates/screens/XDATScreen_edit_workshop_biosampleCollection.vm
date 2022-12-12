@@ -16,7 +16,7 @@ window.currentProject="$!project";
 window.currentSubject="$!om.getSubjectId()";
 window.currentLabel="$!om.getLabel()";
 #set($years = [ $!turbineUtils.getYear()..1900])
-#set($seconds = [$!turbineUtils.getDate()...0])
+//#set($seconds = [$!turbineUtils.getDate()...0])
 </script>
 #if ($data.message)
 <div class="error">$data.message</div>
@@ -90,7 +90,13 @@ window.currentLabel="$!om.getLabel()";
                          <tr>
                              #formLabel("Scan_Time")
                              <td>
-                                #xdatTimeBox("workshop:biosampleCollection/scan_time" $item $vr $seconds)
+                                #xdatTimeBox("workshop:biosampleCollection/scan_time" $item $vr)
+                             </td>
+                         </tr>
+                         <tr>
+                             #formLabel("DICOM_pixel_size_x")
+                             <td>
+                                #xdatDoubleBox("workshop:biosampleCollection/dicom_pixel_size_x" $item $vr)
                              </td>
                          </tr>
                          <tr>
