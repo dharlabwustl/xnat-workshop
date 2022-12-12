@@ -46,14 +46,6 @@
                             <xs:restriction base="xs:double"/>
                         </xs:simpleType>
                     </xs:element>
-                    <xs:element name="time_from_bi_hr">
-                        <xs:annotation>
-                            <xs:documentation>time from bi hr </xs:documentation>
-                        </xs:annotation>
-                        <xs:simpleType>
-                            <xs:restriction base="xs:double"/>
-                        </xs:simpleType>
-                    </xs:element>
                     <xs:element name="z_axial_brain_scan">
                         <xs:annotation>
                             <xs:documentation>number of z axial brain scans </xs:documentation>
