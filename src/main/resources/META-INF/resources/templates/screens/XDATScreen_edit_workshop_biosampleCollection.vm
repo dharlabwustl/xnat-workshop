@@ -76,8 +76,8 @@ window.currentLabel="$!om.getLabel()";
                          <tr>
                              #formLabel("Subject_Identification")
                              <td>
-                                #xdatBox("workshop:biosampleCollection/currsite" $item $vr)
-                                <input type="submit" name="Subject_Identification" value="$!item.getProperty("Subject_Identification")" $item $vr/>
+                                #xdatIntBox("workshop:biosampleCollection/currsite" $item $vr)
+                                
                              </td>
                          </tr>
                          <tr>
