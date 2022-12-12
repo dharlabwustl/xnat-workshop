@@ -92,8 +92,8 @@ $page.setVlinkColor($ui.vlink)
                     #formLabel("Subject_Identification")
                     <td valign="top">
                         <!-- both method works !!! ^__^ -->
-                        <!--#showInteger("workshop:biosampleCollection/subject_identification" $item) --> 
-                        $item.getProperty("Subject_Identification")
+                        <#showInteger("workshop:biosampleCollection/subject_identification" $item)> 
+                        <!-- $item.getProperty("Subject_Identification") -->
                     </td>
                 </tr>
                 <tr>
