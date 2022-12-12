@@ -89,6 +89,23 @@ $page.setVlinkColor($ui.vlink)
                 </tr>
                 <tr>
                     <td>&nbsp;</td>
+                    #formLabel("Subject_Identification")
+                    <td valign="top">
+                        <!-- both method works !!! ^__^ -->
+                        <!--#showInteger("workshop:biosampleCollection/subject_identification" $item) --> 
+                        $item.getProperty("Subject_Identification")
+                    </td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    #formLabel("Scan_Date")
+                    <td valign="top">
+                        <!--#showInteger("workshop:biosampleCollection/Scan_Date" $item) --> 
+                        $item.getProperty("Scan_Date")
+                    </td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
                     #formLabel("RNA")
                     <td valign="top">
                         #showBoolean("workshop:biosampleCollection/rna" $item)
