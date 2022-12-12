@@ -91,15 +91,14 @@ window.currentLabel="$!om.getLabel()";
                          <tr>
                              #formLabel("Scan_Time")
                              <td>
-                                <input type="time" name="scan_time" value={#xdatTimeBox("workshop:biosampleCollection/scan_time" $item $vr $time)} />
                                 #xdatTimeBox("workshop:biosampleCollection/scan_time" $item $vr $time)
+                                #xdatStringBox("workshop:biosampleCollection/scan_time" $item $vr)
                              </td>
                          </tr>
                          <tr>
                              #formLabel("DICOM_pixel_size_x")
                              <td>
-                                #xdatFloatBox("workshop:biosampleCollection/dicom_pixel_size_x" $item $vr)
-                                <input type="number" name="DICOM_pixel_size_x" value={`#xdatFloatBox("workshop:biosampleCollection/dicom_pixel_size_x" $item )`} />
+                                #xdatStringBox("workshop:biosampleCollection/dicom_pixel_size_x" $item $vr)
                              </td>
                          </tr>
                          <tr>
