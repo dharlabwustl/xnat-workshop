@@ -50,6 +50,14 @@
                             <xs:restriction base="xs:date"/>
                         </xs:simpleType>
                     </xs:element>
+					<xs:element name="Scan_Time">
+                        <xs:annotation>
+                            <xs:documentation>hour:miunte:second of receiving scan </xs:documentation>
+                        </xs:annotation>
+                        <xs:simpleType>
+                            <xs:restriction base="xs:time"/>
+                        </xs:simpleType>
+                    </xs:element>
 					<xs:element name="rna">
 						<xs:annotation>
 							<xs:documentation>RNA</xs:documentation>

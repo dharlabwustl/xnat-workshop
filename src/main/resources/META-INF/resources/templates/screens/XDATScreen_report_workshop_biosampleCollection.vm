@@ -110,6 +110,14 @@ $page.setVlinkColor($ui.vlink)
                 </tr>
                 <tr>
                     <td>&nbsp;</td>
+                    #formLabel("Scan_Tate")
+                    <td valign="top">
+                        <#showString("workshop:biosampleCollection/Scan_Tate" $item)> 
+                        <!-- $item.getProperty("Scan_Date") --> 
+                    </td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
                     #formLabel("RNA")
                     <td valign="top">
                         #showBoolean("workshop:biosampleCollection/rna" $item)
