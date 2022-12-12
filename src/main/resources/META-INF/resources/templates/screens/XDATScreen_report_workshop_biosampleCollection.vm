@@ -104,7 +104,7 @@ $page.setVlinkColor($ui.vlink)
                     <td>&nbsp;</td>
                     #formLabel("Scan_Date")
                     <td valign="top">
-                        <#showString("workshop:biosampleCollection/scan_date" $item)> 
+                        <#showString("workshop:biosampleCollection/Scan_Date" $item)> 
                         <!-- $item.getProperty("Scan_Date") --> 
                     </td>
                 </tr>
@@ -112,15 +112,7 @@ $page.setVlinkColor($ui.vlink)
                     <td>&nbsp;</td>
                     #formLabel("DICOM_pixel_size_x")
                     <td valign="top">
-                        <#showString("workshop:biosampleCollection/dicom_pixel_size_x" $item)> 
-                        <!-- $item.getProperty("Scan_Date") --> 
-                    </td>
-                </tr>
-                <tr>
-                    <td>&nbsp;</td>
-                    #formLabel("Scan_Time")
-                    <td valign="top">
-                        <#showString("workshop:biosampleCollection/scan_time" $item)> 
+                        <#showString("workshop:biosampleCollection/Scan_Tate" $item)> 
                         <!-- $item.getProperty("Scan_Date") --> 
                     </td>
                 </tr>
