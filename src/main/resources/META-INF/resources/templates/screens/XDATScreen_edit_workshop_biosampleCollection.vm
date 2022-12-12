@@ -91,8 +91,14 @@ window.currentLabel="$!om.getLabel()";
                          <tr>
                              #formLabel("Scan_Time")
                              <td>
-                                #xdatTimeBox("workshop:biosampleCollection/scan_time" $item $vr $time)
+                                <!-- #xdatTimeBox("workshop:biosampleCollection/scan_time" $item $vr $time) -->
                                 #xdatStringBox("workshop:biosampleCollection/scan_time" $item $vr)
+                             </td>
+                         </tr>
+                           <tr>
+                             #formLabel("Time_From_Bi_Hr")
+                             <td>
+                                #xdatStringBox("workshop:biosampleCollection/time_from_bi_hr" $item $vr)
                              </td>
                          </tr>
                          <tr>

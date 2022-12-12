@@ -62,7 +62,7 @@
                             <xs:restriction base="xs:integer"/>
                         </xs:simpleType>
                     </xs:element>
-                    <xs:element name="selected_scan_number">
+                    <xs:element name="Selected_Scan_Number">
                         <xs:annotation>
                             <xs:documentation>number of z selected scans </xs:documentation>
                         </xs:annotation>
@@ -70,7 +70,7 @@
                             <xs:restriction base="xs:integer"/>
                         </xs:simpleType>
                     </xs:element>
-                    <xs:element name="sequence">
+                    <xs:element name="Sequence">
                         <xs:annotation>
                             <xs:documentation>sequence </xs:documentation>
                         </xs:annotation>
@@ -78,7 +78,7 @@
                             <xs:restriction base="xs:string"/>
                         </xs:simpleType>
                     </xs:element>
-                    <xs:element name="ct_series_description">
+                    <xs:element name="Ct_Series_Description">
                         <xs:annotation>
                             <xs:documentation>describe CT series </xs:documentation>
                         </xs:annotation>
@@ -94,7 +94,7 @@
                             <xs:restriction base="xs:bool"/>
                         </xs:simpleType>
                     </xs:element>
-                    <xs:element name="x_dimension">
+                    <xs:element name="X_Dimension">
                         <xs:annotation>
                             <xs:documentation>x axis dimension</xs:documentation>
                         </xs:annotation>
@@ -102,7 +102,7 @@
                             <xs:restriction base="xs:integer"/>
                         </xs:simpleType>
                     </xs:element>
-                    <xs:element name="y_dimension">
+                    <xs:element name="Y_Dimension">
                         <xs:annotation>
                             <xs:documentation>y axis dimension</xs:documentation>
                         </xs:annotation>
@@ -110,7 +110,7 @@
                             <xs:restriction base="xs:integer"/>
                         </xs:simpleType>
                     </xs:element>
-                    <xs:element name="slice_number">
+                    <xs:element name="Slice_number">
                         <xs:annotation>
                             <xs:documentation>number of slices</xs:documentation>
                         </xs:annotation>

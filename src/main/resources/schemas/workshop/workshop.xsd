@@ -66,7 +66,7 @@
                             <xs:restriction base="xs:double"/>
                         </xs:simpleType> 
                     </xs:element>
-					<xs:element name="Time_from_bi_hr">
+					<xs:element name="Time_From_Bi_Hr">
                         <xs:annotation>
                             <xs:documentation>time from bi hr</xs:documentation>
                         </xs:annotation>

@@ -122,6 +122,13 @@ $page.setVlinkColor($ui.vlink)
                 </tr>
                 <tr>
                     <td>&nbsp;</td>
+                    #formLabel("Time_From_Bi_Hr")
+                    <td valign="top">
+                        <#showString("workshop:biosampleCollection/time_from_bi_hr" $item)> 
+                    </td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
                     #formLabel("DICOM_pixel_size_x")
                     <td valign="top">
                         <#showString("workshop:biosampleCollection/dicom_pixel_size_x" $item)> 
