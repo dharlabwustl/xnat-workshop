@@ -104,7 +104,7 @@ $page.setVlinkColor($ui.vlink)
                     <td>&nbsp;</td>
                     #formLabel("Scan_Date")
                     <td valign="top">
-                        <#showString("workshop:biosampleCollection/Scan_Date" $item)> 
+                        <#showString("workshop:biosampleCollection/scan_date" $item)> 
                         <!-- $item.getProperty("Scan_Date") --> 
                     </td>
                 </tr>
@@ -112,7 +112,7 @@ $page.setVlinkColor($ui.vlink)
                     <td>&nbsp;</td>
                     #formLabel("Scan_Tate")
                     <td valign="top">
-                        <#showString("workshop:biosampleCollection/Scan_Tate" $item)> 
+                        <#showString("workshop:biosampleCollection/scan_tate" $item)> 
                         <!-- $item.getProperty("Scan_Date") --> 
                     </td>
                 </tr>
