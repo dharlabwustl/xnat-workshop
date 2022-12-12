@@ -116,7 +116,13 @@ window.currentLabel="$!om.getLabel()";
                          <tr>
                              #formLabel("Z_Brain_Thin_Scans")
                              <td>
-                                #xdatStringBox("workshop:biosampleCollection/z_axial_thin_scans" $item $vr)
+                                #xdatStringBox("workshop:biosampleCollection/z_brain_thin_scans" $item $vr)
+                             </td>
+                         </tr>
+                         <tr>
+                             #formLabel("Selected_Scan_Number")
+                             <td>
+                                #xdatStringBox("workshop:biosampleCollection/selected_scan_number" $item $vr)
                              </td>
                          </tr>
                          <tr>

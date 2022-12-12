@@ -143,11 +143,19 @@ $page.setVlinkColor($ui.vlink)
                         <!-- $item.getProperty("Scan_Date") --> 
                     </td>
                 </tr>
-                 <tr>
+                <tr>
                     <td>&nbsp;</td>
                     #formLabel("Z_Brain_Thin_Scans")
                     <td valign="top">
                         <#showString("workshop:biosampleCollection/z_brain_thin_scans" $item)> 
+                        <!-- $item.getProperty("Scan_Date") --> 
+                    </td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    #formLabel("Selected_Scan_Number")
+                    <td valign="top">
+                        <#showString("workshop:biosampleCollection/selected_scan_number" $item)> 
                         <!-- $item.getProperty("Scan_Date") --> 
                     </td>
                 </tr>

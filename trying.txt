@@ -110,7 +110,7 @@
                             <xs:restriction base="xs:integer"/>
                         </xs:simpleType>
                     </xs:element>
-                    <xs:element name="Slice_number">
+                    <xs:element name="Slice_Number">
                         <xs:annotation>
                             <xs:documentation>number of slices</xs:documentation>
                         </xs:annotation>
@@ -118,7 +118,7 @@
                             <xs:restriction base="xs:integer"/>
                         </xs:simpleType>
                     </xs:element>
-                    <xs:element name="DICOM_pixel_size_x">
+                    <xs:element name="DICOM_Pixel_Size_X">
                         <xs:annotation>
                             <xs:documentation> x axis pixel size of DICOM</xs:documentation>
                         </xs:annotation>
@@ -126,7 +126,7 @@
                             <xs:restriction base="xs:double"/>
                         </xs:simpleType>
                     </xs:element>
-                    <xs:element name="NIFTI_pixel_size_x">
+                    <xs:element name="NIFTI_Pixel_Size_X">
                         <xs:annotation>
                             <xs:documentation> x axis pixel size of NIFTI</xs:documentation>
                         </xs:annotation>
@@ -134,7 +134,7 @@
                             <xs:restriction base="xs:double"/>
                         </xs:simpleType>
                     </xs:element>
-                    <xs:element name="DICOM_pixel_size_y">
+                    <xs:element name="DICOM_Pixel_Size_Y">
                         <xs:annotation>
                             <xs:documentation> y axis pixel size of DICOM</xs:documentation>
                         </xs:annotation>
@@ -142,7 +142,7 @@
                             <xs:restriction base="xs:double"/>
                         </xs:simpleType>
                     </xs:element>
-                    <xs:element name="NIFTI_pixel_size_y">
+                    <xs:element name="NIFTI_Pixel_Size_Y">
                         <xs:annotation>
                             <xs:documentation> y axis pixel size of NIFTI</xs:documentation>
                         </xs:annotation>
@@ -150,7 +150,7 @@
                             <xs:restriction base="xs:double"/>
                         </xs:simpleType>
                     </xs:element>
-                    <xs:element name="DICOM_slice_thickness">
+                    <xs:element name="DICOM_Slice_Thickness">
                         <xs:annotation>
                             <xs:documentation>thickness of DICOM slice</xs:documentation>
                         </xs:annotation>
@@ -158,7 +158,7 @@
                             <xs:restriction base="xs:double"/>
                         </xs:simpleType>
                     </xs:element>
-                    <xs:element name="NIFTI_slice_thickness">
+                    <xs:element name="NIFTI_Slice_Thickness">
                         <xs:annotation>
                             <xs:documentation>thickness of NIFTI slice</xs:documentation>
                         </xs:annotation>
@@ -166,7 +166,7 @@
                             <xs:restriction base="xs:double"/>
                         </xs:simpleType>
                     </xs:element>
-                    <xs:element name="coverage">
+                    <xs:element name="Coverage">
                         <xs:annotation>
                             <xs:documentation>coverage</xs:documentation>
                         </xs:annotation>
@@ -174,7 +174,7 @@
                             <xs:restriction base="xs:double"/>
                         </xs:simpleType>
                     </xs:element>
-                    <xs:element name="cranial">
+                    <xs:element name="Cranial">
                         <xs:annotation>
                             <xs:documentation>cranial</xs:documentation>
                         </xs:annotation>
@@ -182,7 +182,7 @@
                             <xs:restriction base="xs:double"/>
                         </xs:simpleType>
                     </xs:element>
-                    <xs:element name="csf_seg">
+                    <xs:element name="Csf_Seg">
                         <xs:annotation>
                             <xs:documentation>cerebrospinal fluid segmentation</xs:documentation>
                         </xs:annotation>
@@ -190,7 +190,7 @@
                             <xs:restriction base="xs:double"/>
                         </xs:simpleType>
                     </xs:element>
-                    <xs:element name="csf_adj">
+                    <xs:element name="Csf_Adj">
                         <xs:annotation>
                             <xs:documentation>cerebrospinal fluid segmentation adjusted</xs:documentation>
                         </xs:annotation>
