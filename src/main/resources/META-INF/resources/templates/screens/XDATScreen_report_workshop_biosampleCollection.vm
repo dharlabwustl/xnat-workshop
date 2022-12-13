@@ -171,27 +171,6 @@ $page.setVlinkColor($ui.vlink)
                 </tr>
                 <tr>
                     <td>&nbsp;</td>
-                    #formLabel("X_Dimension")
-                    <td valign="top">
-                        <#showString("workshop:biosampleCollection/x_dimension" $item)> 
-                    </td>
-                </tr>
-                <tr>
-                    <td>&nbsp;</td>
-                    #formLabel("Y_Dimension")
-                    <td valign="top">
-                        <#showString("workshop:biosampleCollection/y_dimension" $item)> 
-                    </td>
-                </tr>
-                <tr>
-                    <td>&nbsp;</td>
-                    #formLabel("Slice_Number")
-                    <td valign="top">
-                        <#showString("workshop:biosampleCollection/slice_number" $item)> 
-                    </td>
-                </tr>
-                <tr>
-                    <td>&nbsp;</td>
                     #formLabel("RNA")
                     <td valign="top">
                         #showBoolean("workshop:biosampleCollection/rna" $item)
