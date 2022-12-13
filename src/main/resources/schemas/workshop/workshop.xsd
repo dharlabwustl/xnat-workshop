@@ -98,6 +98,14 @@
                             <xs:restriction base="xs:integer"/>
                         </xs:simpleType>
                     </xs:element>
+                    <xs:element name="Ct_Series_Description">
+                        <xs:annotation>
+                            <xs:documentation>describe CT series </xs:documentation>
+                        </xs:annotation>
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string"/>
+                        </xs:simpleType>
+                    </xs:element>
 					<xs:element name="rna">
 						<xs:annotation>
 							<xs:documentation>RNA</xs:documentation>

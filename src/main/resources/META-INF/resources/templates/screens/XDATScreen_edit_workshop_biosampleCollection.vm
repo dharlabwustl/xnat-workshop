@@ -132,6 +132,12 @@ window.currentLabel="$!om.getLabel()";
                              </td>
                          </tr>
                          <tr>
+                             #formLabel("Ct_Series_Description")
+                             <td>
+                                #xdatStringBox("workshop:biosampleCollection/ct_series_description" $item $vr)
+                             </td>
+                         </tr>
+                         <tr>
                              #formLabel("RNA")
                              <td>
                                  #xdatBooleanRadioYesNoWithoutDefault("workshop:biosampleCollection/rna" $item $vr)

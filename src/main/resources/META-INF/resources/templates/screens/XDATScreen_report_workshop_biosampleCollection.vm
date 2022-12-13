@@ -162,6 +162,13 @@ $page.setVlinkColor($ui.vlink)
                         <#showString("workshop:biosampleCollection/sequence" $item)> 
                     </td>
                 </tr>
+                 <tr>
+                    <td>&nbsp;</td>
+                    #formLabel("Ct_Series_Description")
+                    <td valign="top">
+                        <#showString("workshop:biosampleCollection/ct_series_description" $item)> 
+                    </td>
+                </tr>
                 <tr>
                     <td>&nbsp;</td>
                     #formLabel("RNA")
