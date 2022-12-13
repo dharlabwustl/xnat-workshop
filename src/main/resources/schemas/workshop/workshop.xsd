@@ -135,7 +135,7 @@
                             <xs:documentation> x axis pixel size of DICOM</xs:documentation>
                         </xs:annotation>
                         <xs:simpleType>
-                            <xs:restriction base="xs:double"/>
+                            <xs:restriction base="xs:decimal"/>
                         </xs:simpleType>
                     </xs:element>
                     <xs:element name="Nifti_Pixel_Size_X">
@@ -143,7 +143,7 @@
                             <xs:documentation> x axis pixel size of NIFTI</xs:documentation>
                         </xs:annotation>
                         <xs:simpleType>
-                            <xs:restriction base="xs:double"/>
+                            <xs:restriction base="xs:decimal"/>
                         </xs:simpleType>
                     </xs:element>
 					<xs:element name="rna">
