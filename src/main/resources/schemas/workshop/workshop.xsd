@@ -106,6 +106,22 @@
                             <xs:restriction base="xs:string"/>
                         </xs:simpleType>
                     </xs:element>
+                    <xs:element name="X_Dimension">
+                        <xs:annotation>
+                            <xs:documentation>x axis dimension</xs:documentation>
+                        </xs:annotation>
+                        <xs:simpleType>
+                            <xs:restriction base="xs:integer"/>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="Y_Dimension">
+                        <xs:annotation>
+                            <xs:documentation>y axis dimension</xs:documentation>
+                        </xs:annotation>
+                        <xs:simpleType>
+                            <xs:restriction base="xs:integer"/>
+                        </xs:simpleType>
+                    </xs:element>
 					<xs:element name="rna">
 						<xs:annotation>
 							<xs:documentation>RNA</xs:documentation>
