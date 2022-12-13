@@ -150,6 +150,24 @@ window.currentLabel="$!om.getLabel()";
                              </td>
                          </tr>
                          <tr>
+                             #formLabel("Slice_Number")
+                             <td>
+                                #xdatStringBox("workshop:biosampleCollection/slice_number" $item $vr)
+                             </td>
+                         </tr>
+                         <tr>
+                             #formLabel("DICOM_Pixel_Size_X")
+                             <td>
+                                #xdatStringBox("workshop:biosampleCollection/dicom_pixel_size_x" $item $vr)
+                             </td>
+                         </tr>
+                         <tr>
+                             #formLabel("NIFTI_Pixel_Size_X")
+                             <td>
+                                #xdatStringBox("workshop:biosampleCollection/nifti_pixel_size_x" $item $vr)
+                             </td>
+                         </tr>
+                         <tr>
                              #formLabel("RNA")
                              <td>
                                  #xdatBooleanRadioYesNoWithoutDefault("workshop:biosampleCollection/rna" $item $vr)
