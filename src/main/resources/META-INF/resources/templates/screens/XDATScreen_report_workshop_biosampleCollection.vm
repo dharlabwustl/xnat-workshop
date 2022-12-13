@@ -192,14 +192,14 @@ $page.setVlinkColor($ui.vlink)
                 </tr>
                 <tr>
                     <td>&nbsp;</td>
-                    #formLabel("DICOM_Pixel_Size_X")
+                    #formLabel("Dicom_Pixel_Size_X")
                     <td valign="top">
                         <#showString("workshop:biosampleCollection/dicom_pixel_size_x" $item)> 
                     </td>
                 </tr>
                 <tr>
                     <td>&nbsp;</td>
-                    #formLabel("NIFTI_Pixel_Size_X")
+                    #formLabel("Nifti_Pixel_Size_X")
                     <td valign="top">
                         <#showString("workshop:biosampleCollection/nifti_pixel_size_x" $item)> 
                     </td>
