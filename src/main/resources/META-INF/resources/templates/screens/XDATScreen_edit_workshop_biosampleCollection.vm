@@ -98,7 +98,8 @@ window.currentLabel="$!om.getLabel()";
                            <tr>
                              #formLabel("Time_From_Baseline")
                              <td>
-                                #xdatTimeBox("workshop:biosampleCollection/time_from_baseline" $item $vr $years)
+                                <!-- #xdatTimeBox("workshop:biosampleCollection/time_from_baseline" $item $vr $years) -->
+                                #xdatStringBox("workshop:biosampleCollection/time_from_baseline" $item $vr)
                              </td>
                          </tr>
                          </tr>
@@ -202,12 +203,6 @@ window.currentLabel="$!om.getLabel()";
                              #formLabel("Tilt")
                              <td>
                                  #xdatBooleanRadioYesNoWithoutDefault("workshop:biosampleCollection/Tilt" $item $vr)
-                             </td>
-                         </tr>
-                         <tr>
-                             #formLabel("Baseline")
-                             <td>
-                                 #xdatBooleanRadioYesNoWithoutDefault("workshop:biosampleCollection/baseline" $item $vr)
                              </td>
                          </tr>
                      </table>
