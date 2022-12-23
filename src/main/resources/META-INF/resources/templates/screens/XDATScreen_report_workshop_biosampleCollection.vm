@@ -150,6 +150,13 @@ $page.setVlinkColor($ui.vlink)
                 </tr>
                 <tr>
                     <td>&nbsp;</td>
+                    #formLabel("Slice_Thickness")
+                    <td valign="top">
+                        <#showInteger("workshop:biosampleCollection/slice_thickness" $item)> 
+                    </td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
                     #formLabel("Z_Brain_Thin_Scans")
                     <td valign="top">
                         <#showString("workshop:biosampleCollection/z_brain_thin_scans" $item)> 

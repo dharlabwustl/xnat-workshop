@@ -98,7 +98,14 @@ window.currentLabel="$!om.getLabel()";
                            <tr>
                              #formLabel("Time_From_Baseline")
                              <td>
-                                #xdatStringBox("workshop:biosampleCollection/time_from_baseline" $item $vr)
+                                #xdatTimeBox("workshop:biosampleCollection/time_from_baseline" $item $vr)
+                             </td>
+                         </tr>
+                         </tr>
+                           <tr>
+                             #formLabel("Slice_Thickness")
+                             <td>
+                                #xdatNumberBox("workshop:biosampleCollection/slice_thickness" $item $vr)
                              </td>
                          </tr>
                          <tr>

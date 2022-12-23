@@ -60,7 +60,7 @@
                     </xs:element>
 					<xs:element name="DICOM_pixel_size_x">
                         <xs:annotation>
-                            <xs:documentation> x axis pixel size of DICOM</xs:documentation>
+                            <xs:documentation>for complete image size: x axis pixel size of DICOM</xs:documentation>
                         </xs:annotation>
                         <xs:simpleType>
                             <xs:restriction base="xs:double"/>
@@ -68,7 +68,7 @@
                     </xs:element>
                     <xs:element name="DICOM_pixel_size_y">
                         <xs:annotation>
-                            <xs:documentation> y axis pixel size of DICOM</xs:documentation>
+                            <xs:documentation>for complete image size: y axis pixel size of DICOM</xs:documentation>
                         </xs:annotation>
                         <xs:simpleType>
                             <xs:restriction base="xs:double"/>
@@ -81,6 +81,14 @@
                         <xs:simpleType>
                             <xs:restriction base="xs:time"/>
                         </xs:simpleType> 
+                    </xs:element>
+                    <xs:element name="Slice_Thickness">
+                        <xs:annotation>
+                            <xs:documentation>slice thickness</xs:documentation>
+                        </xs:annotation>
+                        <xs:simpleType>
+                            <xs:restriction base="xs:integer"/>
+                        </xs:simpleType>
                     </xs:element>
 					<xs:element name="Z_Axial_Brain_Scan">
                         <xs:annotation>
@@ -116,7 +124,7 @@
                     </xs:element>
                     <xs:element name="X_Dimension">
                         <xs:annotation>
-                            <xs:documentation>x axis dimension</xs:documentation>
+                            <xs:documentation>for resolution: x axis dimension</xs:documentation>
                         </xs:annotation>
                         <xs:simpleType>
                             <xs:restriction base="xs:integer"/>
@@ -124,7 +132,7 @@
                     </xs:element>
                     <xs:element name="Y_Dimension">
                         <xs:annotation>
-                            <xs:documentation>y axis dimension</xs:documentation>
+                            <xs:documentation>for resolution: y axis dimension</xs:documentation>
                         </xs:annotation>
                         <xs:simpleType>
                             <xs:restriction base="xs:integer"/>
