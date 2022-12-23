@@ -18,30 +18,6 @@
 		<xs:complexContent>
 			<xs:extension base="xnat:subjectAssessorData">
 				<xs:sequence>
-					<xs:element name="dna">
-						<xs:annotation>
-							<xs:documentation>DNA</xs:documentation>
-						</xs:annotation>
-						<xs:simpleType>
-							<xs:restriction base="xs:boolean"/>
-						</xs:simpleType>
-					</xs:element>
-					<xs:element name="Currsite">
-                        <xs:annotation>
-                            <xs:documentation>Currsite</xs:documentation>
-                        </xs:annotation>
-                        <xs:simpleType>
-                            <xs:restriction base="xs:string"/>
-                        </xs:simpleType>
-                    </xs:element>
-					<xs:element name="Subject_Identification">
-                        <xs:annotation>
-                            <xs:documentation>subject id</xs:documentation>
-                        </xs:annotation>
-                        <xs:simpleType>
-                            <xs:restriction base="xs:integer"/>
-                        </xs:simpleType>
-                    </xs:element>
 					<xs:element name="Scan_Date">
                         <xs:annotation>
                             <xs:documentation>scan date</xs:documentation>
@@ -90,6 +66,7 @@
                             <xs:restriction base="xs:integer"/>
                         </xs:simpleType>
                     </xs:element>
+                    <!-- 
 					<xs:element name="Z_Axial_Brain_Scan">
                         <xs:annotation>
                             <xs:documentation>number of z axial brain scans </xs:documentation>
@@ -106,6 +83,7 @@
                             <xs:restriction base="xs:integer"/>
                         </xs:simpleType>
                     </xs:element>
+                     -->
                     <xs:element name="Total_Cerebrospinal_Fluid_Volume">
                         <xs:annotation>
                             <xs:documentation>total cerebrospinal fluid volume</xs:documentation>
@@ -162,30 +140,7 @@
                             <xs:restriction base="xs:integer"/>
                         </xs:simpleType>
                     </xs:element>
-					<xs:element name="rna">
-						<xs:annotation>
-							<xs:documentation>RNA</xs:documentation>
-						</xs:annotation>
-						<xs:simpleType>
-							<xs:restriction base="xs:boolean"/>
-						</xs:simpleType>
-					</xs:element>
-					<xs:element name="plasma">
-						<xs:annotation>
-							<xs:documentation>Plasma</xs:documentation>
-						</xs:annotation>
-						<xs:simpleType>
-							<xs:restriction base="xs:boolean"/>
-						</xs:simpleType>
-					</xs:element>
-					<xs:element name="serumone">
-						<xs:annotation>
-							<xs:documentation>Serumone</xs:documentation>
-						</xs:annotation>
-						<xs:simpleType>
-							<xs:restriction base="xs:boolean"/>
-						</xs:simpleType>
-					</xs:element>
+					<!--
 					<xs:element name="tilt">
 						<xs:annotation>
 							<xs:documentation>Tilt</xs:documentation>
@@ -194,6 +149,7 @@
 							<xs:restriction base="xs:boolean"/>
 						</xs:simpleType>
 					</xs:element>
+                    -->
 				</xs:sequence>
 			</xs:extension>
 		</xs:complexContent>

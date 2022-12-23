@@ -79,29 +79,6 @@ $page.setVlinkColor($ui.vlink)
                 </tr>
                 <tr>
                     <td>&nbsp;</td>
-                    #formLabel("DNA")
-                    <td valign="top">
-                        #showBoolean("workshop:biosampleCollection/dna" $item)
-                    </td>
-                </tr>
-                <tr>
-                    <td>&nbsp;</td>
-                    #formLabel("Currsite")
-                    <td valign="top">
-                        #showString("workshop:biosampleCollection/currsite" $item)
-                    </td>
-                </tr>
-                <tr>
-                    <td>&nbsp;</td>
-                    #formLabel("Subject_Identification")
-                    <td valign="top">
-                        <!-- both method works !!! ^__^ -->
-                        <#showString("workshop:biosampleCollection/subject_identification" $item)> 
-                        <!-- $item.getProperty("Subject_Identification") -->
-                    </td>
-                </tr>
-                <tr>
-                    <td>&nbsp;</td>
                     #formLabel("Scan_Date")
                     <td valign="top">
                         <!-- both method works !!! ^__^ -->
@@ -141,6 +118,7 @@ $page.setVlinkColor($ui.vlink)
                         <#showString("workshop:biosampleCollection/dicom_pixel_size_y" $item)> 
                     </td>
                 </tr>
+                <!--
                 <tr>
                     <td>&nbsp;</td>
                     #formLabel("Z_Axial_Brain_Scan")
@@ -162,6 +140,7 @@ $page.setVlinkColor($ui.vlink)
                         <#showString("workshop:biosampleCollection/z_brain_thin_scans" $item)> 
                     </td>
                 </tr>
+                -->
                 <tr>
                     <td>&nbsp;</td>
                     #formLabel("Total_Cerebrospinal_Fluid_Volume")
@@ -181,13 +160,6 @@ $page.setVlinkColor($ui.vlink)
                     #formLabel("Selected_Scan_Number")
                     <td valign="top">
                         <#showString("workshop:biosampleCollection/selected_scan_number" $item)> 
-                    </td>
-                </tr>
-                <tr>
-                    <td>&nbsp;</td>
-                    #formLabel("Sequence")
-                    <td valign="top">
-                        <#showString("workshop:biosampleCollection/sequence" $item)> 
                     </td>
                 </tr>
                  <tr>
@@ -218,27 +190,7 @@ $page.setVlinkColor($ui.vlink)
                         <#showString("workshop:biosampleCollection/y_dimension" $item)> 
                     </td>
                 </tr>
-                <tr>
-                    <td>&nbsp;</td>
-                    #formLabel("RNA")
-                    <td valign="top">
-                        #showBoolean("workshop:biosampleCollection/rna" $item)
-                    </td>
-                </tr>
-                <tr>
-                    <td>&nbsp;</td>
-                    #formLabel("Plasma")
-                    <td     valign="top">
-                        #showBoolean("workshop:biosampleCollection/plasma" $item)
-                    </td>
-                </tr>
-                <tr>
-                    <td>&nbsp;</td>
-                    #formLabel("Serumone")
-                    <td valign="top">
-                        #showBoolean("workshop:biosampleCollection/serumone" $item)
-                    </td>
-                </tr>
+                <!--
                 <tr>
                     <td>&nbsp;</td>
                     #formLabel("Tilt")
@@ -246,6 +198,7 @@ $page.setVlinkColor($ui.vlink)
                         #showBoolean("workshop:biosampleCollection/tilt" $item)
                     </td>
                 </tr>
+                -->
                 <tr>
 					<td valign="top">
 						#parse("/screens/ReportProjectSpecificFields.vm")
