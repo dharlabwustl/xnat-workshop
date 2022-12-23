@@ -62,9 +62,10 @@ $page.setVlinkColor($ui.vlink)
 #end
 <table width="100%">
 	<tr>
-		<td>
+		<!-- <td>
 			#parse($turbineUtils.getTemplateName("_report",$om.getXSIType(),$project))
 		</td>
+        -->
 		<td valign="top" align="right">
 			#elementActionsBox($element $search_field $search_value $data.getSession().getAttribute("user") $item)
 		</td>
