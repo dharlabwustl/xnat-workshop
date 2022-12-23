@@ -98,7 +98,7 @@ window.currentLabel="$!om.getLabel()";
                            <tr>
                              #formLabel("Time_From_Baseline")
                              <td>
-                                #xdatTimeBox("workshop:biosampleCollection/time_from_baseline" $item $vr)
+                                #xdatTimeBox("workshop:biosampleCollection/time_from_baseline" $item $vr $years)
                              </td>
                          </tr>
                          </tr>
@@ -136,6 +136,12 @@ window.currentLabel="$!om.getLabel()";
                              #formLabel("Total_Cerebrospinal_Fluid_Volume")
                              <td>
                                 #xdatStringBox("workshop:biosampleCollection/total_cerebrospinal_fluid_volume" $item $vr)
+                             </td>
+                         </tr>
+                         <tr>
+                             #formLabel("Cerebrospinal_Fluid_Ratio")
+                             <td>
+                                #xdatStringBox("workshop:biosampleCollection/cerebrospinal_fluid_ratio" $item $vr)
                              </td>
                          </tr>
                          <tr>

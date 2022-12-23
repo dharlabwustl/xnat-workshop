@@ -130,6 +130,14 @@
                             <xs:restriction base="xs:string"/>
                         </xs:simpleType>
                     </xs:element>
+                    <xs:element name="Cerebrospinal_Fluid_Ratio">
+                        <xs:annotation>
+                            <xs:documentation>cerebrospinal fluid ratio </xs:documentation>
+                        </xs:annotation>
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string"/>
+                        </xs:simpleType>
+                    </xs:element>
                     <xs:element name="X_Dimension">
                         <xs:annotation>
                             <xs:documentation>for resolution: x axis dimension</xs:documentation>
