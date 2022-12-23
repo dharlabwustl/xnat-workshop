@@ -178,9 +178,9 @@ $page.setVlinkColor($ui.vlink)
                 </tr>
                  <tr>
                     <td>&nbsp;</td>
-                    #formLabel("Ct_Series_Description")
+                    #formLabel("Net_Water_Uptake")
                     <td valign="top">
-                        <#showString("workshop:biosampleCollection/ct_series_description" $item)> 
+                        <#showString("workshop:biosampleCollection/net_water_uptake" $item)> 
                     </td>
                 </tr>
                 <tr>

@@ -105,7 +105,7 @@ window.currentLabel="$!om.getLabel()";
                            <tr>
                              #formLabel("Slice_Thickness")
                              <td>
-                                #xdatNumberBox("workshop:biosampleCollection/slice_thickness" $item $vr)
+                                #xdatStringBox("workshop:biosampleCollection/slice_thickness" $item $vr)
                              </td>
                          </tr>
                          <tr>
@@ -163,9 +163,9 @@ window.currentLabel="$!om.getLabel()";
                              </td>
                          </tr>
                          <tr>
-                             #formLabel("Ct_Series_Description")
+                             #formLabel("Net_Water_Uptake")
                              <td>
-                                #xdatStringBox("workshop:biosampleCollection/ct_series_description" $item $vr)
+                                #xdatStringBox("workshop:biosampleCollection/net_water_uptake" $item $vr)
                              </td>
                          </tr>
                          <tr>
