@@ -96,9 +96,9 @@ window.currentLabel="$!om.getLabel()";
                              </td>
                          </tr>
                            <tr>
-                             #formLabel("Time_From_Bi_Hr")
+                             #formLabel("Time_From_Baseline")
                              <td>
-                                #xdatStringBox("workshop:biosampleCollection/time_from_bi_hr" $item $vr)
+                                #xdatStringBox("workshop:biosampleCollection/time_from_baseline" $item $vr)
                              </td>
                          </tr>
                          <tr>

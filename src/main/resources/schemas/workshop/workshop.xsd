@@ -66,12 +66,12 @@
                             <xs:restriction base="xs:double"/>
                         </xs:simpleType> 
                     </xs:element>
-					<xs:element name="Time_From_Bi_Hr">
+					<xs:element name="Time_From_Baseline">
                         <xs:annotation>
-                            <xs:documentation>time from bi hr</xs:documentation>
+                            <xs:documentation>time from baseline</xs:documentation>
                         </xs:annotation>
                         <xs:simpleType>
-                            <xs:restriction base="xs:double"/>
+                            <xs:restriction base="xs:time"/>
                         </xs:simpleType> 
                     </xs:element>
 					<xs:element name="Z_Axial_Brain_Scan">

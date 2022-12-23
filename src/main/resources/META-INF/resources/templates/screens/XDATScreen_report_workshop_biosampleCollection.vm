@@ -122,9 +122,9 @@ $page.setVlinkColor($ui.vlink)
                 </tr>
                 <tr>
                     <td>&nbsp;</td>
-                    #formLabel("Time_From_Bi_Hr")
+                    #formLabel("Time_From_Baseline")
                     <td valign="top">
-                        <#showString("workshop:biosampleCollection/time_from_bi_hr" $item)> 
+                        <#showString("workshop:biosampleCollection/time_from_baseline" $item)> 
                     </td>
                 </tr>
                 <tr>
