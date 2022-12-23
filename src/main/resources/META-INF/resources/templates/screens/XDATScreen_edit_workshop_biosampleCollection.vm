@@ -133,6 +133,12 @@ window.currentLabel="$!om.getLabel()";
                              </td>
                          </tr>
                          <tr>
+                             #formLabel("Total_Cerebrospinal_Fluid_Volume")
+                             <td>
+                                #xdatStringBox("workshop:biosampleCollection/total_cerebrospinal_fluid_volume" $item $vr)
+                             </td>
+                         </tr>
+                         <tr>
                              #formLabel("Selected_Scan_Number")
                              <td>
                                 #xdatStringBox("workshop:biosampleCollection/selected_scan_number" $item $vr)

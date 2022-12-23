@@ -164,6 +164,13 @@ $page.setVlinkColor($ui.vlink)
                 </tr>
                 <tr>
                     <td>&nbsp;</td>
+                    #formLabel("Total_Cerebrospinal_Fluid_Volume")
+                    <td valign="top">
+                        <#showString("workshop:biosampleCollection/total_cerebrospinal_fluid_volume" $item)> 
+                    </td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
                     #formLabel("Selected_Scan_Number")
                     <td valign="top">
                         <#showString("workshop:biosampleCollection/selected_scan_number" $item)> 
