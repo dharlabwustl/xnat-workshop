@@ -108,6 +108,12 @@ window.currentLabel="$!om.getLabel()";
                              </td>
                          </tr>
                          <tr>
+                             #formLabel("DICOM_pixel_size_y")
+                             <td>
+                                #xdatStringBox("workshop:biosampleCollection/dicom_pixel_size_y" $item $vr)
+                             </td>
+                         </tr>
+                         <tr>
                              #formLabel("Z_Axial_Brain_Scan")
                              <td>
                                 #xdatStringBox("workshop:biosampleCollection/z_axial_brain_scan" $item $vr)

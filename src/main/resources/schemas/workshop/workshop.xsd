@@ -66,6 +66,14 @@
                             <xs:restriction base="xs:double"/>
                         </xs:simpleType> 
                     </xs:element>
+                    <xs:element name="DICOM_pixel_size_y">
+                        <xs:annotation>
+                            <xs:documentation> y axis pixel size of DICOM</xs:documentation>
+                        </xs:annotation>
+                        <xs:simpleType>
+                            <xs:restriction base="xs:double"/>
+                        </xs:simpleType> 
+                    </xs:element>
 					<xs:element name="Time_From_Baseline">
                         <xs:annotation>
                             <xs:documentation>time from baseline</xs:documentation>
