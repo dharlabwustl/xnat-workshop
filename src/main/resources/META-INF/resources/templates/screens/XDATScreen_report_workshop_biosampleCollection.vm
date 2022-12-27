@@ -80,29 +80,19 @@ $page.setVlinkColor($ui.vlink)
                 </tr>
                 <tr>
                     <td>&nbsp;</td>
+                    #formLabel("Scan_Time")
+                    <td valign="top">
+                        <#showString("workshop:biosampleCollection/time_from_baseline" $item)> 
+                    </td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
                     #formLabel("Scan_Date")
                     <td valign="top">
                         <!-- both method works !!! ^__^ -->
                         <!--#showInteger("workshop:biosampleCollection/subject_identification" $item) --> 
                         <!-- $item.getProperty("workshop:biosampleCollection/scan_date") -->
                         <#showString("workshop:biosampleCollection/scan_date" $item)> 
-                    </td>
-                </tr>
-                <tr>
-                    <td>&nbsp;</td>
-                    #formLabel("Scan_Time")
-                    <td valign="top">
-                        <!-- both method works !!! ^__^ -->
-                        <!--#showInteger("workshop:biosampleCollection/subject_identification" $item) --> 
-                        <!-- $item.getProperty("workshop:biosampleCollection/scan_time") -->
-                        <#showString("workshop:biosampleCollection/scan_time" $item)> 
-                    </td>
-                </tr>
-                <tr>
-                    <td>&nbsp;</td>
-                    #formLabel("Time_From_Baseline")
-                    <td valign="top">
-                        <#showString("workshop:biosampleCollection/time_from_baseline" $item)> 
                     </td>
                 </tr>
                 <tr>

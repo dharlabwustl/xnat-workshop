@@ -50,14 +50,6 @@
                             <xs:restriction base="xs:double"/>
                         </xs:simpleType> 
                     </xs:element>
-					<xs:element name="Time_From_Baseline">
-                        <xs:annotation>
-                            <xs:documentation>time from baseline</xs:documentation>
-                        </xs:annotation>
-                        <xs:simpleType>
-                            <xs:restriction base="xs:time"/>
-                        </xs:simpleType> 
-                    </xs:element>
                     <xs:element name="Slice_Thickness">
                         <xs:annotation>
                             <xs:documentation>slice thickness</xs:documentation>
