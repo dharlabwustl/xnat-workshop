@@ -90,9 +90,9 @@ $page.setVlinkColor($ui.vlink)
                 </tr>
                 <tr>
                     <td>&nbsp;</td>
-                    #formLabel("Scan_Time")
+                    #formLabel("Scan_Timing")
                     <td valign="top">
-                        <#showInteger("workshop:biosampleCollection/scan_time" $item)> 
+                        <#showInteger("workshop:biosampleCollection/scan_timing" $item)> 
                     </td>
                 </tr>
                 <tr>

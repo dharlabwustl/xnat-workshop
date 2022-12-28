@@ -26,7 +26,7 @@
                             <xs:restriction base="xs:date"/>
                         </xs:simpleType>
                     </xs:element>
-					<xs:element name="Scan_Time">
+					<xs:element name="Scan_Timing">
                         <xs:annotation>
                             <xs:documentation>not sure of unit</xs:documentation>
                         </xs:annotation>
