@@ -97,6 +97,13 @@ $page.setVlinkColor($ui.vlink)
                 </tr>
                 <tr>
                     <td>&nbsp;</td>
+                    #formLabel("Slice_Thickness")
+                    <td valign="top">
+                        <#showInteger("workshop:biosampleCollection/slice_thickness" $item)> 
+                    </td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
                     #formLabel("DICOM_pixel_size_x")
                     <td valign="top">
                         <#showString("workshop:biosampleCollection/dicom_pixel_size_x" $item)> 
@@ -115,13 +122,6 @@ $page.setVlinkColor($ui.vlink)
                     #formLabel("Z_Axial_Brain_Scan")
                     <td valign="top">
                         <#showString("workshop:biosampleCollection/z_axial_brain_scan" $item)> 
-                    </td>
-                </tr>
-                <tr>
-                    <td>&nbsp;</td>
-                    #formLabel("Slice_Thickness")
-                    <td valign="top">
-                        <#showInteger("workshop:biosampleCollection/slice_thickness" $item)> 
                     </td>
                 </tr>
                 <tr>
@@ -153,13 +153,6 @@ $page.setVlinkColor($ui.vlink)
                         <#showString("workshop:biosampleCollection/selected_scan_number" $item)> 
                     </td>
                 </tr>
-                 <tr>
-                    <td>&nbsp;</td>
-                    #formLabel("Net_Water_Uptake")
-                    <td valign="top">
-                        <#showString("workshop:biosampleCollection/net_water_uptake" $item)> 
-                    </td>
-                </tr>
                 <tr>
                     <td>&nbsp;</td>
                     #formLabel("Slice_Number")
@@ -179,6 +172,13 @@ $page.setVlinkColor($ui.vlink)
                     #formLabel("Y_Dimension")
                     <td valign="top">
                         <#showString("workshop:biosampleCollection/y_dimension" $item)> 
+                    </td>
+                </tr>
+                 <tr>
+                    <td>&nbsp;</td>
+                    #formLabel("Net_Water_Uptake")
+                    <td valign="top">
+                        <#showString("workshop:biosampleCollection/net_water_uptake" $item)> 
                     </td>
                 </tr>
                 <!--
