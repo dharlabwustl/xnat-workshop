@@ -28,10 +28,10 @@
                     </xs:element>
 					<xs:element name="Scan_Time">
                         <xs:annotation>
-                            <xs:documentation>hour:miunte:second of receiving scan </xs:documentation>
+                            <xs:documentation>not sure of unit</xs:documentation>
                         </xs:annotation>
                         <xs:simpleType>
-                            <xs:restriction base="xs:time"/>
+                            <xs:restriction base="xs:double"/>
                         </xs:simpleType>
                     </xs:element>
 					<xs:element name="DICOM_pixel_size_x">
@@ -97,7 +97,7 @@
                             <xs:documentation>net water uptake </xs:documentation>
                         </xs:annotation>
                         <xs:simpleType>
-                            <xs:restriction base="xs:string"/>
+                            <xs:restriction base="xs:double"/>
                         </xs:simpleType>
                     </xs:element>
                     <xs:element name="Cerebrospinal_Fluid_Ratio">
@@ -105,7 +105,7 @@
                             <xs:documentation>cerebrospinal fluid ratio </xs:documentation>
                         </xs:annotation>
                         <xs:simpleType>
-                            <xs:restriction base="xs:string"/>
+                            <xs:restriction base="xs:double"/>
                         </xs:simpleType>
                     </xs:element>
                     <xs:element name="X_Dimension">
