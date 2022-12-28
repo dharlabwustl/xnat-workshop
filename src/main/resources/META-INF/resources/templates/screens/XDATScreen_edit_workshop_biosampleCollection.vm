@@ -2,7 +2,7 @@ $page.setTitle("Biosamples")
 $page.setLinkColor($ui.alink)
 $page.setVlinkColor($ui.vlink)
 #set($years = [ $!turbineUtils.getYear()..1900])
-#set($time = [ $!turbineUtils.getDate()])
+<!-- #set($time = [ $!turbineUtils.getDate()]) -->
 
 <script type="text/javascript">
 window.currentID="$!om.getId()";
