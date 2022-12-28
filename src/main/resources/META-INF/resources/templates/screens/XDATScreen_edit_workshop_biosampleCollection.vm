@@ -74,7 +74,8 @@ window.currentLabel="$!om.getLabel()";
                                 <!-- #xdatTimeBox("workshop:biosampleCollection/scan_time" $item $vr $time) -->
                                 #xdatStringBox("workshop:biosampleCollection/scan_time" $item $vr)
                              </td>
-                         </tr>                             #formLabel("Time_From_Baseline")
+                         </tr>                             
+                            #formLabel("Time_From_Baseline")
                              <td>
                                 <!-- #xdatTimeBox("workshop:biosampleCollection/time_from_baseline" $item $vr $years) -->
                                 #xdatStringBox("workshop:biosampleCollection/time_from_baseline" $item $vr)
