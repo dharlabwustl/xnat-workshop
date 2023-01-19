@@ -75,7 +75,7 @@ $page.setVlinkColor($ui.vlink)
 			<table>
                <tr>
                     <td colspan="3" style="padding-top: 20px; padding-bottom: 10px; text-align: left; vertical-align: middle;">
-                        <span style="font-family: $ui.sansSerifFonts; font-size: small; "><b>Biosamples</b></span>
+                        <span style="font-family: $ui.sansSerifFonts; font-size: small; "><b>StrokeEdema</b></span>
                     </td>
                 </tr>
                 <tr>
