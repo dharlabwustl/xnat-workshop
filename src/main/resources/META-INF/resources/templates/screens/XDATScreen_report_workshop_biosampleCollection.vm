@@ -83,16 +83,16 @@ $page.setVlinkColor($ui.vlink)
                     #formLabel("Scan_Date")
                     <td valign="top">
                         <!-- both method works !!! ^__^ -->
-                        <!--#showInteger("workshop:biosampleCollection/subject_identification" $item) --> 
-                        <!-- $item.getProperty("workshop:biosampleCollection/scan_date") -->
-                        <#showInteger("workshop:biosampleCollection/scan_date" $item)> 
+                        <!--#showInteger("workshop:StrokeedemaCollection/subject_identification" $item) --> 
+                        <!-- $item.getProperty("workshop:StrokeedemaCollection/scan_date") -->
+                        <#showInteger("workshop:StrokeedemaCollection/scan_date" $item)> 
                     </td>
                 </tr>
                 <tr>
                     <td>&nbsp;</td>
                     #formLabel("Scan_Timing")
                     <td valign="top">
-                        <#showInteger("workshop:biosampleCollection/scan_timing" $item)> 
+                        <#showInteger("workshop:StrokeedemaCollection/scan_timing" $item)> 
                     </td>
                 </tr>
                  <tr>
@@ -100,30 +100,30 @@ $page.setVlinkColor($ui.vlink)
                     #formLabel("Scan_Identification")
                     <td valign="top">
                         <!-- both method works !!! ^__^ -->
-                        <!--#showInteger("workshop:biosampleCollection/subject_identification" $item) --> 
-                        <!-- $item.getProperty("workshop:biosampleCollection/scan_date") -->
-                        <#showInteger("workshop:biosampleCollection/scan_identification" $item)> 
+                        <!--#showInteger("workshop:StrokeedemaCollection/subject_identification" $item) --> 
+                        <!-- $item.getProperty("workshop:StrokeedemaCollection/scan_date") -->
+                        <#showInteger("workshop:StrokeedemaCollection/scan_identification" $item)> 
                     </td>
                 </tr>
                 <tr>
                     <td>&nbsp;</td>
                     #formLabel("Slice_Thickness")
                     <td valign="top">
-                        <#showInteger("workshop:biosampleCollection/slice_thickness" $item)> 
+                        <#showInteger("workshop:StrokeedemaCollection/slice_thickness" $item)> 
                     </td>
                 </tr>
                 <tr>
                     <td>&nbsp;</td>
                     #formLabel("DICOM_pixel_size_x")
                     <td valign="top">
-                        <#showInteger("workshop:biosampleCollection/dicom_pixel_size_x" $item)> 
+                        <#showInteger("workshop:StrokeedemaCollection/dicom_pixel_size_x" $item)> 
                     </td>
                 </tr>
                 <tr>
                     <td>&nbsp;</td>
                     #formLabel("DICOM_pixel_size_y")
                     <td valign="top">
-                        <#showInteger("workshop:biosampleCollection/dicom_pixel_size_y" $item)> 
+                        <#showInteger("workshop:StrokeedemaCollection/dicom_pixel_size_y" $item)> 
                     </td>
                 </tr>
                 <!--
@@ -131,14 +131,14 @@ $page.setVlinkColor($ui.vlink)
                     <td>&nbsp;</td>
                     #formLabel("Z_Axial_Brain_Scan")
                     <td valign="top">
-                        <#showString("workshop:biosampleCollection/z_axial_brain_scan" $item)> 
+                        <#showString("workshop:StrokeedemaCollection/z_axial_brain_scan" $item)> 
                     </td>
                 </tr>
                 <tr>
                     <td>&nbsp;</td>
                     #formLabel("Z_Brain_Thin_Scans")
                     <td valign="top">
-                        <#showString("workshop:biosampleCollection/z_brain_thin_scans" $item)> 
+                        <#showString("workshop:StrokeedemaCollection/z_brain_thin_scans" $item)> 
                     </td>
                 </tr>
                 -->
@@ -146,49 +146,49 @@ $page.setVlinkColor($ui.vlink)
                     <td>&nbsp;</td>
                     #formLabel("Total_Cerebrospinal_Fluid_Volume")
                     <td valign="top">
-                        <#showInteger("workshop:biosampleCollection/total_cerebrospinal_fluid_volume" $item)> 
+                        <#showInteger("workshop:StrokeedemaCollection/total_cerebrospinal_fluid_volume" $item)> 
                     </td>
                 </tr>
                 <tr>
                     <td>&nbsp;</td>
                     #formLabel("Cerebrospinal_Fluid_Ratio")
                     <td valign="top">
-                        <#showInteger("workshop:biosampleCollection/cerebrospinal_fluid_ratio" $item)> 
+                        <#showInteger("workshop:StrokeedemaCollection/cerebrospinal_fluid_ratio" $item)> 
                     </td>
                 </tr>
                 <tr>
                     <td>&nbsp;</td>
                     #formLabel("Selected_Scan_Number")
                     <td valign="top">
-                        <#showInteger("workshop:biosampleCollection/selected_scan_number" $item)> 
+                        <#showInteger("workshop:StrokeedemaCollection/selected_scan_number" $item)> 
                     </td>
                 </tr>
                 <tr>
                     <td>&nbsp;</td>
                     #formLabel("Slice_Number")
                     <td valign="top">
-                        <#showInteger("workshop:biosampleCollection/slice_number" $item)> 
+                        <#showInteger("workshop:StrokeedemaCollection/slice_number" $item)> 
                     </td>
                 </tr>
                 <tr>
                     <td>&nbsp;</td>
                     #formLabel("X_Dimension")
                     <td valign="top">
-                        <#showInteger("workshop:biosampleCollection/x_dimension" $item)> 
+                        <#showInteger("workshop:StrokeedemaCollection/x_dimension" $item)> 
                     </td>
                 </tr>
                 <tr>
                     <td>&nbsp;</td>
                     #formLabel("Y_Dimension")
                     <td valign="top">
-                        <#showInteger("workshop:biosampleCollection/y_dimension" $item)> 
+                        <#showInteger("workshop:StrokeedemaCollection/y_dimension" $item)> 
                     </td>
                 </tr>
                  <tr>
                     <td>&nbsp;</td>
                     #formLabel("Net_Water_Uptake")
                     <td valign="top">
-                        <#showInteger("workshop:biosampleCollection/net_water_uptake" $item)> 
+                        <#showInteger("workshop:StrokeedemaCollection/net_water_uptake" $item)> 
                     </td>
                 </tr>
                 <!--
@@ -196,7 +196,7 @@ $page.setVlinkColor($ui.vlink)
                     <td>&nbsp;</td>
                     #formLabel("Tilt")
                     <td valign="top">
-                        #showBoolean("workshop:biosampleCollection/tilt" $item)
+                        #showBoolean("workshop:StrokeedemaCollection/tilt" $item)
                     </td>
                 </tr>
                 -->
