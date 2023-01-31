@@ -11,7 +11,7 @@
 <xs:schema targetNamespace="http://nrg.wustl.edu/workshop" xmlns:workshop="http://nrg.wustl.edu/workshop" xmlns:xnat="http://nrg.wustl.edu/xnat" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
 	<xs:import namespace="http://nrg.wustl.edu/xnat" schemaLocation="../xnat/xnat.xsd"/>
 	<xs:element name="BiosampleCollection" type="workshop:biosampleCollection"/>
-	<xs:complexType name="strokeEdemaCollection">
+	<xs:complexType name="biosampleCollection">
 		<xs:annotation>
 			<xs:documentation>Indicates whether the required biosample collections have been acquired per study protocol.</xs:documentation>
 		</xs:annotation>

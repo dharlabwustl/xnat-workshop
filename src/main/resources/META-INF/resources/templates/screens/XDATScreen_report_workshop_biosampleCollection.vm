@@ -88,13 +88,6 @@ $page.setVlinkColor($ui.vlink)
                         <#showInteger("workshop:biosampleCollection/scan_date" $item)> 
                     </td>
                 </tr>
-                <tr>
-                    <td>&nbsp;</td>
-                    #formLabel("Scan_Timing")
-                    <td valign="top">
-                        <#showInteger("workshop:biosampleCollection/scan_timing" $item)> 
-                    </td>
-                </tr>
                  <tr>
                     <td>&nbsp;</td>
                     #formLabel("Scan_Identification")
@@ -103,6 +96,13 @@ $page.setVlinkColor($ui.vlink)
                         <!--#showInteger("workshop:biosampleCollection/subject_identification" $item) --> 
                         <!-- $item.getProperty("workshop:biosampleCollection/scan_date") -->
                         <#showInteger("workshop:biosampleCollection/scan_identification" $item)> 
+                    </td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    #formLabel("Scan_Timing")
+                    <td valign="top">
+                        <#showInteger("workshop:biosampleCollection/scan_timing" $item)> 
                     </td>
                 </tr>
                 <tr>
