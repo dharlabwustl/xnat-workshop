@@ -13,7 +13,7 @@
 	<xs:element name="BiosampleCollection" type="workshop:biosampleCollection"/>
 	<xs:complexType name="biosampleCollection">
 		<xs:annotation>
-			<xs:documentation>Indicates whether the required biosample collections have been acquired per study protocol.</xs:documentation>
+			<xs:documentation>Indicates whether the required stroke edema collections have been acquired per study protocol.</xs:documentation>
 		</xs:annotation>
 		<xs:complexContent>
 			<xs:extension base="xnat:subjectAssessorData">
