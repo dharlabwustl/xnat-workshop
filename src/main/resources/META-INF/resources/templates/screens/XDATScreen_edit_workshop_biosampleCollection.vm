@@ -1,4 +1,4 @@
-$page.setTitle("StrokeEdemaSample")
+$page.setTitle("Biosamples")
 $page.setLinkColor($ui.alink)
 $page.setVlinkColor($ui.vlink)
 #set($years = [ $!turbineUtils.getYear()..1900])
