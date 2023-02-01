@@ -88,7 +88,7 @@ $page.setVlinkColor($ui.vlink)
                     <td>&nbsp;</td>
                     #formLabel("Scan_Timing")
                     <td valign="top">
-                        <#showInteger("workshop:biosampleCollection/scan_timing" $item)> 
+                        <#showString("workshop:biosampleCollection/scan_timing" $item)> 
                     </td>
                 </tr>
                 
@@ -96,7 +96,7 @@ $page.setVlinkColor($ui.vlink)
                     <td>&nbsp;</td>
                     #formLabel("Scan_Identification")
                     <td valign="top">
-                        <#showInteger("workshop:biosampleCollection/scan_identification" $item)> 
+                        <#showString("workshop:biosampleCollection/scan_identification" $item)> 
                     </td>
                 </tr>
                 
@@ -104,7 +104,7 @@ $page.setVlinkColor($ui.vlink)
                     <td>&nbsp;</td>
                     #formLabel("Slice_Thickness")
                     <td valign="top">
-                        <#showInteger("workshop:biosampleCollection/slice_thickness" $item)> 
+                        <#showString("workshop:biosampleCollection/slice_thickness" $item)> 
                     </td>
                 </tr>
 
@@ -112,7 +112,7 @@ $page.setVlinkColor($ui.vlink)
                     <td>&nbsp;</td>
                     #formLabel("DICOM_pixel_size_x")
                     <td valign="top">
-                        <#showInteger("workshop:biosampleCollection/dicom_pixel_size_x" $item)> 
+                        <#showString("workshop:biosampleCollection/dicom_pixel_size_x" $item)> 
                     </td>
                 </tr>
 
@@ -120,7 +120,7 @@ $page.setVlinkColor($ui.vlink)
                     <td>&nbsp;</td>
                     #formLabel("DICOM_pixel_size_y")
                     <td valign="top">
-                        <#showInteger("workshop:biosampleCollection/dicom_pixel_size_y" $item)> 
+                        <#showString("workshop:biosampleCollection/dicom_pixel_size_y" $item)> 
                     </td>
                 </tr>
 
@@ -128,7 +128,7 @@ $page.setVlinkColor($ui.vlink)
                     <td>&nbsp;</td>
                     #formLabel("Total_Cerebrospinal_Fluid_Volume")
                     <td valign="top">
-                        <#showInteger("workshop:biosampleCollection/total_cerebrospinal_fluid_volume" $item)> 
+                        <#showString("workshop:biosampleCollection/total_cerebrospinal_fluid_volume" $item)> 
                     </td>
                 </tr>
                 
@@ -136,7 +136,7 @@ $page.setVlinkColor($ui.vlink)
                     <td>&nbsp;</td>
                     #formLabel("Cerebrospinal_Fluid_Ratio")
                     <td valign="top">
-                        <#showInteger("workshop:biosampleCollection/cerebrospinal_fluid_ratio" $item)> 
+                        <#showString("workshop:biosampleCollection/cerebrospinal_fluid_ratio" $item)> 
                     </td>
                 </tr>
                 
@@ -152,7 +152,7 @@ $page.setVlinkColor($ui.vlink)
                     <td>&nbsp;</td>
                     #formLabel("Slice_Number")
                     <td valign="top">
-                        <#showInteger("workshop:biosampleCollection/slice_number" $item)> 
+                        <#showString("workshop:biosampleCollection/slice_number" $item)> 
                     </td>
                 </tr>
 
@@ -160,7 +160,7 @@ $page.setVlinkColor($ui.vlink)
                     <td>&nbsp;</td>
                     #formLabel("X_Dimension")
                     <td valign="top">
-                        <#showInteger("workshop:biosampleCollection/x_dimension" $item)> 
+                        <#showString("workshop:biosampleCollection/x_dimension" $item)> 
                     </td>
                 </tr>
 
@@ -168,7 +168,7 @@ $page.setVlinkColor($ui.vlink)
                     <td>&nbsp;</td>
                     #formLabel("Y_Dimension")
                     <td valign="top">
-                        <#showInteger("workshop:biosampleCollection/y_dimension" $item)> 
+                        <#showString("workshop:biosampleCollection/y_dimension" $item)> 
                     </td>
                 </tr>
 
@@ -176,7 +176,7 @@ $page.setVlinkColor($ui.vlink)
                     <td>&nbsp;</td>
                     #formLabel("Net_Water_Uptake")
                     <td valign="top">
-                        <#showInteger("workshop:biosampleCollection/net_water_uptake" $item)> 
+                        <#showString("workshop:biosampleCollection/net_water_uptake" $item)> 
                     </td>
                 </tr>
 
