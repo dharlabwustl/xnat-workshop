@@ -7,4 +7,5 @@
  * Released under the Simplified BSD.
  */
 
-rootProject.name = 'xnat-workshop'
+//rootProject.name = 'xnat-workshop'
+rootProject.name = 'stroke-edema'
