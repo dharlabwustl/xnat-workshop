@@ -188,7 +188,7 @@ publishing.publications {
 
         pom.withXml {
             def root = asNode()
-            root.appendNode('name', 'XNAT Workshop 2016 Plugin')
+            root.appendNode('name', 'Stroke Edema Plugin modified from XNAT Workshop 2016 Plugin')
             root.appendNode('url', 'https://github.com/autumnxu/xnat_datatype')
             root.appendNode('inceptionYear', '2016')
 

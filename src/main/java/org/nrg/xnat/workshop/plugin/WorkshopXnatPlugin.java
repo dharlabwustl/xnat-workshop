@@ -16,7 +16,7 @@ import org.nrg.xdat.bean.RadRadiologyreaddataBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 
-@XnatPlugin(value = "workshopPlugin", name = "XNAT 1.7 Workshop 2016 Plugin", entityPackages = "org.nrg.xnat.workshop.entities",
+@XnatPlugin(value = "workshopPlugin", name = "Stroke Edema Plugin modified from XNAT 1.7 Workshop 2016 Plugin", entityPackages = "org.nrg.xnat.workshop.entities",
             dataModels = {@XnatDataModel(value = WorkshopBiosamplecollectionBean.SCHEMA_ELEMENT_NAME,
                                          singular = "Stroke Edema Collection",
                                          plural = "Stroke Edema Collection"),
