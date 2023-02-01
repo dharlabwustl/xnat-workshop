@@ -63,15 +63,7 @@ $page.setVlinkColor($ui.vlink)
                         <span style="font-family: $ui.sansSerifFonts; font-size: small; "><b>Stroke Edema Sample</b></span>
                     </td>
                 </tr>
-
-                <tr>
-                    <td>&nbsp;</td>
-                    #formLabel("DNA")
-                    <td valign="top">
-                        #showBoolean("workshop:biosampleCollection/dna" $item)
-                    </td>
-                </tr>
-
+                
                 <tr>
                     <td>&nbsp;</td>
                     #formLabel("Scan_Date")
