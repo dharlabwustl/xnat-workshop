@@ -75,7 +75,7 @@ $page.setVlinkColor($ui.vlink)
                         <span style="font-family: $ui.sansSerifFonts; font-size: small; "><b>Stroke Edema Sample</b></span>
                     </td>
                 </tr>
-
+                <!--
                 <tr>
                     <td>&nbsp;</td>
                     #formLabel("Scan_Date")
@@ -91,7 +91,7 @@ $page.setVlinkColor($ui.vlink)
                         <#showInteger("workshop:biosampleCollection/scan_timing" $item)> 
                     </td>
                 </tr>
-                
+                -->
                 <tr>
                     <td>&nbsp;</td>
                     #formLabel("Scan_Identification")

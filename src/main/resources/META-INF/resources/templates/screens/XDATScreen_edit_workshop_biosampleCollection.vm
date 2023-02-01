@@ -64,7 +64,7 @@ window.currentLabel="$!om.getLabel()";
                         <tr>
                              <td colspan="2">Have the following stroke information be taken and stored as per protocol?</td>
                         </tr>
-
+                        <!--
                         <tr>
                              #formLabel("Scan_Date")
                              <td>
@@ -75,11 +75,13 @@ window.currentLabel="$!om.getLabel()";
                          <tr>
                              #formLabel("Scan_Timing")
                              <td>
+                             !-->
                                 <!-- #xdatTimeBox("workshop:biosampleCollection/scan_time" $item $vr $time) -->
+                                <!--
                                 #xdatStringBox("workshop:biosampleCollection/scan_timing" $item $vr)
                              </td>
                          </tr>  
-
+                        -->
                          <tr>
                              #formLabel("Scan_Identification")
                              <td>
