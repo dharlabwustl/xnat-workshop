@@ -189,13 +189,13 @@ publishing.publications {
         pom.withXml {
             def root = asNode()
             root.appendNode('name', 'XNAT Workshop 2016 Plugin')
-            root.appendNode('url', 'https://github.com/XnatWorkshop/xnat-workshop-plugin')
+            root.appendNode('url', 'https://github.com/autumnxu/xnat_datatype')
             root.appendNode('inceptionYear', '2016')
 
             def scm = root.appendNode('scm')
-            scm.appendNode('url', 'https://github.com/XnatWorkshop/xnat-workshop-plugin')
-            scm.appendNode('connection', 'scm:https://github.com/XnatWorkshop/xnat-workshop-plugin.git')
-            scm.appendNode('developerConnection', 'scm:git://github.com/XnatWorkshop/xnat-workshop-plugin.git')
+            scm.appendNode('url', 'https://github.com/autumnxu/xnat_datatype')
+            scm.appendNode('connection', 'scm:https://github.com/autumnxu/xnat_datatype.git')
+            scm.appendNode('developerConnection', 'scm:https://github.com/autumnxu/xnat_datatype.git')
 
             def license = root.appendNode('licenses').appendNode('license')
             license.appendNode('name', 'Simplified BSD 2-Clause License')
