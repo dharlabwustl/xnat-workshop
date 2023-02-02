@@ -18,8 +18,8 @@ import org.springframework.context.annotation.ComponentScan;
 
 @XnatPlugin(value = "workshopPlugin", name = "Stroke Edema Plugin modified from XNAT 1.7 Workshop 2016 Plugin", entityPackages = "org.nrg.xnat.workshop.entities",
             dataModels = {@XnatDataModel(value = WorkshopBiosamplecollectionBean.SCHEMA_ELEMENT_NAME,
-                                         singular = "Stroke Edema Collection",
-                                         plural = "Stroke Edema Collections"),
+                                         singular = "Biosample Collection",
+                                         plural = "Biosample Collections"),
                           @XnatDataModel(value = RadRadiologyreaddataBean.SCHEMA_ELEMENT_NAME,
                                          singular = "Radiology Read",
                                          plural = "Radiology Reads")})
