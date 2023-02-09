@@ -7,5 +7,5 @@
  * Released under the Simplified BSD.
  */
 
-//rootProject.name = 'xnat-workshop'
+//rootProject.name anything else doesn't work
 rootProject.name = 'xnat-workshop'
