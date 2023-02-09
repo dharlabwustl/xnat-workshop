@@ -24,7 +24,7 @@
                             <xs:documentation>scan date</xs:documentation>
                         </xs:annotation>
                         <xs:simpleType>
-                            <xs:restriction base="xnat:date"/>
+                            <xs:restriction base="xs:date"/>
                         </xs:simpleType>
                     </xs:element>
 					<xs:element name="Scan_Time" minOccurs="1">
@@ -33,7 +33,7 @@
                         </xs:annotation>
                         <xs:simpleType>
                             <!-- changed base from double to time -->
-                            <xs:restriction base="xnat:time"/>
+                            <xs:restriction base="xs:time"/>
                         </xs:simpleType>
                     </xs:element>
                     <xs:element name="Scan_Identification">

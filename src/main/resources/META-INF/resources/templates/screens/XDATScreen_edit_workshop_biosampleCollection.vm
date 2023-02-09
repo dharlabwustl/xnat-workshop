@@ -68,7 +68,7 @@ window.currentLabel="$!om.getLabel()";
                          <tr>
                              #formLabel("Scan_Date")
                              <td>
-                                #xdatDateBox("workshop:biosampleCollection/scan_date" $item $year $month $date)
+                                #xdatDateBox("workshop:biosampleCollection/scan_date" $item $month $date $year)
                              </td>
                         </tr> 
                         
