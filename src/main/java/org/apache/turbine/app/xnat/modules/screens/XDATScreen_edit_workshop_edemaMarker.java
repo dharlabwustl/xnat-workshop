@@ -26,7 +26,7 @@ import java.util.List;
 public class XDATScreen_edit_workshop_edemaMarker extends EditSubjectAssessorScreen {
     @Override
     public String getElementName() {
-        return WorkshopBiosamplecollection.SCHEMA_ELEMENT_NAME;
+        return WorkshopEdemamarker.SCHEMA_ELEMENT_NAME;
     }
 
     @Override
