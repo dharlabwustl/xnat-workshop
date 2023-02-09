@@ -26,13 +26,13 @@ window.currentLabel="$!om.getLabel()";
 <form ID="biosampleAssessmentForm" name="biosampleAssessmentForm" method="post" action="$link.setAction("ModifySubjectAssessorData")">
     <input type="hidden" name="project" value="$!{project}">
     <input type="hidden" name="part_id" value="$!{subjectId}">
-    <input type='hidden' name='workshop:edemaMarker/ID' value='$!item.getProperty("ID")'/>
-    <input type="hidden" name="workshop:edemaMarker/project" value='$!{project}'/>
-    <input type='hidden' name='workshop:edemaMarker/subject_ID' value='$!{subjectId}'/>
-    <input type='hidden' name='workshop:edemaMarker/label' value='$!label'/>
-    <input type="hidden" name="workshop:edemaMarker.date.month" id="workshop:edemaMarker.date.month" value=""/>
-    <input type="hidden" name="workshop:edemaMarker.date.date" id="workshop:edemaMarker.date.date" value=""/>
-    <input type="hidden" name="workshop:edemaMarker.date.year" id="workshop:edemaMarker.date.year" value=""/>
+    <input type='hidden' name='workshop:biosampleCollection/ID' value='$!item.getProperty("ID")'/>
+    <input type="hidden" name="workshop:biosampleCollection/project" value='$!{project}'/>
+    <input type='hidden' name='workshop:biosampleCollection/subject_ID' value='$!{subjectId}'/>
+    <input type='hidden' name='workshop:biosampleCollection/label' value='$!label'/>
+    <input type="hidden" name="workshop:biosampleCollection.date.month" id="workshop:biosampleCollection.date.month" value=""/>
+    <input type="hidden" name="workshop:biosampleCollection.date.date" id="workshop:biosampleCollection.date.date" value=""/>
+    <input type="hidden" name="workshop:biosampleCollection.date.year" id="workshop:biosampleCollection.date.year" value=""/>
     <input type="hidden" name="$om.getXSIType()/ID" id="$om.getXSIType()/ID" value="$!om.getId()"/>
 
     #if($vr)
@@ -68,103 +68,103 @@ window.currentLabel="$!om.getLabel()";
                          <tr>
                              #formLabel("Scan_Date")
                              <td>
-                                #xdatDateBox("workshop:edemaMarker/scan_date" $item $month $date $year)
+                                #xdatDateBox("workshop:biosampleCollection/scan_date" $item $month $date $year)
                              </td>
                         </tr> 
                         
                         <tr>
                              #formLabel("Scan_Time")
                              <td>
-                                #xdatStringBox("workshop:edemaMarker/scan_time" $item $time)
+                                #xdatStringBox("workshop:biosampleCollection/scan_time" $item $time)
                              </td>
                         </tr> 
 
                          <tr>
                              #formLabel("Scan_Identification")
                              <td>
-                                #xdatStringBox("workshop:edemaMarker/scan_identification" $item $vr)
+                                #xdatStringBox("workshop:biosampleCollection/scan_identification" $item $vr)
                              </td>
                         </tr>    
 
                          <tr>
                              #formLabel("Slice_Thickness")
                              <td>
-                                #xdatStringBox("workshop:edemaMarker/slice_thickness" $item $vr)
+                                #xdatStringBox("workshop:biosampleCollection/slice_thickness" $item $vr)
                              </td>
                          </tr>
                          <tr>
                              #formLabel("DICOM_pixel_size_x")
                              <td>
-                                #xdatStringBox("workshop:edemaMarker/dicom_pixel_size_x" $item $vr)
+                                #xdatStringBox("workshop:biosampleCollection/dicom_pixel_size_x" $item $vr)
                              </td>
                          </tr>
                          <tr>
                              #formLabel("DICOM_pixel_size_y")
                              <td>
-                                #xdatStringBox("workshop:edemaMarker/dicom_pixel_size_y" $item $vr)
+                                #xdatStringBox("workshop:biosampleCollection/dicom_pixel_size_y" $item $vr)
                              </td>
                          </tr>
                          <!--
                          <tr>
                              #formLabel("Z_Axial_Brain_Scan")
                              <td>
-                                #xdatStringBox("workshop:edemaMarker/z_axial_brain_scan" $item $vr)
+                                #xdatStringBox("workshop:biosampleCollection/z_axial_brain_scan" $item $vr)
                              </td>
                          </tr>
                          <tr>
                              #formLabel("Z_Brain_Thin_Scans")
                              <td>
-                                #xdatStringBox("workshop:edemaMarker/z_brain_thin_scans" $item $vr)
+                                #xdatStringBox("workshop:biosampleCollection/z_brain_thin_scans" $item $vr)
                              </td>
                          </tr>
                          -->
                          <tr>
                              #formLabel("Total_Cerebrospinal_Fluid_Volume")
                              <td>
-                                #xdatStringBox("workshop:edemaMarker/total_cerebrospinal_fluid_volume" $item $vr)
+                                #xdatStringBox("workshop:biosampleCollection/total_cerebrospinal_fluid_volume" $item $vr)
                              </td>
                          </tr>
                          <tr>
                              #formLabel("Cerebrospinal_Fluid_Ratio")
                              <td>
-                                #xdatStringBox("workshop:edemaMarker/cerebrospinal_fluid_ratio" $item $vr)
+                                #xdatStringBox("workshop:biosampleCollection/cerebrospinal_fluid_ratio" $item $vr)
                              </td>
                          </tr>
                          <tr>
                              #formLabel("Selected_Scan_Number")
                              <td>
-                                #xdatStringBox("workshop:edemaMarker/selected_scan_number" $item $vr)
+                                #xdatStringBox("workshop:biosampleCollection/selected_scan_number" $item $vr)
                              </td>
                          </tr>
                          <tr>
                              #formLabel("Slice_Number")
                              <td>
-                                #xdatStringBox("workshop:edemaMarker/slice_number" $item $vr)
+                                #xdatStringBox("workshop:biosampleCollection/slice_number" $item $vr)
                              </td>
                          </tr>
                          <tr>
                              #formLabel("X_Dimension")
                              <td>
-                                #xdatStringBox("workshop:edemaMarker/x_dimension" $item $vr)
+                                #xdatStringBox("workshop:biosampleCollection/x_dimension" $item $vr)
                              </td>
                          </tr>
                          <tr>
                              #formLabel("Y_Dimension")
                              <td>
-                                #xdatStringBox("workshop:edemaMarker/y_dimension" $item $vr)
+                                #xdatStringBox("workshop:biosampleCollection/y_dimension" $item $vr)
                              </td>
                          </tr>
                          <tr>
                              #formLabel("Net_Water_Uptake")
                              <td>
-                                #xdatStringBox("workshop:edemaMarker/net_water_uptake" $item $vr)
+                                #xdatStringBox("workshop:biosampleCollection/net_water_uptake" $item $vr)
                              </td>
                          </tr>
                          <!--
                          <tr>
                              #formLabel("Tilt")
                              <td>
-                                 #xdatBooleanRadioYesNoWithoutDefault("workshop:edemaMarker/Tilt" $item $vr)
+                                 #xdatBooleanRadioYesNoWithoutDefault("workshop:biosampleCollection/Tilt" $item $vr)
                              </td>
                          </tr>
                          -->
@@ -191,9 +191,9 @@ window.currentLabel="$!om.getLabel()";
 <script type="text/javascript">
     function validateForm() {
         var today = new Date();
-        document.getElementById('workshop:edemaMarker.date.month').value = today.getMonth();
-        document.getElementById('workshop:edemaMarker.date.date').value = today.getDate();
-        document.getElementById('workshop:edemaMarker.date.year').value = today.getFullYear();
+        document.getElementById('workshop:biosampleCollection.date.month').value = today.getMonth();
+        document.getElementById('workshop:biosampleCollection.date.date').value = today.getDate();
+        document.getElementById('workshop:biosampleCollection.date.year').value = today.getFullYear();
 
         document.biosampleAssessmentForm.submit();
         return true;
