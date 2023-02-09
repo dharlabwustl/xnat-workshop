@@ -80,15 +80,15 @@ $page.setVlinkColor($ui.vlink)
                     <td>&nbsp;</td>
                     #formLabel("Scan_Date")
                     <td valign="top">
-                        #showDate("workshop:biosampleCollection/Scan_Date" $item)
+                        #showDate("workshop:biosampleCollection/scan_date" $item)
                     </td>
                 </tr>
                 
                 <tr>
                     <td>&nbsp;</td>
-                    #formLabel("Scan_Timing")
+                    #formLabel("Scan_Time")
                     <td valign="top">
-                        #showInteger("workshop:biosampleCollection/Scan_Timing" $item)
+                        #showInteger("workshop:biosampleCollection/scan_time" $item)
                     </td>
                 </tr>
 
