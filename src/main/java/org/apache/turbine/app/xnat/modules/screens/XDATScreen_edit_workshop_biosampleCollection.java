@@ -1,5 +1,5 @@
 /*
- * xnat-workshop: org.apache.turbine.app.xnat.modules.screens.XDATScreen_edit_workshop_biosampleCollection
+ * xnat-workshop: org.apache.turbine.app.xnat.modules.screens.XDATScreen_edit_workshop_edemaMarker
  * XNAT http://www.xnat.org
  * Copyright (c) 2017, Washington University School of Medicine
  * All Rights Reserved
@@ -23,7 +23,7 @@ import org.nrg.xnat.turbine.modules.screens.EditSubjectAssessorScreen;
 
 import java.util.List;
 
-public class XDATScreen_edit_workshop_biosampleCollection extends EditSubjectAssessorScreen {
+public class XDATScreen_edit_workshop_edemaMarker extends EditSubjectAssessorScreen {
     @Override
     public String getElementName() {
         return WorkshopBiosamplecollection.SCHEMA_ELEMENT_NAME;
