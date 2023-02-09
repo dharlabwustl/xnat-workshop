@@ -12,7 +12,7 @@ package org.apache.turbine.app.xnat.modules.screens;
 import org.apache.turbine.util.RunData;
 import org.apache.velocity.context.Context;
 import org.nrg.xdat.XDAT;
-import org.nrg.xdat.om.WorkshopBiosamplecollection;
+import org.nrg.xdat.om.WorkshopEdemamarker;
 import org.nrg.xdat.om.XnatSubjectassessordata;
 import org.nrg.xdat.om.XnatSubjectdata;
 import org.nrg.xft.XFTItem;
@@ -55,7 +55,7 @@ public class XDATScreen_edit_workshop_edemaMarker extends EditSubjectAssessorScr
 
             if (!context.containsKey("label")) {
                 final XnatSubjectdata               subject    = XnatSubjectdata.getXnatSubjectdatasById(subjectId, XDAT.getUserDetails(), false);
-                final List<XnatSubjectassessordata> biosamples = subject.getExperiments_experiment(WorkshopBiosamplecollection.SCHEMA_ELEMENT_NAME);
+                final List<XnatSubjectassessordata> biosamples = subject.getExperiments_experiment(WorkshopEdemamarker.SCHEMA_ELEMENT_NAME);
                 final String subjectLabel = subject.getLabel();
                 int index = 1;
                 String label = null;
@@ -76,7 +76,7 @@ public class XDATScreen_edit_workshop_edemaMarker extends EditSubjectAssessorScr
                 context.put("label", label);
             }
         } catch (XFTInitException | ElementNotFoundException | FieldNotFoundException e) {
-            final String message = "An error occurred trying to get the subject ID when creating a biosample collection assessor.";
+            final String message = "An error occurred trying to get the subject ID when creating a edema stroke collection assessor.";
             log.error(message, e);
             throw new RuntimeException(message, e);
         }
