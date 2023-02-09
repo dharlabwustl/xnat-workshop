@@ -19,7 +19,7 @@
 			<xs:extension base="xnat:subjectAssessorData">
 				<xs:sequence>
                     <!-- <xs:element name="Scan_Date" minOccurs="0"> -->
-					<xs:element name="Scan_Date" minOccurs="1">
+					<xs:element name="Scan_Date" minOccurs="0">
                         <xs:annotation>
                             <xs:documentation>scan date</xs:documentation>
                         </xs:annotation>
@@ -27,7 +27,7 @@
                             <xs:restriction base="xs:date"/>
                         </xs:simpleType>
                     </xs:element>
-					<xs:element name="Scan_Time" minOccurs="1">
+					<xs:element name="Scan_Time" minOccurs="0">
                         <xs:annotation>
                             <xs:documentation>not sure of unit</xs:documentation>
                         </xs:annotation>
