@@ -94,6 +94,22 @@ $page.setVlinkColor($ui.vlink)
 
                 <tr>
                     <td>&nbsp;</td>
+                    #formLabel("DICOM_pixel_size_x")
+                    <td valign="top">
+                        #showInteger("workshop:biosampleCollection/dicom_pixel_size_x" $item)
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>&nbsp;</td>
+                    #formLabel("DICOM_pixel_size_y")
+                    <td valign="top">
+                        #showInteger("workshop:biosampleCollection/dicom_pixel_size_y" $item)
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>&nbsp;</td>
                     #formLabel("X_Dimension")
                     <td valign="top">
                         #showInteger("workshop:biosampleCollection/x_dimension" $item)

@@ -81,6 +81,19 @@ window.currentLabel="$!om.getLabel()";
                              </td>
                         </tr> 
 
+                        <tr>
+                             #formLabel("DICOM_pixel_size_x")
+                             <td>
+                                #xdatStringBox("workshop:biosampleCollection/dicom_pixel_size_x" $item $vr)
+                             </td>
+                         </tr>
+                         <tr>
+                             #formLabel("DICOM_pixel_size_y")
+                             <td>
+                                #xdatStringBox("workshop:biosampleCollection/dicom_pixel_size_y" $item $vr)
+                             </td>
+                         </tr>
+                         
                         <!--
                          <tr>
                              #formLabel("Scan_Identification")
@@ -93,19 +106,6 @@ window.currentLabel="$!om.getLabel()";
                              #formLabel("Slice_Thickness")
                              <td>
                                 #xdatStringBox("workshop:biosampleCollection/slice_thickness" $item $vr)
-                             </td>
-                         </tr>
-                         
-                         <tr>
-                             #formLabel("DICOM_pixel_size_x")
-                             <td>
-                                #xdatStringBox("workshop:biosampleCollection/dicom_pixel_size_x" $item $vr)
-                             </td>
-                         </tr>
-                         <tr>
-                             #formLabel("DICOM_pixel_size_y")
-                             <td>
-                                #xdatStringBox("workshop:biosampleCollection/dicom_pixel_size_y" $item $vr)
                              </td>
                          </tr>
                         
