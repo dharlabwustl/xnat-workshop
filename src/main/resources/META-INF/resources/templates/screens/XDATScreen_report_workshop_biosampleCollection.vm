@@ -80,7 +80,6 @@ $page.setVlinkColor($ui.vlink)
                     <td>&nbsp;</td>
                     #formLabel("Scan_Date")
                     <td valign="top">
-                        <!--#showDate("workshop:biosampleCollection/scan_date" $item) -->
                         $turbineUtils.formatDate($!item.getProperty("date"),"yyyy-MM-dd")
                     </td>
                 </tr>
@@ -89,7 +88,6 @@ $page.setVlinkColor($ui.vlink)
                     <td>&nbsp;</td>
                     #formLabel("Scan_Time")
                     <td valign="top">
-                        <!-- #showInteger("workshop:biosampleCollection/scan_time" $item) -->
                         $turbineUtils.formatDate($!item.getProperty("time"))
                     </td>
                 </tr>
