@@ -110,6 +110,22 @@ $page.setVlinkColor($ui.vlink)
 
                 <tr>
                     <td>&nbsp;</td>
+                    #formLabel("Total_Cerebrospinal_Fluid_Volume")
+                    <td valign="top">
+                        #showInteger("workshop:biosampleCollection/total_cerebrospinal_fluid_volume" $item)
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>&nbsp;</td>
+                    #formLabel("Cerebrospinal_Fluid_Ratio")
+                    <td valign="top">
+                        #showInteger("workshop:biosampleCollection/cerebrospinal_fluid_ratio" $item)
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>&nbsp;</td>
                     #formLabel("X_Dimension")
                     <td valign="top">
                         #showInteger("workshop:biosampleCollection/x_dimension" $item)
