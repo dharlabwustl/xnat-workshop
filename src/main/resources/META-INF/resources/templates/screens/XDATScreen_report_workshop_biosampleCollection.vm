@@ -91,7 +91,7 @@ $page.setVlinkColor($ui.vlink)
                         #showInteger("workshop:biosampleCollection/scan_time" $item)
                         #showString("workshop:biosampleCollection/scan_time" $item)
                         #showDate("workshop:biosampleCollection/scan_time" $item)
-                        $!item.getProperty("time")
+                        $!item.getProperty("Scan_Time")
                     </td>
                 </tr>
 
