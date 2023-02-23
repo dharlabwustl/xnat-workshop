@@ -24,7 +24,7 @@ import org.nrg.xnat.turbine.modules.screens.EditSubjectAssessorScreen;
 
 import java.util.List;
 
-public class XDATScreen_edit_workshop_edemaMarker extends EditSubjectAssessorScreen {
+public class XDATScreen_edit_workshop_biosampleCollection extends EditSubjectAssessorScreen {
     @Override
     public String getElementName() {
         return WorkshopBiosamplecollection.SCHEMA_ELEMENT_NAME;

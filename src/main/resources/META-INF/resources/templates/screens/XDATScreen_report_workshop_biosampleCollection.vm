@@ -96,7 +96,7 @@ $page.setVlinkColor($ui.vlink)
                     <td>&nbsp;</td>
                     #formLabel("Scan_Identification")
                     <td valign="top">
-                        #showInteger("workshop:edemaMarker/scan_identification" $item)
+                        #showInteger("workshop:biosampleCollection/scan_identification" $item)
                     </td>
                 </tr>
                 
