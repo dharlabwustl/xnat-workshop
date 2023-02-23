@@ -88,7 +88,7 @@ $page.setVlinkColor($ui.vlink)
                     <td>&nbsp;</td>
                     #formLabel("Scan_Time")
                     <td valign="top">
-                        $turbineUtils.formatDate($!item.getProperty("time"))
+                        #showInteger("workshop:biosampleCollection/scan_time" $item)
                     </td>
                 </tr>
 
