@@ -88,9 +88,6 @@ $page.setVlinkColor($ui.vlink)
                     <td>&nbsp;</td>
                     #formLabel("Scan_Time")
                     <td valign="top">
-                        #showInteger("workshop:biosampleCollection/scan_time" $item)
-                        #showString("workshop:biosampleCollection/scan_time" $item)
-                        #showDate("workshop:biosampleCollection/scan_time" $item)
                         $!item.getProperty("Scan_Time")
                     </td>
                 </tr>
