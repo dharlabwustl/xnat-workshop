@@ -69,7 +69,7 @@ window.currentLabel="$!om.getLabel()";
                              #formLabel("Scan_Date")
                              <td>
                                 <!-- $month $date $years -->
-                                #xdatDateBox("workshop:biosampleCollection/scan_date" $item $vr)
+                                #xdatDateBox("workshop:biosampleCollection/scan_date" $item $vr $years)
                              </td>
                         </tr> 
                         
@@ -77,10 +77,11 @@ window.currentLabel="$!om.getLabel()";
                              #formLabel("Scan_Time")
                              <td>
                                 <!-- $time -->
-                                #xdatStringBox("workshop:biosampleCollection/scan_time" $item $vr)
+                                #xdatStringBox("workshop:biosampleCollection/scan_time" $item $time)
                              </td>
                         </tr> 
 
+                        <!--
                          <tr>
                              #formLabel("Scan_Identification")
                              <td>
@@ -94,6 +95,7 @@ window.currentLabel="$!om.getLabel()";
                                 #xdatStringBox("workshop:biosampleCollection/slice_thickness" $item $vr)
                              </td>
                          </tr>
+                         
                          <tr>
                              #formLabel("DICOM_pixel_size_x")
                              <td>
@@ -106,7 +108,7 @@ window.currentLabel="$!om.getLabel()";
                                 #xdatStringBox("workshop:biosampleCollection/dicom_pixel_size_y" $item $vr)
                              </td>
                          </tr>
-                         <!--
+                        
                          <tr>
                              #formLabel("Z_Axial_Brain_Scan")
                              <td>
@@ -132,6 +134,7 @@ window.currentLabel="$!om.getLabel()";
                                 #xdatStringBox("workshop:biosampleCollection/cerebrospinal_fluid_ratio" $item $vr)
                              </td>
                          </tr>
+                         <!--
                          <tr>
                              #formLabel("Selected_Scan_Number")
                              <td>
@@ -144,6 +147,8 @@ window.currentLabel="$!om.getLabel()";
                                 #xdatStringBox("workshop:biosampleCollection/slice_number" $item $vr)
                              </td>
                          </tr>
+                         -->
+
                          <tr>
                              #formLabel("X_Dimension")
                              <td>
@@ -156,6 +161,7 @@ window.currentLabel="$!om.getLabel()";
                                 #xdatStringBox("workshop:biosampleCollection/y_dimension" $item $vr)
                              </td>
                          </tr>
+
                          <tr>
                              #formLabel("Net_Water_Uptake")
                              <td>

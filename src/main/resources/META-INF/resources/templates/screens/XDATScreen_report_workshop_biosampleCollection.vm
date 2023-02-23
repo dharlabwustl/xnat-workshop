@@ -92,6 +92,7 @@ $page.setVlinkColor($ui.vlink)
                     </td>
                 </tr>
 
+                <!--
                 <tr>
                     <td>&nbsp;</td>
                     #formLabel("Scan_Identification")
@@ -155,7 +156,7 @@ $page.setVlinkColor($ui.vlink)
                         #showInteger("workshop:biosampleCollection/slice_number" $item)
                     </td>
                 </tr>
-
+                -->
                 <tr>
                     <td>&nbsp;</td>
                     #formLabel("X_Dimension")
@@ -200,7 +201,7 @@ $page.setVlinkColor($ui.vlink)
                     <td>&nbsp;</td>
                     #formLabel("Cerebellar_Stroke")
                     <td valign="top">
-                        #showInteger("workshop:biosampleCollection/cerebellar_stroke" $item)
+                        #showBoolean("workshop:biosampleCollection/cerebellar_stroke" $item)
                     </td>
                 </tr>
 
