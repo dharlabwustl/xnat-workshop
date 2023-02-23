@@ -44,7 +44,7 @@
                             <xs:restriction base="xs:integer"/>
                         </xs:simpleType>
                     </xs:element>
-					<xs:element name="DICOM_pixel_size_x" minOccurs="0">
+					<xs:element name="DICOM_pixel_size_x" minOccurs="1">
                         <xs:annotation>
                             <xs:documentation>for complete image size: x axis pixel size of DICOM</xs:documentation>
                         </xs:annotation>
@@ -52,7 +52,7 @@
                             <xs:restriction base="xs:double"/>
                         </xs:simpleType> 
                     </xs:element>
-                    <xs:element name="DICOM_pixel_size_y" minOccurs="0">
+                    <xs:element name="DICOM_pixel_size_y" minOccurs="1">
                         <xs:annotation>
                             <xs:documentation>for complete image size: y axis pixel size of DICOM</xs:documentation>
                         </xs:annotation>
@@ -86,7 +86,7 @@
                         </xs:simpleType>
                     </xs:element>
                      -->
-                    <xs:element name="Total_Cerebrospinal_Fluid_Volume">
+                    <xs:element name="Total_Cerebrospinal_Fluid_Volume" minOccurs="1">
                         <xs:annotation>
                             <xs:documentation>total cerebrospinal fluid volume</xs:documentation>
                         </xs:annotation>
@@ -102,7 +102,7 @@
                             <xs:restriction base="xs:integer"/>
                         </xs:simpleType>
                     </xs:element>
-                    <xs:element name="Net_Water_Uptake">
+                    <xs:element name="Net_Water_Uptake" minOccurs="1">
                         <xs:annotation>
                             <xs:documentation>net water uptake </xs:documentation>
                         </xs:annotation>
@@ -118,7 +118,7 @@
                             <xs:restriction base="xs:double"/>
                         </xs:simpleType>
                     </xs:element>
-                    <xs:element name="X_Dimension">
+                    <xs:element name="X_Dimension" minOccurs="1">
                         <xs:annotation>
                             <xs:documentation>for resolution: x axis dimension</xs:documentation>
                         </xs:annotation>
@@ -126,7 +126,7 @@
                             <xs:restriction base="xs:integer"/>
                         </xs:simpleType>
                     </xs:element>
-                    <xs:element name="Y_Dimension">
+                    <xs:element name="Y_Dimension" minOccurs="1">
                         <xs:annotation>
                             <xs:documentation>for resolution: y axis dimension</xs:documentation>
                         </xs:annotation>
@@ -144,12 +144,12 @@
                     </xs:element>
                     
 
-                     <xs:element name="Since_Stroke_Onset">
+                     <xs:element name="Since_Stroke_Onset" minOccurs="1">
                         <xs:annotation>
                             <xs:documentation>time since stroke onset</xs:documentation>
                         </xs:annotation>
                         <xs:simpleType>
-                            <xs:restriction base="xs:double"/>
+                            <xs:restriction base="xs:time"/>
                         </xs:simpleType>
                     </xs:element>
 

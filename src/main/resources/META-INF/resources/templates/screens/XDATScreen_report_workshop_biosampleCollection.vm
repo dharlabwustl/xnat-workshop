@@ -94,16 +94,18 @@ $page.setVlinkColor($ui.vlink)
 
                 <tr>
                     <td>&nbsp;</td>
-                    #formLabel("DICOM_pixel_size_x")
+                    #formLabel("DICOM_Pixel_Size_X")
                     <td valign="top">
+                        $!item.getProperty("DICOM_Pixel_Size_X")
                         #showInteger("workshop:biosampleCollection/dicom_pixel_size_x" $item)
                     </td>
                 </tr>
 
                 <tr>
                     <td>&nbsp;</td>
-                    #formLabel("DICOM_pixel_size_y")
+                    #formLabel("DICOM_Pixel_Size_Y")
                     <td valign="top">
+                        $!item.getProperty("DICOM_Pixel_Size_Y")
                         #showInteger("workshop:biosampleCollection/dicom_pixel_size_y" $item)
                     </td>
                 </tr>
@@ -112,6 +114,7 @@ $page.setVlinkColor($ui.vlink)
                     <td>&nbsp;</td>
                     #formLabel("Total_Cerebrospinal_Fluid_Volume")
                     <td valign="top">
+                        $!item.getProperty("Total_Cerebrospinal_Fluid_Volume")
                         #showInteger("workshop:biosampleCollection/total_cerebrospinal_fluid_volume" $item)
                     </td>
                 </tr>
@@ -120,6 +123,7 @@ $page.setVlinkColor($ui.vlink)
                     <td>&nbsp;</td>
                     #formLabel("Cerebrospinal_Fluid_Ratio")
                     <td valign="top">
+                        $!item.getProperty("Cerebrospinal_Fluid_Ratio")
                         #showInteger("workshop:biosampleCollection/cerebrospinal_fluid_ratio" $item)
                     </td>
                 </tr>
@@ -144,6 +148,7 @@ $page.setVlinkColor($ui.vlink)
                     <td>&nbsp;</td>
                     #formLabel("Net_Water_Uptake")
                     <td valign="top">
+                        $!item.getProperty("Net_Water_Uptake")
                         #showInteger("workshop:biosampleCollection/net_water_uptake" $item)
                     </td>
                 </tr>
@@ -152,7 +157,7 @@ $page.setVlinkColor($ui.vlink)
                     <td>&nbsp;</td>
                     #formLabel("Since_Stroke_Onset")
                     <td valign="top">
-                        #showInteger("workshop:biosampleCollection/since_stroke_onset" $item)
+                        $!item.getProperty("Since_Stroke_Onset")
                     </td>
                 </tr>
 
@@ -160,6 +165,7 @@ $page.setVlinkColor($ui.vlink)
                     <td>&nbsp;</td>
                     #formLabel("CT_Scanner")
                     <td valign="top">
+                        $!item.getProperty("CT_Scanner")
                         #showInteger("workshop:biosampleCollection/ct_scanner" $item)
                     </td>
                 </tr>
