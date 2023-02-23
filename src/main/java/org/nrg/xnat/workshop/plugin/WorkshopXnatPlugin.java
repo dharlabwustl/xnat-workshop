@@ -11,8 +11,8 @@ package org.nrg.xnat.workshop.plugin;
 
 import org.nrg.framework.annotations.XnatDataModel;
 import org.nrg.framework.annotations.XnatPlugin;
-import org.nrg.xdat.bean.WorkshopEdemamarkerBean;
-//import org.nrg.xdat.bean.RadRadiologyreaddataBean;
+//import org.nrg.xdat.bean.WorkshopEdemamarkerBean;
+import org.nrg.xdat.bean.RadRadiologyreaddataBean;
 import org.nrg.xdat.bean.BiosamplecollectionBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
