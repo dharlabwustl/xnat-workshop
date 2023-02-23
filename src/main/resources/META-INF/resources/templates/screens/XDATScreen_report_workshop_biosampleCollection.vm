@@ -181,6 +181,30 @@ $page.setVlinkColor($ui.vlink)
                 </tr>
 
                 <tr>
+                    <td>&nbsp;</td>
+                    #formLabel("Since_Stroke_Onset")
+                    <td valign="top">
+                        #showInteger("workshop:biosampleCollection/since_stroke_onset" $item)
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>&nbsp;</td>
+                    #formLabel("CT_Scanner")
+                    <td valign="top">
+                        #showInteger("workshop:biosampleCollection/ct_scanner" $item)
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>&nbsp;</td>
+                    #formLabel("Cerebellar_Stroke")
+                    <td valign="top">
+                        #showInteger("workshop:biosampleCollection/cerebellar_stroke" $item)
+                    </td>
+                </tr>
+
+                <tr>
 					<td valign="top">
 						#parse("/screens/ReportProjectSpecificFields.vm")
 					</td>

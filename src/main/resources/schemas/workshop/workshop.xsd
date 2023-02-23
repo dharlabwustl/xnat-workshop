@@ -142,16 +142,38 @@
                             <xs:restriction base="xs:integer"/>
                         </xs:simpleType>
                     </xs:element>
-					<!--
-					<xs:element name="tilt">
+                    
+
+                     <xs:element name="Since_Stroke_Onset">
+                        <xs:annotation>
+                            <xs:documentation>time since stroke onset</xs:documentation>
+                        </xs:annotation>
+                        <xs:simpleType>
+                            <xs:restriction base="xs:double"/>
+                        </xs:simpleType>
+                    </xs:element>
+
+                    <xs:element name="CT_Scanner">
+                        <xs:annotation>
+                            <xs:documentation>CT Scanner type, take note of the portable version</xs:documentation>
+                        </xs:annotation>
+                        <xs:simpleType>
+                            <!-- could turn out to be integer-->
+                            <xs:restriction base="xs:string"/>
+                        </xs:simpleType>
+                    </xs:element>
+
+				
+					<xs:element name="Cerebellar_Stroke">
 						<xs:annotation>
-							<xs:documentation>Tilt</xs:documentation>
+                            <!-- custom variable-->
+							<xs:documentation>cerebellar stroke or not</xs:documentation>
 						</xs:annotation>
 						<xs:simpleType>
 							<xs:restriction base="xs:boolean"/>
 						</xs:simpleType>
 					</xs:element>
-                    -->
+                    
 				</xs:sequence>
 			</xs:extension>
 		</xs:complexContent>
