@@ -36,14 +36,15 @@
                             <xs:restriction base="xs:time"/>
                         </xs:simpleType>
                     </xs:element>
-                    <xs:element name="Scan_Identification" minOccurs="0">
+                    <!--<xs:element name="Scan_Identification" minOccurs="0">
                         <xs:annotation>
                             <xs:documentation>scan id</xs:documentation>
                         </xs:annotation>
                         <xs:simpleType>
                             <xs:restriction base="xs:integer"/>
                         </xs:simpleType>
-                    </xs:element>
+                    </xs:element> -->
+                    
 					<xs:element name="DICOM_pixel_size_x" minOccurs="1">
                         <xs:annotation>
                             <xs:documentation>for complete image size: x axis pixel size of DICOM</xs:documentation>
@@ -60,6 +61,7 @@
                             <xs:restriction base="xs:double"/>
                         </xs:simpleType> 
                     </xs:element>
+                    <!-- 
                     <xs:element name="Slice_Thickness" minOccurs="0">
                         <xs:annotation>
                             <xs:documentation>slice thickness</xs:documentation>
@@ -68,7 +70,6 @@
                             <xs:restriction base="xs:integer"/>
                         </xs:simpleType>
                     </xs:element>
-                    <!-- 
 					<xs:element name="Z_Axial_Brain_Scan">
                         <xs:annotation>
                             <xs:documentation>number of z axial brain scans </xs:documentation>
@@ -94,6 +95,7 @@
                             <xs:restriction base="xs:double"/>
                         </xs:simpleType>
                     </xs:element>
+                    <!--
 					<xs:element name="Selected_Scan_Number" minOccurs="0">
                         <xs:annotation>
                             <xs:documentation>number of z selected scans </xs:documentation>
@@ -102,6 +104,7 @@
                             <xs:restriction base="xs:integer"/>
                         </xs:simpleType>
                     </xs:element>
+                    -->
                     <xs:element name="Net_Water_Uptake" minOccurs="1">
                         <xs:annotation>
                             <xs:documentation>net water uptake </xs:documentation>
@@ -134,6 +137,7 @@
                             <xs:restriction base="xs:integer"/>
                         </xs:simpleType>
                     </xs:element>
+                    <!--
                     <xs:element name="Slice_Number" minOccurs="0">
                         <xs:annotation>
                             <xs:documentation>number of slices</xs:documentation>
@@ -142,7 +146,7 @@
                             <xs:restriction base="xs:integer"/>
                         </xs:simpleType>
                     </xs:element>
-                    
+                    -->
 
                      <xs:element name="Since_Stroke_Onset" minOccurs="1">
                         <xs:annotation>
