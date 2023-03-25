@@ -82,6 +82,15 @@ window.currentLabel="$!om.getLabel()";
                              </td>
                         </tr> 
                          --> 
+
+                        <tr>
+                             #formLabel("Aquisition_Time")
+                             <td>
+                                #xdatStringBox("workshop:biosampleCollection/dicom_pixel_size_x" $item $vr)
+                             </td>
+                         </tr>
+
+
                         <tr>
                              #formLabel("DICOM_Pixel_Size_X")
                              <td>

@@ -93,7 +93,16 @@ $page.setVlinkColor($ui.vlink)
                     </td>
                 </tr>
                 -->
-                
+
+                <tr>
+                    <td>&nbsp;</td>
+                    #formLabel("Aquisition_Time")
+                    <td valign="top">
+                        $!item.getProperty("Aquisition_Time")
+                    </td>
+                </tr>
+
+
                 <tr>
                     <td>&nbsp;</td>
                     #formLabel("DICOM_Pixel_Size_X")
