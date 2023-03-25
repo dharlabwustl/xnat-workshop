@@ -83,14 +83,6 @@ $page.setVlinkColor($ui.vlink)
                         $turbineUtils.formatDate($!item.getProperty("date"),"yyyy-MM-dd")
                     </td>
                 </tr>
-
-                <tr>
-                    <td>&nbsp;</td>
-                    #formLabel("Acquisition_Time")
-                    <td valign="top">
-                        $!item.getProperty("Acquisition_Time")
-                    </td>
-                </tr>
                 
                 <!--
                 <tr>
