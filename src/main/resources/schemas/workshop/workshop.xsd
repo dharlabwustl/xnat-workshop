@@ -27,13 +27,25 @@
                             <xs:restriction base="xs:date"/>
                         </xs:simpleType>
                     </xs:element>
-					<xs:element name="Scan_Time" minOccurs="0">
+
+                    <xs:element name="Acquisition_Time" minOccurs="0">
                         <xs:annotation>
                             <xs:documentation>not sure of unit</xs:documentation>
                         </xs:annotation>
                         <xs:simpleType>
                             <!-- changed base from time to double -->
                             <xs:restriction base="xs:double"/>
+                        </xs:simpleType>
+                    </xs:element>
+
+
+					<xs:element name="Scan_Time" minOccurs="0">
+                        <xs:annotation>
+                            <xs:documentation>not sure of unit</xs:documentation>
+                        </xs:annotation>
+                        <xs:simpleType>
+                            <!-- changed base from time to double -->
+                            <xs:restriction base="xs:time"/>
                         </xs:simpleType>
                     </xs:element>
                     <!--<xs:element name="Scan_Identification" minOccurs="0">

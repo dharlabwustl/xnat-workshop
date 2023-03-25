@@ -72,15 +72,24 @@ window.currentLabel="$!om.getLabel()";
                                 #xdatDateBox("workshop:biosampleCollection/scan_date" $item $vr)
                              </td>
                         </tr> 
-                        
+
                         <tr>
-                             #formLabel("Scan_Time")
+                             #formLabel("Acquisition_Time")
                              <td>
-                                <!-- $time -->
-                                #xdatStringBox("workshop:biosampleCollection/scan_time" $item $vr)
+                                <!-- $month $date $years -->
+                                #xdatDateBox("workshop:biosampleCollection/acquisition_time" $item $vr)
                              </td>
                         </tr> 
 
+                        <!-- 
+                        <tr>
+                             #formLabel("Scan_Time")
+                             <td>
+                                                                                        $time 
+                                #xdatStringBox("workshop:biosampleCollection/scan_time" $item $vr)
+                             </td>
+                        </tr> 
+                        -->
                         <tr>
                              #formLabel("DICOM_Pixel_Size_X")
                              <td>
