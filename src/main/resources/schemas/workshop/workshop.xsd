@@ -26,15 +26,27 @@
                             <xs:restriction base="xs:date"/>
                         </xs:simpleType>
                     </xs:element>
-
-                    <xs:element name="Aquisition_Time" minOccurs="0">
+                    <!--
+					<xs:element name="Scan_Time" minOccurs="0">
                         <xs:annotation>
                             <xs:documentation>not sure of unit</xs:documentation>
                         </xs:annotation>
                         <xs:simpleType>
                             <xs:restriction base="xs:double"/>
+                        </xs:simpleType>
+                    </xs:element>
+                    -->
+
+                    <!--
+                    <xs:element name="Aquisition_Time" minOccurs="0">
+                        <xs:annotation>
+                            <xs:documentation>not sure of units</xs:documentation>
+                        </xs:annotation>
+                        <xs:simpleType>
+                            <xs:restriction base="xs:double"/>
                         </xs:simpleType> 
                     </xs:element>
+                    -->
                     
 					<xs:element name="DICOM_pixel_size_x" minOccurs="0">
                         <xs:annotation>
