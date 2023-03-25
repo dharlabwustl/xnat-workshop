@@ -73,15 +73,15 @@ window.currentLabel="$!om.getLabel()";
                              </td>
                         </tr> 
 
-                        <!-- 
+                        
                         <tr>
                              #formLabel("Scan_Time")
                              <td>
-                                                                                        $time 
+                                                                                        <!-- $time --> 
                                 #xdatStringBox("workshop:biosampleCollection/scan_time" $item $vr)
                              </td>
                         </tr> 
-                        -->
+                    
                         <tr>
                              #formLabel("DICOM_Pixel_Size_X")
                              <td>
@@ -96,13 +96,6 @@ window.currentLabel="$!om.getLabel()";
                          </tr>
                          
                         <!--
-                         <tr>
-                             #formLabel("Scan_Identification")
-                             <td>
-                                #xdatStringBox("workshop:biosampleCollection/scan_identification" $item $vr)
-                             </td>
-                        </tr>    
-
                          <tr>
                              #formLabel("Slice_Thickness")
                              <td>

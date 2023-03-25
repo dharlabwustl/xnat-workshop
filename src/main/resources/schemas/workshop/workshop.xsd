@@ -18,8 +18,7 @@
 		<xs:complexContent>
 			<xs:extension base="xnat:subjectAssessorData">
 				<xs:sequence>
-                    <!-- <xs:element name="Scan_Date" minOccurs="0"> -->
-					<xs:element name="Scan_Date" minOccurs="1">
+					<xs:element name="Scan_Date" minOccurs="0">
                         <xs:annotation>
                             <xs:documentation>scan date</xs:documentation>
                         </xs:annotation>
@@ -27,41 +26,16 @@
                             <xs:restriction base="xs:date"/>
                         </xs:simpleType>
                     </xs:element>
-<<<<<<< HEAD
-
-                    <xs:element name="Acquisition_Time" minOccurs="0">
+					<xs:element name="Scan_Time" minOccurs="0">
                         <xs:annotation>
                             <xs:documentation>not sure of unit</xs:documentation>
                         </xs:annotation>
                         <xs:simpleType>
-                            <!-- changed base from time to double -->
                             <xs:restriction base="xs:double"/>
                         </xs:simpleType>
                     </xs:element>
 
-                    <!--
-					<xs:element name="Scan_Time" minOccurs="0">
-=======
->>>>>>> parent of 7bfaa1d (change all minoccurence in xsd file to 0)
-					<xs:element name="Scan_Time" minOccurs="1">
-                        <xs:annotation>
-                            <xs:documentation>not sure of unit</xs:documentation>
-                        </xs:annotation>
-                        <xs:simpleType>
-                            changed base from time to double
-                            <xs:restriction base="xs:time"/>
-                        </xs:simpleType>
-                    </xs:element>
-                    <xs:element name="Scan_Identification" minOccurs="0">
-                        <xs:annotation>
-                            <xs:documentation>scan id</xs:documentation>
-                        </xs:annotation>
-                        <xs:simpleType>
-                            <xs:restriction base="xs:integer"/>
-                        </xs:simpleType>
-                    </xs:element> -->
-                    
-					<xs:element name="DICOM_pixel_size_x" minOccurs="1">
+					<xs:element name="DICOM_pixel_size_x" minOccurs="0">
                         <xs:annotation>
                             <xs:documentation>for complete image size: x axis pixel size of DICOM</xs:documentation>
                         </xs:annotation>
@@ -69,7 +43,7 @@
                             <xs:restriction base="xs:double"/>
                         </xs:simpleType> 
                     </xs:element>
-                    <xs:element name="DICOM_pixel_size_y" minOccurs="1">
+                    <xs:element name="DICOM_pixel_size_y" minOccurs="0">
                         <xs:annotation>
                             <xs:documentation>for complete image size: y axis pixel size of DICOM</xs:documentation>
                         </xs:annotation>
@@ -103,7 +77,7 @@
                         </xs:simpleType>
                     </xs:element>
                      -->
-                    <xs:element name="Total_Cerebrospinal_Fluid_Volume" minOccurs="1">
+                    <xs:element name="Total_Cerebrospinal_Fluid_Volume" minOccurs="0">
                         <xs:annotation>
                             <xs:documentation>total cerebrospinal fluid volume</xs:documentation>
                         </xs:annotation>
@@ -121,7 +95,7 @@
                         </xs:simpleType>
                     </xs:element>
                     -->
-                    <xs:element name="Net_Water_Uptake" minOccurs="1">
+                    <xs:element name="Net_Water_Uptake" minOccurs="0">
                         <xs:annotation>
                             <xs:documentation>net water uptake </xs:documentation>
                         </xs:annotation>
@@ -137,7 +111,7 @@
                             <xs:restriction base="xs:double"/>
                         </xs:simpleType>
                     </xs:element>
-                    <xs:element name="X_Dimension" minOccurs="1">
+                    <xs:element name="X_Dimension" minOccurs="0">
                         <xs:annotation>
                             <xs:documentation>for resolution: x axis dimension</xs:documentation>
                         </xs:annotation>
@@ -145,7 +119,7 @@
                             <xs:restriction base="xs:integer"/>
                         </xs:simpleType>
                     </xs:element>
-                    <xs:element name="Y_Dimension" minOccurs="1">
+                    <xs:element name="Y_Dimension" minOccurs="0">
                         <xs:annotation>
                             <xs:documentation>for resolution: y axis dimension</xs:documentation>
                         </xs:annotation>
@@ -173,18 +147,17 @@
                         </xs:simpleType>
                     </xs:element>
 
-                    <xs:element name="CT_Scanner">
+                    <xs:element name="CT_Scanner"  minOccurs="0">
                         <xs:annotation>
                             <xs:documentation>CT Scanner type, take note of the portable version</xs:documentation>
                         </xs:annotation>
                         <xs:simpleType>
-                            <!-- could turn out to be integer-->
                             <xs:restriction base="xs:string"/>
                         </xs:simpleType>
                     </xs:element>
 
 				
-					<xs:element name="Cerebellar_Stroke">
+					<xs:element name="Cerebellar_Stroke"  minOccurs="0">
 						<xs:annotation>
                             <!-- custom variable-->
 							<xs:documentation>cerebellar stroke or not</xs:documentation>
