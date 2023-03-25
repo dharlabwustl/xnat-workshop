@@ -84,15 +84,14 @@ $page.setVlinkColor($ui.vlink)
                     </td>
                 </tr>
                 
-                <!--
                 <tr>
                     <td>&nbsp;</td>
-                    #formLabel("Scan_Time")
+                    #formLabel("Scan_Aquisition_Time")
                     <td valign="top">
-                        $!item.getProperty("Scan_Time")
+                        $!item.getProperty("Scan_Aquisition_Time")
                     </td>
                 </tr>
-                -->
+
                 
                 <!--
                 <tr>
