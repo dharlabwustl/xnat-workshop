@@ -84,6 +84,7 @@ $page.setVlinkColor($ui.vlink)
                     </td>
                 </tr>
                 
+                <!--
                 <tr>
                     <td>&nbsp;</td>
                     #formLabel("Scan_Time")
@@ -91,7 +92,8 @@ $page.setVlinkColor($ui.vlink)
                         $!item.getProperty("Scan_Time")
                     </td>
                 </tr>
-
+                -->
+                
                 <tr>
                     <td>&nbsp;</td>
                     #formLabel("DICOM_Pixel_Size_X")
