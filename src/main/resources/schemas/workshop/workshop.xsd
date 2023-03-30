@@ -32,7 +32,7 @@
                             <xs:documentation>not sure of unit</xs:documentation>
                         </xs:annotation>
                         <xs:simpleType>
-                            <xs:restriction base="xs:double"/>
+                            <xs:restriction base="xs:time"/>
                         </xs:simpleType>
                     </xs:element>
 
