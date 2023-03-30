@@ -145,7 +145,7 @@ $page.setVlinkColor($ui.vlink)
                     <td>&nbsp;</td>
                     #formLabel("Net_Water_Uptake")
                     <td valign="top">
-                        $!item.getProperty("Net_Water_Uptake")
+                        $!item.getProperty("Net_Water_Uptake"  $item)
                     </td>
                 </tr>
 
@@ -153,7 +153,7 @@ $page.setVlinkColor($ui.vlink)
                     <td>&nbsp;</td>
                     #formLabel("Since_Stroke_Onset")
                     <td valign="top">
-                        $!item.getProperty("Since_Stroke_Onset")
+                        $!item.getProperty("Since_Stroke_Onset"  $item)
                     </td>
                 </tr>
 
@@ -161,7 +161,7 @@ $page.setVlinkColor($ui.vlink)
                     <td>&nbsp;</td>
                     #formLabel("CT_Scanner")
                     <td valign="top">
-                        $!item.getProperty("CT_Scanner")
+                        $!item.getProperty("CT_Scanner"  $item)
                     </td>
                 </tr>
 
