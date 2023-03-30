@@ -168,7 +168,7 @@
                     </xs:element>
 
 				
-					<xs:element name="Cerebellar_Stroke"  minOccurs="0">
+					<xs:element name="Cerebellar_Stroke">
 						<xs:annotation>
                             <!-- custom variable-->
 							<xs:documentation>cerebellar stroke or not</xs:documentation>
