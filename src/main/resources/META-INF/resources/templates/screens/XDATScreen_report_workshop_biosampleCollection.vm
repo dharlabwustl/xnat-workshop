@@ -145,7 +145,7 @@ $page.setVlinkColor($ui.vlink)
                     <td>&nbsp;</td>
                     #formLabel("Z_Dimension")
                     <td valign="top">
-                        #showInteger("workshop:biosampleCollection/y_dimension")
+                        $!item.getProperty("Z_Dimension")
                     </td>
                 </tr>
 
