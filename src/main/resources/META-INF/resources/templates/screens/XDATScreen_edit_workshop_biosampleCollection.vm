@@ -155,6 +155,14 @@ window.currentLabel="$!om.getLabel()";
                          </tr>
 
                          <tr>
+                             #formLabel("Z_Dimension")
+                             <td>
+                                #xdatStringBox("workshop:biosampleCollection/z_dimension" $item $vr)
+                             </td>
+                         </tr>
+
+
+                         <tr>
                              #formLabel("Net_Water_Uptake")
                              <td>
                                 #xdatStringBox("workshop:biosampleCollection/net_water_uptake" $item $vr)

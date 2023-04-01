@@ -143,6 +143,14 @@ $page.setVlinkColor($ui.vlink)
 
                 <tr>
                     <td>&nbsp;</td>
+                    #formLabel("Z_Dimension")
+                    <td valign="top">
+                        #showInteger("workshop:biosampleCollection/y_dimension")
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>&nbsp;</td>
                     #formLabel("Net_Water_Uptake")
                     <td valign="top">
                         $!item.getProperty("Net_Water_Uptake")
