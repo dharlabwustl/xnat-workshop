@@ -187,7 +187,8 @@ window.currentLabel="$!om.getLabel()";
                          <tr>
                              #formLabel("Cerebellar_Stroke")
                              <td>
-                                 #xdatBooleanRadioYesNoWithoutDefault("workshop:biosampleCollection/cerebellar_stroke" $item $vr)
+                                #xdatStringBox("workshop:biosampleCollection/cerebellar_stroke" $item $vr)
+                                 <!-- #xdatBooleanRadioYesNoWithoutDefault("workshop:biosampleCollection/cerebellar_stroke" $item $vr) -->
                              </td>
                          </tr>
 
