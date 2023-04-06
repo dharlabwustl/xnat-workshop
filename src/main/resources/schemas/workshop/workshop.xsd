@@ -162,7 +162,7 @@
                             <xs:documentation>time since stroke onset</xs:documentation>
                         </xs:annotation>
                         <xs:simpleType>
-                            <xs:restriction base="xs:time"/>
+                            <xs:restriction base="xs:double"/>
                         </xs:simpleType>
                     </xs:element>
 
