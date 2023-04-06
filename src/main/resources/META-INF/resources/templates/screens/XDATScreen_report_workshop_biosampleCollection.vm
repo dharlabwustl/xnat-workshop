@@ -178,7 +178,6 @@ $page.setVlinkColor($ui.vlink)
                     #formLabel("Cerebellar Stroke")
                     <td valign="top">
                         $!item.getProperty("Cerebellar_Stroke")
-                        <!-- #showBoolean("workshop:biosampleCollection/cerebellar_stroke") -->
                     </td>
                 </tr>
 
