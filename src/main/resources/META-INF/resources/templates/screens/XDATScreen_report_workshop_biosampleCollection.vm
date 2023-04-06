@@ -78,7 +78,7 @@ $page.setVlinkColor($ui.vlink)
                 
                 <tr>
                     <td>&nbsp;</td>
-                    #formLabel("Scan_Date")
+                    #formLabel("Scan Date")
                     <td valign="top">
                         $turbineUtils.formatDate($!item.getProperty("date"),"yyyy-MM-dd")
                     </td>
@@ -87,7 +87,7 @@ $page.setVlinkColor($ui.vlink)
 
                 <tr>
                     <td>&nbsp;</td>
-                    #formLabel("Scan_Time")
+                    #formLabel("Scan Time")
                     <td valign="top">
                         $!item.getProperty("Scan_Time")
                     </td>
@@ -95,7 +95,7 @@ $page.setVlinkColor($ui.vlink)
 
                 <tr>
                     <td>&nbsp;</td>
-                    #formLabel("DICOM_Pixel_Size_X")
+                    #formLabel("DICOM Pixel Size X")
                     <td valign="top">
                         $!item.getProperty("DICOM_Pixel_Size_X")
                     </td>
@@ -103,7 +103,7 @@ $page.setVlinkColor($ui.vlink)
 
                 <tr>
                     <td>&nbsp;</td>
-                    #formLabel("DICOM_Pixel_Size_Y")
+                    #formLabel("DICOM Pixel Size Y")
                     <td valign="top">
                         $!item.getProperty("DICOM_Pixel_Size_Y")
                     </td>
@@ -119,7 +119,7 @@ $page.setVlinkColor($ui.vlink)
 
                 <tr>
                     <td>&nbsp;</td>
-                    #formLabel("Cerebrospinal_Fluid_Ratio")
+                    #formLabel("Cerebrospinal Fluid Ratio")
                     <td valign="top">
                         $!item.getProperty("Cerebrospinal_Fluid_Ratio")
                     </td>
@@ -127,7 +127,7 @@ $page.setVlinkColor($ui.vlink)
 
                 <tr>
                     <td>&nbsp;</td>
-                    #formLabel("X_Dimension")
+                    #formLabel("X Dimension")
                     <td valign="top">
                         #showInteger("workshop:biosampleCollection/x_dimension")
                     </td>
@@ -135,7 +135,7 @@ $page.setVlinkColor($ui.vlink)
 
                 <tr>
                     <td>&nbsp;</td>
-                    #formLabel("Y_Dimension")
+                    #formLabel("Y Dimension")
                     <td valign="top">
                         #showInteger("workshop:biosampleCollection/y_dimension")
                     </td>
@@ -143,7 +143,7 @@ $page.setVlinkColor($ui.vlink)
 
                 <tr>
                     <td>&nbsp;</td>
-                    #formLabel("Z_Dimension")
+                    #formLabel("Z Dimension")
                     <td valign="top">
                         $!item.getProperty("Z_Dimension")
                     </td>
@@ -151,7 +151,7 @@ $page.setVlinkColor($ui.vlink)
 
                 <tr>
                     <td>&nbsp;</td>
-                    #formLabel("Net_Water_Uptake")
+                    #formLabel("Net Water Uptake")
                     <td valign="top">
                         $!item.getProperty("Net_Water_Uptake")
                     </td>
@@ -159,7 +159,7 @@ $page.setVlinkColor($ui.vlink)
 
                 <tr>
                     <td>&nbsp;</td>
-                    #formLabel("Since_Stroke_Onset")
+                    #formLabel("Since Stroke Onset")
                     <td valign="top">
                         $!item.getProperty("Since_Stroke_Onset")
                     </td>
@@ -167,7 +167,7 @@ $page.setVlinkColor($ui.vlink)
 
                 <tr>
                     <td>&nbsp;</td>
-                    #formLabel("CT_Scanner")
+                    #formLabel("CT Scanner")
                     <td valign="top">
                         $!item.getProperty("CT_Scanner")
                     </td>
@@ -175,7 +175,7 @@ $page.setVlinkColor($ui.vlink)
 
                 <tr>
                     <td>&nbsp;</td>
-                    #formLabel("Cerebellar_Stroke")
+                    #formLabel("Cerebellar Stroke")
                     <td valign="top">
                         #showBoolean("workshop:biosampleCollection/cerebellar_stroke")
                     </td>
