@@ -106,14 +106,7 @@
                         </xs:simpleType>
                     </xs:element>
                     -->
-                    <xs:element name="Net_Water_Uptake" minOccurs="0">
-                        <xs:annotation>
-                            <xs:documentation>net water uptake </xs:documentation>
-                        </xs:annotation>
-                        <xs:simpleType>
-                            <xs:restriction base="xs:double"/>
-                        </xs:simpleType>
-                    </xs:element>
+                    
                     <xs:element name="Cerebrospinal_Fluid_Ratio" minOccurs="0">
                         <xs:annotation>
                             <xs:documentation>cerebrospinal fluid ratio </xs:documentation>
@@ -122,6 +115,7 @@
                             <xs:restriction base="xs:double"/>
                         </xs:simpleType>
                     </xs:element>
+
                     <xs:element name="X_Dimension" minOccurs="0">
                         <xs:annotation>
                             <xs:documentation>for resolution: x axis dimension</xs:documentation>
@@ -146,6 +140,16 @@
                             <xs:restriction base="xs:double"/>
                         </xs:simpleType>
                     </xs:element>
+
+                    <xs:element name="Net_Water_Uptake" minOccurs="0">
+                        <xs:annotation>
+                            <xs:documentation>net water uptake </xs:documentation>
+                        </xs:annotation>
+                        <xs:simpleType>
+                            <xs:restriction base="xs:double"/>
+                        </xs:simpleType>
+                    </xs:element>
+
                     <!--
                     <xs:element name="Slice_Number" minOccurs="0">
                         <xs:annotation>

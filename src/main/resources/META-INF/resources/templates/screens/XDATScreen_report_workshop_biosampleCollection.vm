@@ -80,7 +80,7 @@ $page.setVlinkColor($ui.vlink)
                     <td>&nbsp;</td>
                     #formLabel("Scan Date")
                     <td valign="top">
-                        $turbineUtils.formatDate($!item.getProperty("date"),"yyyy-MM-dd")
+                        $turbineUtils.formatDate($!item.getProperty("Scan_Dime"),"yyyy-MM-dd")
                     </td>
                 </tr>
                 
