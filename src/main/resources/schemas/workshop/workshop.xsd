@@ -161,7 +161,7 @@
                     </xs:element>
                     -->
 
-                     <xs:element name="Since_Stroke_Onset" minOccurs="0">
+                     <xs:element name="Elapsed_Since_Stroke" minOccurs="0">
                         <xs:annotation>
                             <xs:documentation>time since stroke onset</xs:documentation>
                         </xs:annotation>

@@ -172,7 +172,7 @@ window.currentLabel="$!om.getLabel()";
                          <tr>
                              #formLabel("Since Stroke Onset")
                              <td>
-                                #xdatStringBox("workshop:biosampleCollection/since_stroke_onset" $item $vr)
+                                #xdatStringBox("workshop:biosampleCollection/Elapsed_Since_Stroke" $item $vr)
                              </td>
                          </tr>
 

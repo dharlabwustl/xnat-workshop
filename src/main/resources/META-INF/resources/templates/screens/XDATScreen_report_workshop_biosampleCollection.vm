@@ -161,7 +161,7 @@ $page.setVlinkColor($ui.vlink)
                     <td>&nbsp;</td>
                     #formLabel("Since Stroke Onset")
                     <td valign="top">
-                        $!item.getProperty("since_stroke_onset")
+                        $!item.getProperty("Elapsed_Since_Stroke")
                     </td>
                 </tr>
 
