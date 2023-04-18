@@ -178,13 +178,6 @@ window.currentLabel="$!om.getLabel()";
                          </tr>
 
 
-                         <tr>
-                             #formLabel("Cerebellar Stroke")
-                             <td>
-                                #xdatStringBox("workshop:biosampleCollection/cerebellar_stroke" $item $vr)
-                             </td>
-                         </tr>
-
                      </table>
                  </td>
             </tr>

@@ -171,17 +171,6 @@
                     </xs:element>
 
 				
-					<xs:element name="Cerebellar_Stroke" minOccurs="0">
-						<xs:annotation>
-                            <!-- custom variable-->
-							<xs:documentation>cerebellar stroke or not, but could be NA</xs:documentation>
-						</xs:annotation>
-						<xs:simpleType>
-							<!-- <xs:restriction base="xs:boolean"/> -->
-                            <xs:restriction base="xs:string"/> 
-						</xs:simpleType>
-					</xs:element>
-                    
 				</xs:sequence>
 			</xs:extension>
 		</xs:complexContent>
