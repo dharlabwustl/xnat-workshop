@@ -165,6 +165,14 @@ $page.setVlinkColor($ui.vlink)
                     </td>
                 </tr>
 
+                <tr>
+                    <td>&nbsp;</td>
+                    #formLabel("Stroke Cerebral")
+                    <td valign="top">
+                        $!item.getProperty("Stroke_Cerebral")
+                    </td>
+                </tr>
+
 
                 <tr>
                     <td>&nbsp;</td>

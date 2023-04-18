@@ -177,6 +177,13 @@ window.currentLabel="$!om.getLabel()";
                          </tr>
 
                          <tr>
+                             #formLabel("Stroke Cerebral")
+                             <td>
+                                #xdatStringBox("workshop:biosampleCollection/stroke_cerebral" $item $vr)
+                             </td>
+                         </tr>
+
+                         <tr>
                              #formLabel("CT Scanner")
                              <td>
                                 #xdatStringBox("workshop:biosampleCollection/ct_scanner" $item $vr)

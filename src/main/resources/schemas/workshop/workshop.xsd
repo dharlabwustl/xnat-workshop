@@ -159,6 +159,15 @@
                         </xs:simpleType>
                     </xs:element>
 
+                    <xs:element name="Stroke_Cerebral" minOccurs="0">
+                        <xs:annotation>
+                            <xs:documentation>presence of cerebral stroke, could be yes, no or na</xs:documentation>
+                        </xs:annotation>
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string"/>
+                        </xs:simpleType>
+                    </xs:element>
+
                     <xs:element name="CT_Scanner" minOccurs="0">
                         <xs:annotation>
                             <xs:documentation>CT Scanner type, take note of the portable version</xs:documentation>
