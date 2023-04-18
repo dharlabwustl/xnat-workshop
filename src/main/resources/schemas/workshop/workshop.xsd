@@ -150,16 +150,14 @@
                         </xs:simpleType>
                     </xs:element>
 
-                    <!--
-                    <xs:element name="Slice_Number" minOccurs="0">
+                    <xs:element name="Elapsed_From_Stroke" minOccurs="0">
                         <xs:annotation>
-                            <xs:documentation>number of slices</xs:documentation>
+                            <xs:documentation>amount of time elapsed since stroke, in seconds</xs:documentation>
                         </xs:annotation>
                         <xs:simpleType>
-                            <xs:restriction base="xs:integer"/>
+                            <xs:restriction base="xs:double"/>
                         </xs:simpleType>
                     </xs:element>
-                    -->
 
                     <xs:element name="CT_Scanner" minOccurs="0">
                         <xs:annotation>

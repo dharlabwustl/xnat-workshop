@@ -168,7 +168,13 @@ window.currentLabel="$!om.getLabel()";
                                 #xdatStringBox("workshop:biosampleCollection/net_water_uptake" $item $vr)
                              </td>
                          </tr>
-
+                        
+                        <tr>
+                             #formLabel("Elapsed From Stroke")
+                             <td>
+                                #xdatStringBox("workshop:biosampleCollection/elapsed_from_stroke" $item $vr)
+                             </td>
+                         </tr>
 
                          <tr>
                              #formLabel("CT Scanner")

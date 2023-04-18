@@ -80,7 +80,7 @@ $page.setVlinkColor($ui.vlink)
                     <td>&nbsp;</td>
                     #formLabel("Scan Date")
                     <td valign="top">
-                        $turbineUtils.formatDate($!item.getProperty("Scan_Dime"),"yyyy-MM-dd")
+                        $turbineUtils.formatDate($!item.getProperty("Scan_Date"),"yyyy-MM-dd")
                     </td>
                 </tr>
                 
@@ -157,6 +157,14 @@ $page.setVlinkColor($ui.vlink)
                     </td>
                 </tr>
 
+                <tr>
+                    <td>&nbsp;</td>
+                    #formLabel("Elapsed From Stroke")
+                    <td valign="top">
+                        $!item.getProperty("Elapsed_From_Stroke")
+                    </td>
+                </tr>
+
 
                 <tr>
                     <td>&nbsp;</td>
@@ -165,7 +173,6 @@ $page.setVlinkColor($ui.vlink)
                         $!item.getProperty("CT_Scanner")
                     </td>
                 </tr>
-
 
                 <tr>
 					<td valign="top">
