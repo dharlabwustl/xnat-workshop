@@ -161,15 +161,6 @@
                     </xs:element>
                     -->
 
-                     <xs:element name="Elapsed_Since_Stroke" minOccurs="0">
-                        <xs:annotation>
-                            <xs:documentation>time since stroke onset</xs:documentation>
-                        </xs:annotation>
-                        <xs:simpleType>
-                            <xs:restriction base="xs:double"/>
-                        </xs:simpleType>
-                    </xs:element>
-
                     <xs:element name="CT_Scanner" minOccurs="0">
                         <xs:annotation>
                             <xs:documentation>CT Scanner type, take note of the portable version</xs:documentation>

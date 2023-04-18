@@ -169,12 +169,6 @@ window.currentLabel="$!om.getLabel()";
                              </td>
                          </tr>
 
-                         <tr>
-                             #formLabel("Since Stroke Onset")
-                             <td>
-                                #xdatStringBox("workshop:biosampleCollection/elapsed_since_stroke" $item $vr)
-                             </td>
-                         </tr>
 
                          <tr>
                              #formLabel("CT Scanner")
