@@ -173,6 +173,13 @@ $page.setVlinkColor($ui.vlink)
                     </td>
                 </tr>
 
+                <tr>
+                    <td>&nbsp;</td>
+                    #formLabel("Scan Quality")
+                    <td valign="top">
+                        $!item.getProperty("Scan_Quality")
+                    </td>
+                </tr>
 
                 <tr>
                     <td>&nbsp;</td>
