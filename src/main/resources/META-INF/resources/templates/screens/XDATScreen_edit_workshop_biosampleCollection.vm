@@ -64,7 +64,8 @@ window.currentLabel="$!om.getLabel()";
                         <tr>
                             <td colspan="2">Have the following stroke information be taken and stored as per protocol?</td>
                         </tr>
-                    
+
+                        <tr> Stroke Information</tr>
                         <tr>
                              #formLabel("Scan Date")
                             <td>
@@ -101,6 +102,7 @@ window.currentLabel="$!om.getLabel()";
                             </td>
                         </tr>
 
+                        <tr>Scan Details</tr>
                         <tr>
                              #formLabel("DICOM Pixel Size X")
                             <td>
@@ -162,13 +164,14 @@ window.currentLabel="$!om.getLabel()";
                              </td>
                          </tr>
                          -->
-                         <tr>
+                        <tr>Biomarker Results</tr>
+                        <tr>
                              #formLabel("Total Cerebrospinal Fluid Volume")
                             <td>
                                 #xdatStringBox("workshop:biosampleCollection/total_cerebrospinal_fluid_volume" $item $vr)
                             </td>
-                         </tr>
-                         <tr>
+                        </tr>
+                        <tr>
                             #formLabel("Cerebrospinal Fluid Ratio")
                             <td>
                                 #xdatStringBox("workshop:biosampleCollection/cerebrospinal_fluid_ratio" $item $vr)
@@ -190,45 +193,45 @@ window.currentLabel="$!om.getLabel()";
                          -->
 
 
-                         <tr>
-                             #formLabel("Net Water Uptake")
-                             <td>
+                        <tr>
+                            #formLabel("Net Water Uptake")
+                            <td>
                                 #xdatStringBox("workshop:biosampleCollection/net_water_uptake" $item $vr)
-                             </td>
+                            </td>
                         </tr>
 
                         <tr>
-                             #formLabel("Infarct Volumn")
-                             <td>
+                            #formLabel("Infarct Volumn")
+                            <td>
                                 #xdatStringBox("workshop:biosampleCollection/infarct_volumn" $item $vr)
-                             </td>
+                            </td>
                         </tr>
 
                         <tr>
-                             #formLabel("Infarct Side")
-                             <td>
+                            #formLabel("Infarct Side")
+                            <td>
                                 #xdatStringBox("workshop:biosampleCollection/infarct_side" $item $vr)
-                             </td>
+                            </td>
                         </tr>
                         
                         <tr>
-                             #formLabel("Date of Analysis")
-                             <td>
+                            #formLabel("Date of Analysis")
+                            <td>
                                 <!-- $month $date $years -->
                                 #xdatDateBox("workshop:biosampleCollection/analysis_date" $item $vr)
-                             </td>
+                            </td>
                         </tr> 
 
                         <tr>
-                             #formLabel("Version Date")
-                             <td>
+                            #formLabel("Version Date")
+                            <td>
                                 <!-- $month $date $years -->
                                 #xdatDateBox("workshop:biosampleCollection/version_date" $item $vr)
-                             </td>
+                            </td>
                         </tr> 
 
                         <tr>
-                             #formLabel("Cerebral Edema Grade")
+                            #formLabel("Cerebral Edema Grade")
                             <td>
                                 #xdatStringBox("workshop:biosampleCollection/cerebral_edema_grade" $item $vr)
                             </td>

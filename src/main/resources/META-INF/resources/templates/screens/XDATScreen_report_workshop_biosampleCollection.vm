@@ -75,7 +75,8 @@ $page.setVlinkColor($ui.vlink)
                         <span style="font-family: $ui.sansSerifFonts; font-size: small; "><b>Stroke Edema Sample</b></span>
                     </td>
                 </tr>
-                
+
+                <tr> Stroke Information</tr>
                 <tr>
                     <td>&nbsp;</td>
                     #formLabel("Scan Date")
@@ -117,6 +118,7 @@ $page.setVlinkColor($ui.vlink)
                     </td>
                 </tr>
 
+                <tr>Scan Details</tr>
                 <tr>
                     <td>&nbsp;</td>
                     #formLabel("DICOM Pixel Size X")
@@ -165,6 +167,7 @@ $page.setVlinkColor($ui.vlink)
                     </td>
                 </tr>
 
+                <tr>Biomarker Results</tr>
                 <tr>
                     <td>&nbsp;</td>
                     #formLabel("Total_Cerebrospinal_Fluid_Volume")
@@ -233,7 +236,7 @@ $page.setVlinkColor($ui.vlink)
                     <td>&nbsp;</td>
                     #formLabel("Stroke Cerebral")
                     <td valign="top">
-                        $!item.getProperty("Stroke_Cerebral")
+                        $!item.getProperty("Cerebral_Edema_Grade")
                     </td>
                 </tr>
 
