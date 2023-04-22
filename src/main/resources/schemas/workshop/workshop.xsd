@@ -27,6 +27,7 @@
                             <xs:restriction base="xs:date"/>
                         </xs:simpleType>
                     </xs:element>
+
 					<xs:element name="Scan_Time" minOccurs="0">
                         <xs:annotation>
                             <xs:documentation>not sure of unit</xs:documentation>
@@ -36,15 +37,32 @@
                         </xs:simpleType>
                     </xs:element>
 
-                    <!--
-                    <xs:element name="Aquisition_Time" minOccurs="0">
+                    <xs:element name="CT_Scanner" minOccurs="0">
                         <xs:annotation>
-                            <xs:documentation>not sure of units</xs:documentation>
+                            <xs:documentation>CT Scanner type, take note of the portable version</xs:documentation>
                         </xs:annotation>
                         <xs:simpleType>
-                            <xs:restriction base="xs:integer"/>
+                            <xs:restriction base="xs:string"/>
                         </xs:simpleType>
-                    </xs:element> -->
+                    </xs:element>
+                    
+                    <xs:element name="Stroke_Time" minOccurs="0">
+                        <xs:annotation>
+                            <xs:documentation>not sure of unit</xs:documentation>
+                        </xs:annotation>
+                        <xs:simpleType>
+                            <xs:restriction base="xs:time"/>
+                        </xs:simpleType>
+                    </xs:element>
+
+                    <xs:element name="Elapsed_From_Stroke" minOccurs="0">
+                        <xs:annotation>
+                            <xs:documentation>amount of time elapsed since stroke, in seconds</xs:documentation>
+                        </xs:annotation>
+                        <xs:simpleType>
+                            <xs:restriction base="xs:double"/>
+                        </xs:simpleType>
+                    </xs:element>
                     
 					<xs:element name="DICOM_pixel_size_x" minOccurs="0">
                         <xs:annotation>
@@ -62,6 +80,41 @@
                             <xs:restriction base="xs:double"/>
                         </xs:simpleType> 
                     </xs:element>
+
+                     <xs:element name="X_Dimension" minOccurs="0">
+                        <xs:annotation>
+                            <xs:documentation>for resolution: x axis dimension</xs:documentation>
+                        </xs:annotation>
+                        <xs:simpleType>
+                            <xs:restriction base="xs:integer"/>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="Y_Dimension" minOccurs="0">
+                        <xs:annotation>
+                            <xs:documentation>for resolution: y axis dimension</xs:documentation>
+                        </xs:annotation>
+                        <xs:simpleType>
+                            <xs:restriction base="xs:integer"/>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="Z_Dimension" minOccurs="0">
+                        <xs:annotation>
+                            <xs:documentation>z dimension analogous to slice thickness</xs:documentation>
+                        </xs:annotation>
+                        <xs:simpleType>
+                            <xs:restriction base="xs:double"/>
+                        </xs:simpleType>
+                    </xs:element>
+
+                    <xs:element name="Scan_Quality" minOccurs="0">
+                        <xs:annotation>
+                            <xs:documentation>quality of the scan from scan metadata</xs:documentation>
+                        </xs:annotation>
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string"/>
+                        </xs:simpleType>
+                    </xs:element>
+
                     <!-- 
                     <xs:element name="Slice_Thickness" minOccurs="0">
                         <xs:annotation>
@@ -116,30 +169,6 @@
                         </xs:simpleType>
                     </xs:element>
 
-                    <xs:element name="X_Dimension" minOccurs="0">
-                        <xs:annotation>
-                            <xs:documentation>for resolution: x axis dimension</xs:documentation>
-                        </xs:annotation>
-                        <xs:simpleType>
-                            <xs:restriction base="xs:integer"/>
-                        </xs:simpleType>
-                    </xs:element>
-                    <xs:element name="Y_Dimension" minOccurs="0">
-                        <xs:annotation>
-                            <xs:documentation>for resolution: y axis dimension</xs:documentation>
-                        </xs:annotation>
-                        <xs:simpleType>
-                            <xs:restriction base="xs:integer"/>
-                        </xs:simpleType>
-                    </xs:element>
-                    <xs:element name="Z_Dimension" minOccurs="0">
-                        <xs:annotation>
-                            <xs:documentation>z dimension analogous to slice thickness</xs:documentation>
-                        </xs:annotation>
-                        <xs:simpleType>
-                            <xs:restriction base="xs:double"/>
-                        </xs:simpleType>
-                    </xs:element>
 
                     <xs:element name="Net_Water_Uptake" minOccurs="0">
                         <xs:annotation>
@@ -150,43 +179,51 @@
                         </xs:simpleType>
                     </xs:element>
 
-                    <xs:element name="Elapsed_From_Stroke" minOccurs="0">
+                    <xs:element name="Infarct_Volumn" minOccurs="0">
                         <xs:annotation>
-                            <xs:documentation>amount of time elapsed since stroke, in seconds</xs:documentation>
+                            <xs:documentation>infarction volumn, likely numeric</xs:documentation>
                         </xs:annotation>
                         <xs:simpleType>
                             <xs:restriction base="xs:double"/>
                         </xs:simpleType>
                     </xs:element>
 
-                    <xs:element name="Stroke_Cerebral" minOccurs="0">
+                    <xs:element name="Infarct_Side" minOccurs="0">
                         <xs:annotation>
-                            <xs:documentation>presence of cerebral stroke, could be yes, no or na</xs:documentation>
+                            <xs:documentation>infarction side</xs:documentation>
+                        </xs:annotation>
+                        <xs:simpleType>
+                            <xs:restriction base="string"/>
+                        </xs:simpleType>
+                    </xs:element>
+
+                    <xs:element name="Analysis_Date" minOccurs="0">
+                        <xs:annotation>
+                            <xs:documentation>date of analysis</xs:documentation>
+                        </xs:annotation>
+                        <xs:simpleType>
+                            <xs:restriction base="xs:date"/>
+                        </xs:simpleType>
+                    </xs:element>
+
+                    <xs:element name="Version_Date" minOccurs="0">
+                        <xs:annotation>
+                            <xs:documentation>date of most recent processing that generated csv file</xs:documentation>
+                        </xs:annotation>
+                        <xs:simpleType>
+                            <xs:restriction base="xs:date"/>
+                        </xs:simpleType>
+                    </xs:element>
+
+                    <xs:element name="Cerebral_Edema_Grade" minOccurs="0">
+                        <xs:annotation>
+                            <xs:documentation>blank in dev, integer values or blank in production</xs:documentation>
                         </xs:annotation>
                         <xs:simpleType>
                             <xs:restriction base="xs:string"/>
                         </xs:simpleType>
                     </xs:element>
 
-                    <xs:element name="Scan_Quality" minOccurs="0">
-                        <xs:annotation>
-                            <xs:documentation>quality of the scan from scan metadata</xs:documentation>
-                        </xs:annotation>
-                        <xs:simpleType>
-                            <xs:restriction base="xs:string"/>
-                        </xs:simpleType>
-                    </xs:element>
-
-                    <xs:element name="CT_Scanner" minOccurs="0">
-                        <xs:annotation>
-                            <xs:documentation>CT Scanner type, take note of the portable version</xs:documentation>
-                        </xs:annotation>
-                        <xs:simpleType>
-                            <xs:restriction base="xs:string"/>
-                        </xs:simpleType>
-                    </xs:element>
-
-				
 				</xs:sequence>
 			</xs:extension>
 		</xs:complexContent>
