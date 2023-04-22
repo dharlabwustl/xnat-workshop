@@ -65,7 +65,6 @@ window.currentLabel="$!om.getLabel()";
                             <td colspan="2">Have the following stroke information be taken and stored as per protocol?</td>
                         </tr>
 
-                        <tr> Stroke Information</tr>
                         <tr>
                              #formLabel("Scan Date")
                             <td>
@@ -102,7 +101,6 @@ window.currentLabel="$!om.getLabel()";
                             </td>
                         </tr>
 
-                        <tr>Scan Details</tr>
                         <tr>
                              #formLabel("DICOM Pixel Size X")
                             <td>
@@ -164,7 +162,6 @@ window.currentLabel="$!om.getLabel()";
                              </td>
                          </tr>
                          -->
-                        <tr>Biomarker Results</tr>
                         <tr>
                              #formLabel("Total Cerebrospinal Fluid Volume")
                             <td>
