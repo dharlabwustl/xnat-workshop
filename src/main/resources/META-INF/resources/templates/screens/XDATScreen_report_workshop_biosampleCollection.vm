@@ -77,10 +77,8 @@ $page.setVlinkColor($ui.vlink)
                 </tr>
 
                 <tr>
-                    <td>&nbsp;</td>
-                    #formLabel("Stroke Info")
-                    <td valign="top">
-                        
+                    <td colspan="2" style="padding-top: 20px; padding-bottom: 10px; text-align: left; vertical-align: middle;">
+                        <span style="font-family: $ui.sansSerifFonts; font-size: small; "><i>Stroke Info</i></span>
                     </td>
                 </tr>
                 
@@ -127,7 +125,7 @@ $page.setVlinkColor($ui.vlink)
 
                 <tr>
                     <td colspan="2" style="padding-top: 20px; padding-bottom: 10px; text-align: left; vertical-align: middle;">
-                        <span style="font-family: $ui.sansSerifFonts; font-size: small; "><b>Scan Details</b></span>
+                        <span style="font-family: $ui.sansSerifFonts; font-size: small; "><i>Scan Details</i></span>
                     </td>
                 </tr>
 
