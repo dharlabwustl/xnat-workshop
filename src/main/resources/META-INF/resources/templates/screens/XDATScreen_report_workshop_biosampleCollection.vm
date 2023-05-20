@@ -80,7 +80,7 @@ $page.setVlinkColor($ui.vlink)
                     <td>&nbsp;</td>
                     #formLabel("Stroke Info")
                     <td valign="top">
-                        Stroke Info
+                        
                     </td>
                 </tr>
                 
@@ -129,7 +129,7 @@ $page.setVlinkColor($ui.vlink)
                     <td>&nbsp;</td>
                     #formLabel("Scan Details")
                     <td valign="top">
-                        Scan Details 
+                        ----------
                     </td>
                 </tr>
 
@@ -185,7 +185,7 @@ $page.setVlinkColor($ui.vlink)
                     <td>&nbsp;</td>
                     #formLabel("Biomarker Results")
                     <td valign="top">
-                        Biomarker Results
+                         ----------
                     </td>
                 </tr>
 
