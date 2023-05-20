@@ -70,7 +70,7 @@ $page.setVlinkColor($ui.vlink)
 	<tr>
 		<td>
 			<table>
-               <tr>
+                <tr>
                     <td colspan="3" style="padding-top: 20px; padding-bottom: 10px; text-align: left; vertical-align: middle;">
                         <span style="font-family: $ui.sansSerifFonts; font-size: small; "><b>Stroke Edema Sample</b></span>
                     </td>
@@ -126,10 +126,8 @@ $page.setVlinkColor($ui.vlink)
                 </tr>
 
                 <tr>
-                    <td>&nbsp;</td>
-                    #formLabel("Scan Details")
-                    <td valign="top">
-                        ----------
+                    <td colspan="2" style="padding-top: 20px; padding-bottom: 10px; text-align: left; vertical-align: middle;">
+                        <span style="font-family: $ui.sansSerifFonts; font-size: small; "><b>Scan Details</b></span>
                     </td>
                 </tr>
 
@@ -182,10 +180,8 @@ $page.setVlinkColor($ui.vlink)
                 </tr>
 
                 <tr>
-                    <td>&nbsp;</td>
-                    #formLabel("Biomarker Results")
-                    <td valign="top">
-                         ----------
+                    <td colspan="2" style="padding-top: 20px; padding-bottom: 10px; text-align: left; vertical-align: middle;">
+                        <span style="font-family: $ui.sansSerifFonts; font-size: small; "><i>Biomarker Results</i></span>
                     </td>
                 </tr>
 
