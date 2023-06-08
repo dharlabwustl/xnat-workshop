@@ -100,6 +100,15 @@
 						</xs:simpleType>
 					</xs:element>
 
+					<xs:element name="Scan_Quality" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>quality of the scan from scan metadata</xs:documentation>
+						</xs:annotation>
+						<xs:simpleType>
+							<xs:restriction base="xs:string"/>
+						</xs:simpleType>
+					</xs:element>
+
 					<xs:element name="plasma" minOccurs="0">
 						<xs:annotation>
 							<xs:documentation>infarction volumn, likely numeric</xs:documentation>

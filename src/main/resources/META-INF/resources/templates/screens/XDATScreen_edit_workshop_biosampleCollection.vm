@@ -127,6 +127,14 @@ window.currentLabel="$!om.getLabel()";
                              </td>
                          </tr>
 
+
+                         <tr>
+                             #formLabel("Scan Quality")
+                             <td>
+                                 #xdatStringBox("workshop:biosampleCollection/scan_quality" $item $vr)
+                             </td>
+                         </tr>
+
                          <tr>
                              #formLabel("Plasma")
                              <td>

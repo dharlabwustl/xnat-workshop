@@ -159,12 +159,12 @@ $page.setVlinkColor($ui.vlink)
                         $!item.getProperty("Z_Dimension")
                     </td>
                 </tr>
-
+                
                 <tr>
                     <td>&nbsp;</td>
-                    #formLabel("Plasma")
+                    #formLabel("Scan Quality")
                     <td valign="top">
-                        $!item.getProperty("Plasma")
+                        #showString("workshop:biosampleCollection/Scan_Quality" $item)
                     </td>
                 </tr>
 
@@ -173,7 +173,15 @@ $page.setVlinkColor($ui.vlink)
                         <span style="font-family: $ui.sansSerifFonts; font-size: small; "><i>Biomarker Results</i></span>
                     </td>
                 </tr>
-                
+
+                <tr>
+                    <td>&nbsp;</td>
+                    #formLabel("Plasma")
+                    <td valign="top">
+                        $!item.getProperty("Plasma")
+                    </td>
+                </tr>               
+
                 <tr>
                     <td>&nbsp;</td>
                     #formLabel("Serum")
