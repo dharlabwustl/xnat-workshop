@@ -64,6 +64,15 @@
 						</xs:simpleType>
 					</xs:element>
 
+					<xs:element name="Elapsed_From_Stroke" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>amount of time elapsed since stroke, in seconds</xs:documentation>
+						</xs:annotation>
+						<xs:simpleType>
+							<xs:restriction base="xs:double"/>
+						</xs:simpleType>
+					</xs:element>
+
 					<xs:element name="plasma" minOccurs="0">
 						<xs:annotation>
 							<xs:documentation>infarction volumn, likely numeric</xs:documentation>
