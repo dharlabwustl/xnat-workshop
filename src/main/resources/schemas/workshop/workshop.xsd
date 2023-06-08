@@ -154,6 +154,15 @@
 						</xs:simpleType>
 					</xs:element>
 
+					<xs:element name="Analysis_Date" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>date of analysis</xs:documentation>
+						</xs:annotation>
+						<xs:simpleType>
+							<xs:restriction base="xs:date"/>
+						</xs:simpleType>
+					</xs:element>
+
 					<xs:element name="Serum" minOccurs="0">
 						<xs:annotation>
 							<xs:documentation>date of most recent processing that generated csv file</xs:documentation>

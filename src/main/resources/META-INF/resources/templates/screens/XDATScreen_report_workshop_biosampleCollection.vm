@@ -225,6 +225,14 @@ $page.setVlinkColor($ui.vlink)
 
                 <tr>
                     <td>&nbsp;</td>
+                    #formLabel("Date of Analysis")
+                    <td valign="top">
+                         $turbineUtils.formatDate($!item.getProperty("Serum"),"yyyy-MM-dd")
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>&nbsp;</td>
                     #formLabel("CSF")
                     <td valign="top">
                         #showString("workshop:biosampleCollection/csf" $item)
