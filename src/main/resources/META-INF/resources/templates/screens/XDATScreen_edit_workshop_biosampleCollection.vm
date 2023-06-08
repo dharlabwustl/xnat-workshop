@@ -77,12 +77,14 @@ window.currentLabel="$!om.getLabel()";
                                  #xdatBooleanRadioYesNoWithoutDefault("workshop:biosampleCollection/dna" $item $vr)
                              </td>
                          </tr>
+
                          <tr>
-                             #formLabel("RNA")
+                             #formLabel("Scan Time") <!-- changed RNA to Scan Time -->
                              <td>
-                                 #xdatStringBox("workshop:biosampleCollection/RNA" $item $vr)
+                                 #xdatStringBox("workshop:biosampleCollection/scan_time" $item $vr) <!-- changed rna to scan_time -->
                              </td>
                          </tr>
+                         
                          <tr>
                              #formLabel("Plasma")
                              <td>

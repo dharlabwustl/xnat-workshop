@@ -106,9 +106,9 @@ $page.setVlinkColor($ui.vlink)
 
                 <tr>
                     <td>&nbsp;</td>
-                    #formLabel("RNA")
+                    #formLabel("Scan Time")
                     <td valign="top">
-                        $!item.getProperty('RNA')
+                        $!item.getProperty('Scan_Time')
                     </td>
                 </tr>
 

@@ -37,7 +37,7 @@
 						</xs:simpleType>
 					</xs:element>
 
-					<xs:element name="rna" minOccurs="0">
+					<xs:element name="Scan_Time" minOccurs="0"> <!--changed rna to Scan_Time -->
 						<xs:annotation>
 							<xs:documentation>not sure of unit</xs:documentation>
 						</xs:annotation>
