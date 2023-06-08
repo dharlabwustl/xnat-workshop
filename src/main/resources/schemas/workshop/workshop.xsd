@@ -145,6 +145,15 @@
 						</xs:simpleType>
 					</xs:element>
 
+					<xs:element name="Infarct_Side" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>infarction side</xs:documentation>
+						</xs:annotation>
+						<xs:simpleType>
+							<xs:restriction base="xs:string"/>
+						</xs:simpleType>
+					</xs:element>
+
 					<xs:element name="Serum" minOccurs="0">
 						<xs:annotation>
 							<xs:documentation>date of most recent processing that generated csv file</xs:documentation>

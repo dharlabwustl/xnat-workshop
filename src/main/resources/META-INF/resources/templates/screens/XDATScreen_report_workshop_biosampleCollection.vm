@@ -209,6 +209,14 @@ $page.setVlinkColor($ui.vlink)
 
                 <tr>
                     <td>&nbsp;</td>
+                    #formLabel("Infraction Side")
+                    <td valign="top">
+                        #showString("workshop:biosampleCollection/Infarct_Side" $item)
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>&nbsp;</td>
                     #formLabel("Serum")
                     <td valign="top">
                          $turbineUtils.formatDate($!item.getProperty("Serum"),"yyyy-MM-dd")
