@@ -163,7 +163,7 @@
 						</xs:simpleType>
 					</xs:element>
 
-					<xs:element name="Serum" minOccurs="0">
+					<xs:element name="Version_Date" minOccurs="0"> <!-- changed Serum to Version_Date -->
 						<xs:annotation>
 							<xs:documentation>date of most recent processing that generated csv file</xs:documentation>
 						</xs:annotation>
@@ -172,7 +172,7 @@
 						</xs:simpleType>
 					</xs:element>
 
-					<xs:element name="csf" minOccurs="0">
+					<xs:element name="csf" minOccurs="0"> 
 						<xs:annotation>
 							<xs:documentation>blank in dev, integer values or blank in production</xs:documentation>
 						</xs:annotation>

@@ -217,9 +217,9 @@ $page.setVlinkColor($ui.vlink)
 
                 <tr>
                     <td>&nbsp;</td>
-                    #formLabel("Serum")
-                    <td valign="top">
-                         $turbineUtils.formatDate($!item.getProperty("Serum"),"yyyy-MM-dd")
+                    #formLabel("Version Date") <!-- changed Serum to Version Date -->
+                    <td valign="top"> <!-- changed Serum to Version_Date -->
+                         $turbineUtils.formatDate($!item.getProperty("Version_Date"),"yyyy-MM-dd")
                     </td>
                 </tr>
 

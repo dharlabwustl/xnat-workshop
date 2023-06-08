@@ -178,9 +178,9 @@ window.currentLabel="$!om.getLabel()";
                          </tr>
 
                          <tr>
-                             #formLabel("Serum")
-                             <td>
-                                #xdatDateBox("workshop:biosampleCollection/Serum" $item $vr)
+                             #formLabel("Version Date") <!-- changed Serum to Version Date -->
+                             <td>  <!-- changed Serum to Version version_date -->
+                                #xdatDateBox("workshop:biosampleCollection/version_date" $item $vr)
                              </td>
                          </tr>
 
