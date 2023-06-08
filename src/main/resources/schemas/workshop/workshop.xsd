@@ -10,7 +10,7 @@
 
 <xs:schema targetNamespace="http://nrg.wustl.edu/workshop" xmlns:workshop="http://nrg.wustl.edu/workshop" xmlns:xnat="http://nrg.wustl.edu/xnat" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
 	<xs:import namespace="http://nrg.wustl.edu/xnat" schemaLocation="../xnat/xnat.xsd"/>
-	<xs:element name="biosampleCollection" type="workshop:biosampleCollection"/>
+	<xs:element name="BiosampleCollection" type="workshop:biosampleCollection"/>
 	<xs:complexType name="biosampleCollection">
 		<xs:annotation>
 			<xs:documentation>Indicates whether the required stroke edema collections have been acquired per study protocol.</xs:documentation>
@@ -18,212 +18,51 @@
 		<xs:complexContent>
 			<xs:extension base="xnat:subjectAssessorData">
 				<xs:sequence>
-                    <!-- <xs:element name="Scan_Date" minOccurs="0"> -->
-					<xs:element name="Scan_Date" minOccurs="0">
-                        <xs:annotation>
-                            <xs:documentation>scan date</xs:documentation>
-                        </xs:annotation>
-                        <xs:simpleType>
-                            <xs:restriction base="xs:date"/>
-                        </xs:simpleType>
-                    </xs:element>
-
-					<xs:element name="Scan_Time" minOccurs="0">
-                        <xs:annotation>
-                            <xs:documentation>not sure of unit</xs:documentation>
-                        </xs:annotation>
-                        <xs:simpleType>
-                            <xs:restriction base="xs:time"/>
-                        </xs:simpleType>
-                    </xs:element>
-
-                    <xs:element name="CT_Scanner" minOccurs="0">
-                        <xs:annotation>
-                            <xs:documentation>CT Scanner type, take note of the portable version</xs:documentation>
-                        </xs:annotation>
-                        <xs:simpleType>
-                            <xs:restriction base="xs:string"/>
-                        </xs:simpleType>
-                    </xs:element>
-                    
-                    <xs:element name="Stroke_Time" minOccurs="0">
-                        <xs:annotation>
-                            <xs:documentation>not sure of unit</xs:documentation>
-                        </xs:annotation>
-                        <xs:simpleType>
-                            <xs:restriction base="xs:time"/>
-                        </xs:simpleType>
-                    </xs:element>
-
-                    <xs:element name="Elapsed_From_Stroke" minOccurs="0">
-                        <xs:annotation>
-                            <xs:documentation>amount of time elapsed since stroke, in seconds</xs:documentation>
-                        </xs:annotation>
-                        <xs:simpleType>
-                            <xs:restriction base="xs:double"/>
-                        </xs:simpleType>
-                    </xs:element>
-                    
-					<xs:element name="DICOM_pixel_size_x" minOccurs="0">
-                        <xs:annotation>
-                            <xs:documentation>for complete image size: x axis pixel size of DICOM</xs:documentation>
-                        </xs:annotation>
-                        <xs:simpleType>
-                            <xs:restriction base="xs:double"/>
-                        </xs:simpleType> 
-                    </xs:element>
-                    <xs:element name="DICOM_pixel_size_y" minOccurs="0">
-                        <xs:annotation>
-                            <xs:documentation>for complete image size: y axis pixel size of DICOM</xs:documentation>
-                        </xs:annotation>
-                        <xs:simpleType>
-                            <xs:restriction base="xs:double"/>
-                        </xs:simpleType> 
-                    </xs:element>
-
-                     <xs:element name="X_Dimension" minOccurs="0">
-                        <xs:annotation>
-                            <xs:documentation>for resolution: x axis dimension</xs:documentation>
-                        </xs:annotation>
-                        <xs:simpleType>
-                            <xs:restriction base="xs:integer"/>
-                        </xs:simpleType>
-                    </xs:element>
-                    <xs:element name="Y_Dimension" minOccurs="0">
-                        <xs:annotation>
-                            <xs:documentation>for resolution: y axis dimension</xs:documentation>
-                        </xs:annotation>
-                        <xs:simpleType>
-                            <xs:restriction base="xs:integer"/>
-                        </xs:simpleType>
-                    </xs:element>
-                    <xs:element name="Z_Dimension" minOccurs="0">
-                        <xs:annotation>
-                            <xs:documentation>z dimension analogous to slice thickness</xs:documentation>
-                        </xs:annotation>
-                        <xs:simpleType>
-                            <xs:restriction base="xs:double"/>
-                        </xs:simpleType>
-                    </xs:element>
-
-                    <xs:element name="Scan_Quality" minOccurs="0">
-                        <xs:annotation>
-                            <xs:documentation>quality of the scan from scan metadata</xs:documentation>
-                        </xs:annotation>
-                        <xs:simpleType>
-                            <xs:restriction base="xs:string"/>
-                        </xs:simpleType>
-                    </xs:element>
-
-                    <!-- 
-                    <xs:element name="Slice_Thickness" minOccurs="0">
-                        <xs:annotation>
-                            <xs:documentation>slice thickness</xs:documentation>
-                        </xs:annotation>
-                        <xs:simpleType>
-                            <xs:restriction base="xs:integer"/>
-                        </xs:simpleType>
-                    </xs:element>
-					<xs:element name="Z_Axial_Brain_Scan">
-                        <xs:annotation>
-                            <xs:documentation>number of z axial brain scans </xs:documentation>
-                        </xs:annotation>
-                        <xs:simpleType>
-                            <xs:restriction base="xs:integer"/>
-                        </xs:simpleType>
-                    </xs:element>
-					<xs:element name="Z_brain_Thin_Scans">
-                        <xs:annotation>
-                            <xs:documentation>number of z brain thin scans </xs:documentation>
-                        </xs:annotation>
-                        <xs:simpleType>
-                            <xs:restriction base="xs:integer"/>
-                        </xs:simpleType>
-                    </xs:element>
-                     -->
-                    <xs:element name="Total_Cerebrospinal_Fluid_Volume" minOccurs="0">
-                        <xs:annotation>
-                            <xs:documentation>total cerebrospinal fluid volume</xs:documentation>
-                        </xs:annotation>
-                        <xs:simpleType>
-                            <xs:restriction base="xs:double"/>
-                        </xs:simpleType>
-                    </xs:element>
-                    <!--
-					<xs:element name="Selected_Scan_Number" minOccurs="0">
-                        <xs:annotation>
-                            <xs:documentation>number of z selected scans </xs:documentation>
-                        </xs:annotation>
-                        <xs:simpleType>
-                            <xs:restriction base="xs:integer"/>
-                        </xs:simpleType>
-                    </xs:element>
-                    -->
-                    
-                    <xs:element name="Cerebrospinal_Fluid_Ratio" minOccurs="0">
-                        <xs:annotation>
-                            <xs:documentation>cerebrospinal fluid ratio </xs:documentation>
-                        </xs:annotation>
-                        <xs:simpleType>
-                            <xs:restriction base="xs:double"/>
-                        </xs:simpleType>
-                    </xs:element>
 
 
-                    <xs:element name="Net_Water_Uptake" minOccurs="0">
-                        <xs:annotation>
-                            <xs:documentation>net water uptake </xs:documentation>
-                        </xs:annotation>
-                        <xs:simpleType>
-                            <xs:restriction base="xs:double"/>
-                        </xs:simpleType>
-                    </xs:element>
+					<xs:element name="dna">
+						<xs:annotation>
+							<xs:documentation>DNA</xs:documentation>
+						</xs:annotation>
+						<xs:simpleType>
+							<xs:restriction base="xs:boolean"/>
+						</xs:simpleType>
+					</xs:element>
+					<xs:element name="rna" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>not sure of unit</xs:documentation>
+						</xs:annotation>
+						<xs:simpleType>
+							<xs:restriction base="xs:time"/>
+						</xs:simpleType>
+					</xs:element>
+					<xs:element name="plasma" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>infarction volumn, likely numeric</xs:documentation>
+						</xs:annotation>
+						<xs:simpleType>
+							<xs:restriction base="xs:double"/>
+						</xs:simpleType>
+					</xs:element>
 
-                    <xs:element name="Infarct_Volumn" minOccurs="0">
-                        <xs:annotation>
-                            <xs:documentation>infarction volumn, likely numeric</xs:documentation>
-                        </xs:annotation>
-                        <xs:simpleType>
-                            <xs:restriction base="xs:double"/>
-                        </xs:simpleType>
-                    </xs:element>
+					<xs:element name="Serum" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>date of most recent processing that generated csv file</xs:documentation>
+						</xs:annotation>
+						<xs:simpleType>
+							<xs:restriction base="xs:date"/>
+						</xs:simpleType>
+					</xs:element>
 
-                    <xs:element name="Infarct_Side" minOccurs="0">
-                        <xs:annotation>
-                            <xs:documentation>infarction side</xs:documentation>
-                        </xs:annotation>
-                        <xs:simpleType>
-                            <xs:restriction base="string"/>
-                        </xs:simpleType>
-                    </xs:element>
-
-                    <xs:element name="Analysis_Date" minOccurs="0">
-                        <xs:annotation>
-                            <xs:documentation>date of analysis</xs:documentation>
-                        </xs:annotation>
-                        <xs:simpleType>
-                            <xs:restriction base="xs:date"/>
-                        </xs:simpleType>
-                    </xs:element>
-
-                    <xs:element name="Version_Date" minOccurs="0">
-                        <xs:annotation>
-                            <xs:documentation>date of most recent processing that generated csv file</xs:documentation>
-                        </xs:annotation>
-                        <xs:simpleType>
-                            <xs:restriction base="xs:date"/>
-                        </xs:simpleType>
-                    </xs:element>
-
-                    <xs:element name="Cerebral_Edema_Grade" minOccurs="0">
-                        <xs:annotation>
-                            <xs:documentation>blank in dev, integer values or blank in production</xs:documentation>
-                        </xs:annotation>
-                        <xs:simpleType>
-                            <xs:restriction base="xs:string"/>
-                        </xs:simpleType>
-                    </xs:element>
-
+					<xs:element name="csf" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>blank in dev, integer values or blank in production</xs:documentation>
+						</xs:annotation>
+						<xs:simpleType>
+							<xs:restriction base="xs:string"/>
+						</xs:simpleType>
+					</xs:element>
+					
 				</xs:sequence>
 			</xs:extension>
 		</xs:complexContent>

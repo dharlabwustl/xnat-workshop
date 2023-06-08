@@ -1,12 +1,11 @@
-$page.setTitle("BiosampleCollection")
+$page.setTitle("StrokeEdemaSample")
 $page.setLinkColor($ui.alink)
 $page.setVlinkColor($ui.vlink)
 #set($years = [ $!turbineUtils.getYear()..1900])
-<!-- #set($time = [ $!turbineUtils.getDate()]) -->
 
 <script type="text/javascript">
 window.currentID="$!om.getId()";
-    #if($om.getProject()) 
+    #if($om.getProject())
      #if($om.getProject().equals(""))
 window.currentProject="$!project";
      #else
@@ -62,177 +61,41 @@ window.currentLabel="$!om.getLabel()";
                             <td colspan="2">#parse("/screens/EditProjectSpecificFields.vm")</td>
                         </tr>
                         <tr>
-                            <td colspan="2">Have the following stroke information be taken and stored as per protocol?</td>
-                        </tr>
-
-                        <tr>
-                             #formLabel("Scan Date")
-                            <td>
-                                <!-- $month $date $years -->
-                                #xdatDateBox("workshop:biosampleCollection/scan_date" $item $vr)
-                            </td>
-                        </tr> 
-
-                        <tr>
-                            #formLabel("Scan Time")
-                            <td>
-                                #xdatStringBox("workshop:biosampleCollection/scan_time" $item $vr)
-                            </td>
-                        </tr>
-
-                         <tr>
-                             #formLabel("CT Scanner")
-                            <td>
-                                #xdatStringBox("workshop:biosampleCollection/ct_scanner" $item $vr)
-                            </td>
-                        </tr>
-
-                        <tr>
-                            #formLabel("Stroke Time")
-                            <td>
-                                #xdatStringBox("workshop:biosampleCollection/stroke_time" $item $vr)
-                            </td>
-                        </tr>
-
-                        <tr>
-                             #formLabel("Elapsed From Stroke")
-                            <td>
-                                #xdatStringBox("workshop:biosampleCollection/elapsed_from_stroke" $item $vr)
-                            </td>
-                        </tr>
-
-                        <tr>
-                             #formLabel("DICOM Pixel Size X")
-                            <td>
-                                #xdatStringBox("workshop:biosampleCollection/dicom_pixel_size_x" $item $vr)
-                            </td>
-                        </tr>
-                        <tr>
-                             #formLabel("DICOM Pixel Size Y")
-                             <td>
-                                #xdatStringBox("workshop:biosampleCollection/dicom_pixel_size_y" $item $vr)
-                             </td>
-                        </tr>
-
-                        <tr>
-                            #formLabel("X Dimension")
-                            <td>
-                                #xdatStringBox("workshop:biosampleCollection/x_dimension" $item $vr)
-                            </td>
-                        </tr>
-                        <tr>
-                            #formLabel("Y Dimension")
-                            <td>
-                                #xdatStringBox("workshop:biosampleCollection/y_dimension" $item $vr)
-                            </td>
-                        </tr>
-
-                        <tr>
-                            #formLabel("Z Dimension")
-                            <td>
-                                #xdatStringBox("workshop:biosampleCollection/z_dimension" $item $vr)
-                            </td>
-                        </tr>
-
-                        <tr>
-                            #formLabel("Scan Quality")
-                            <td>
-                                #xdatStringBox("workshop:biosampleCollection/scan_quality" $item $vr)
-                            </td>
-                        </tr>
-                         
-                        <!--
-                         <tr>
-                             #formLabel("Slice_Thickness")
-                             <td>
-                                #xdatStringBox("workshop:biosampleCollection/slice_thickness" $item $vr)
-                             </td>
+                             <td colspan="2">Have the following stroke edema smaple be taken and stored as per protocol?</td>
                          </tr>
-                        
+
                          <tr>
-                             #formLabel("Z_Axial_Brain_Scan")
+                             #formLabel("DNA")
                              <td>
-                                #xdatStringBox("workshop:biosampleCollection/z_axial_brain_scan" $item $vr)
+                                 #xdatBooleanRadioYesNoWithoutDefault("workshop:biosampleCollection/dna" $item $vr)
                              </td>
                          </tr>
                          <tr>
-                             #formLabel("Z_Brain_Thin_Scans")
+                             #formLabel("RNA")
                              <td>
-                                #xdatStringBox("workshop:biosampleCollection/z_brain_thin_scans" $item $vr)
-                             </td>
-                         </tr>
-                         -->
-                        <tr>
-                             #formLabel("Total Cerebrospinal Fluid Volume")
-                            <td>
-                                #xdatStringBox("workshop:biosampleCollection/total_cerebrospinal_fluid_volume" $item $vr)
-                            </td>
-                        </tr>
-                        <tr>
-                            #formLabel("Cerebrospinal Fluid Ratio")
-                            <td>
-                                #xdatStringBox("workshop:biosampleCollection/cerebrospinal_fluid_ratio" $item $vr)
-                            </td>
-                        </tr>
-                         <!--
-                         <tr>
-                             #formLabel("Selected_Scan_Number")
-                             <td>
-                                #xdatStringBox("workshop:biosampleCollection/selected_scan_number" $item $vr)
+                                 #xdatStringBox("workshop:biosampleCollection/RNA" $item $vr)
                              </td>
                          </tr>
                          <tr>
-                             #formLabel("Slice_Number")
+                             #formLabel("Plasma")
                              <td>
-                                #xdatStringBox("workshop:biosampleCollection/slice_number" $item $vr)
+                                  #xdatStringBox("workshop:biosampleCollection/Plasma" $item $vr)
                              </td>
                          </tr>
-                         -->
+ 
+                         <tr>
+                             #formLabel("Serum")
+                             <td>
+                                #xdatDateBox("workshop:biosampleCollection/Serum" $item $vr)
+                             </td>
+                         </tr>
 
-
-                        <tr>
-                            #formLabel("Net Water Uptake")
-                            <td>
-                                #xdatStringBox("workshop:biosampleCollection/net_water_uptake" $item $vr)
-                            </td>
-                        </tr>
-
-                        <tr>
-                            #formLabel("Infarct Volumn")
-                            <td>
-                                #xdatStringBox("workshop:biosampleCollection/infarct_volumn" $item $vr)
-                            </td>
-                        </tr>
-
-                        <tr>
-                            #formLabel("Infarct Side")
-                            <td>
-                                #xdatStringBox("workshop:biosampleCollection/infarct_side" $item $vr)
-                            </td>
-                        </tr>
-                        
-                        <tr>
-                            #formLabel("Date of Analysis")
-                            <td>
-                                <!-- $month $date $years -->
-                                #xdatDateBox("workshop:biosampleCollection/analysis_date" $item $vr)
-                            </td>
-                        </tr> 
-
-                        <tr>
-                            #formLabel("Version Date")
-                            <td>
-                                <!-- $month $date $years -->
-                                #xdatDateBox("workshop:biosampleCollection/version_date" $item $vr)
-                            </td>
-                        </tr> 
-
-                        <tr>
-                            #formLabel("Cerebral Edema Grade")
-                            <td>
-                                #xdatStringBox("workshop:biosampleCollection/cerebral_edema_grade" $item $vr)
-                            </td>
-                        </tr>
+                         <tr>
+                             #formLabel("CSF")
+                             <td>
+                                 #xdatStringBox("workshop:biosampleCollection/csf" $item $vr)
+                             </td>
+                         </tr>
 
 
                      </table>
