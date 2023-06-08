@@ -150,6 +150,13 @@ window.currentLabel="$!om.getLabel()";
                          </tr>
 
                          <tr>
+                             #formLabel("Net Water Uptake")
+                             <td>
+                                  #xdatStringBox("workshop:biosampleCollection/net_water_uptake" $item $vr)
+                             </td>
+                         </tr>
+
+                         <tr>
                              #formLabel("Plasma")
                              <td>
                                   #xdatStringBox("workshop:biosampleCollection/Plasma" $item $vr)

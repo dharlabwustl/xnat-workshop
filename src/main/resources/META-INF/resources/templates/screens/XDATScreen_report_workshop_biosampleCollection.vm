@@ -190,6 +190,15 @@ $page.setVlinkColor($ui.vlink)
                     </td>
                 </tr>  
 
+
+                <tr>
+                    <td>&nbsp;</td>
+                    #formLabel("Net Water Uptake")
+                    <td valign="top">
+                        $!item.getProperty("Net_Water_Uptake")
+                    </td>
+                </tr>  
+
                 <tr>
                     <td>&nbsp;</td>
                     #formLabel("Plasma")
