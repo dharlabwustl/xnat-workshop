@@ -99,12 +99,6 @@ $page.setVlinkColor($ui.vlink)
                 </tr>
 
                 <tr>
-                    <td colspan="2" style="padding-top: 20px; padding-bottom: 10px; text-align: left; vertical-align: middle;">
-                        <span style="font-family: $ui.sansSerifFonts; font-size: small; "><i>Scan Details</i></span>
-                    </td>
-                </tr>
-
-                <tr>
                     <td>&nbsp;</td>
                     #formLabel("Scan Time")
                     <td valign="top">
@@ -138,7 +132,7 @@ $page.setVlinkColor($ui.vlink)
 
                 <tr>
                     <td colspan="2" style="padding-top: 20px; padding-bottom: 10px; text-align: left; vertical-align: middle;">
-                        <span style="font-family: $ui.sansSerifFonts; font-size: small; "><i>Biomarker Results</i></span>
+                        <span style="font-family: $ui.sansSerifFonts; font-size: small; "><i>Scan Details</i></span>
                     </td>
                 </tr>
 
@@ -160,12 +154,26 @@ $page.setVlinkColor($ui.vlink)
 
                 <tr>
                     <td>&nbsp;</td>
+                    #formLabel("Z Dimension")
+                    <td valign="top">
+                        $!item.getProperty("Z_Dimension")
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>&nbsp;</td>
                     #formLabel("Plasma")
                     <td valign="top">
                         $!item.getProperty("Plasma")
                     </td>
                 </tr>
 
+                <tr>
+                    <td colspan="2" style="padding-top: 20px; padding-bottom: 10px; text-align: left; vertical-align: middle;">
+                        <span style="font-family: $ui.sansSerifFonts; font-size: small; "><i>Biomarker Results</i></span>
+                    </td>
+                </tr>
+                
                 <tr>
                     <td>&nbsp;</td>
                     #formLabel("Serum")

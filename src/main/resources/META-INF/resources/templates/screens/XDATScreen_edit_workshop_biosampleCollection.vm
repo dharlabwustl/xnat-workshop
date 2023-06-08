@@ -121,6 +121,13 @@ window.currentLabel="$!om.getLabel()";
                          </tr>
 
                          <tr>
+                             #formLabel("Z Dimension")
+                             <td>
+                                  #xdatStringBox("workshop:biosampleCollection/z_dimension" $item $vr)
+                             </td>
+                         </tr>
+
+                         <tr>
                              #formLabel("Plasma")
                              <td>
                                   #xdatStringBox("workshop:biosampleCollection/Plasma" $item $vr)
