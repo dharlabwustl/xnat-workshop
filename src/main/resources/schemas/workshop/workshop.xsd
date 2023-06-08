@@ -46,6 +46,15 @@
 						</xs:simpleType>
 					</xs:element>
 
+					<xs:element name="CT_Scanner" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>CT Scanner type, take note of the portable version</xs:documentation>
+						</xs:annotation>
+						<xs:simpleType>
+							<xs:restriction base="xs:string"/>
+						</xs:simpleType>
+					</xs:element>
+
 					<xs:element name="plasma" minOccurs="0">
 						<xs:annotation>
 							<xs:documentation>infarction volumn, likely numeric</xs:documentation>

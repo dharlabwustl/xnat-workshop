@@ -111,6 +111,14 @@ $page.setVlinkColor($ui.vlink)
                         $!item.getProperty('Scan_Time')
                     </td>
                 </tr>
+                
+                <tr>
+                    <td>&nbsp;</td>
+                    #formLabel("CT Scanner")
+                    <td valign="top">
+                        #showString("workshop:biosampleCollection/ct_scanner" $item)
+                    </td>
+                </tr>
 
                 <tr>
                     <td colspan="2" style="padding-top: 20px; padding-bottom: 10px; text-align: left; vertical-align: middle;">

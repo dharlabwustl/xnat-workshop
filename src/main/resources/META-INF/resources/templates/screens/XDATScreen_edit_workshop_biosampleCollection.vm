@@ -84,7 +84,14 @@ window.currentLabel="$!om.getLabel()";
                                  #xdatStringBox("workshop:biosampleCollection/scan_time" $item $vr) <!-- changed rna to scan_time -->
                              </td>
                          </tr>
-                         
+
+                         <tr>
+                             #formLabel("CT Scanner")
+                             <td>
+                                 #xdatStringBox("workshop:biosampleCollection/ct_scanner" $item $vr)
+                             </td>
+                         </tr>
+
                          <tr>
                              #formLabel("Plasma")
                              <td>
