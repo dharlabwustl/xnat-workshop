@@ -109,6 +109,15 @@
 						</xs:simpleType>
 					</xs:element>
 
+					<xs:element name="Total_Cerebrospinal_Fluid_Volume" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>total cerebrospinal fluid volume</xs:documentation>
+						</xs:annotation>
+						<xs:simpleType>
+							<xs:restriction base="xs:double"/>
+						</xs:simpleType>
+					</xs:element>
+
 					<xs:element name="plasma" minOccurs="0">
 						<xs:annotation>
 							<xs:documentation>infarction volumn, likely numeric</xs:documentation>
