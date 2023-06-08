@@ -55,6 +55,15 @@
 						</xs:simpleType>
 					</xs:element>
 
+					<xs:element name="Stroke_Time" minOccurs="0"> 
+						<xs:annotation>
+							<xs:documentation>not sure of unit</xs:documentation>
+						</xs:annotation>
+						<xs:simpleType>
+							<xs:restriction base="xs:time"/>
+						</xs:simpleType>
+					</xs:element>
+
 					<xs:element name="plasma" minOccurs="0">
 						<xs:annotation>
 							<xs:documentation>infarction volumn, likely numeric</xs:documentation>
