@@ -94,7 +94,7 @@ $page.setVlinkColor($ui.vlink)
                     <td>&nbsp;</td>
                     #formLabel("DNA")
                     <td valign="top">
-                        #showBoolean("workshop:biosampleCollection/dna" $item)
+                        #showInteger("workshop:biosampleCollection/dna" $item)
                     </td>
                 </tr>
 

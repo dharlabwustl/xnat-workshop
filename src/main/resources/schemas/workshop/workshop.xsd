@@ -30,10 +30,10 @@
 
 					<xs:element name="dna">
 						<xs:annotation>
-							<xs:documentation>DNA</xs:documentation>
+							<xs:documentation>for resolution: x axis dimension</xs:documentation>
 						</xs:annotation>
 						<xs:simpleType>
-							<xs:restriction base="xs:boolean"/>
+							<xs:restriction base="xs:integer"/>
 						</xs:simpleType>
 					</xs:element>
 

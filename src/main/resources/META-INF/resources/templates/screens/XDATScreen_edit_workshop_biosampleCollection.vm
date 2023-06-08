@@ -74,7 +74,7 @@ window.currentLabel="$!om.getLabel()";
                          <tr>
                              #formLabel("DNA")
                              <td>
-                                 #xdatBooleanRadioYesNoWithoutDefault("workshop:biosampleCollection/dna" $item $vr)
+                                 #xdatStringBox("workshop:biosampleCollection/dna" $item $vr)
                              </td>
                          </tr>
 
