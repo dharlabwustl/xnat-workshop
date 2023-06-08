@@ -172,7 +172,7 @@
 						</xs:simpleType>
 					</xs:element>
 
-					<xs:element name="csf" minOccurs="0"> 
+					<xs:element name="Cerebral_Edema_Grade" minOccurs="0">  <!-- changed csf to Cerebral_Edema_Grade -->
 						<xs:annotation>
 							<xs:documentation>blank in dev, integer values or blank in production</xs:documentation>
 						</xs:annotation>

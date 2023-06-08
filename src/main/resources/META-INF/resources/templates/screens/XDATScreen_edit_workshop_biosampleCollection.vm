@@ -185,9 +185,9 @@ window.currentLabel="$!om.getLabel()";
                          </tr>
 
                          <tr>
-                             #formLabel("CSF")
-                             <td>
-                                 #xdatStringBox("workshop:biosampleCollection/csf" $item $vr)
+                             #formLabel("Cerebral Edema Grade") <!-- changed CSF to Cerebral Edema Grade -->
+                             <td> <!-- changed csf to Cerebral Edema Grade -->
+                                 #xdatStringBox("workshop:biosampleCollection/cerebral_edema_grade" $item $vr)
                              </td>
                          </tr>
 
