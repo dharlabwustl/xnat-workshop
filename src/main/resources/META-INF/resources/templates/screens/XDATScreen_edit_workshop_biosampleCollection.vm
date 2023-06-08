@@ -72,13 +72,6 @@ window.currentLabel="$!om.getLabel()";
                          </tr>
 
                          <tr>
-                             #formLabel("DNA")
-                             <td>
-                                 #xdatStringBox("workshop:biosampleCollection/dna" $item $vr)
-                             </td>
-                         </tr>
-
-                         <tr>
                              #formLabel("Scan Time") <!-- changed RNA to Scan Time -->
                              <td>
                                  #xdatStringBox("workshop:biosampleCollection/scan_time" $item $vr) <!-- changed rna to scan_time -->
@@ -117,6 +110,20 @@ window.currentLabel="$!om.getLabel()";
                              #formLabel("DICOM Pixel Size Y")
                              <td>
                                   #xdatStringBox("workshop:biosampleCollection/dicom_pixel_size_y" $item $vr)
+                             </td>
+                         </tr>
+
+                        <tr>
+                             #formLabel("X Dimension") <!-- changed DNA to X Dimension -->
+                             <td> <!-- changed dna to x_dimension -->
+                                 #xdatStringBox("workshop:biosampleCollection/x_dimension" $item $vr)
+                             </td>
+                         </tr>
+
+                         <tr>
+                             #formLabel("Y Dimension")
+                             <td>
+                                 #xdatStringBox("workshop:biosampleCollection/y_dimension" $item $vr)
                              </td>
                          </tr>
 

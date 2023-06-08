@@ -78,7 +78,7 @@ $page.setVlinkColor($ui.vlink)
 
                 <tr>
                     <td colspan="2" style="padding-top: 20px; padding-bottom: 10px; text-align: left; vertical-align: middle;">
-                        <span style="font-family: $ui.sansSerifFonts; font-size: small; "><i>Stroke Info</i></span>
+                        <span style="font-family: $ui.sansSerifFonts; font-size: small; "><i>Scan Info</i></span>
                     </td>
                 </tr>
 
@@ -87,14 +87,6 @@ $page.setVlinkColor($ui.vlink)
                     #formLabel("Scan Date")
                     <td valign="top">
                          $turbineUtils.formatDate($!item.getProperty("Scan_Date"),"yyyy-MM-dd")
-                    </td>
-                </tr>
-
-                <tr>
-                    <td>&nbsp;</td>
-                    #formLabel("DNA")
-                    <td valign="top">
-                        #showInteger("workshop:biosampleCollection/dna" $item)
                     </td>
                 </tr>
 
@@ -149,6 +141,22 @@ $page.setVlinkColor($ui.vlink)
                     #formLabel("DICOM Pixel Size Y")
                     <td valign="top">
                         $!item.getProperty("DICOM_Pixel_Size_Y")
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>&nbsp;</td>
+                    #formLabel("X Dimension") <!-- changed DNA to X Dimension -->
+                    <td valign="top"> <!-- changed dna to x_dimension-->
+                        #showInteger("workshop:biosampleCollection/x_dimension" $item)
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>&nbsp;</td>
+                    #formLabel("Y Dimension")
+                    <td valign="top">
+                        #showInteger("workshop:biosampleCollection/y_dimension" $item)
                     </td>
                 </tr>
 

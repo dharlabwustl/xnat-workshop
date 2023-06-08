@@ -28,15 +28,6 @@
 						</xs:simpleType>
 					</xs:element>
 
-					<xs:element name="dna">
-						<xs:annotation>
-							<xs:documentation>for resolution: x axis dimension</xs:documentation>
-						</xs:annotation>
-						<xs:simpleType>
-							<xs:restriction base="xs:integer"/>
-						</xs:simpleType>
-					</xs:element>
-
 					<xs:element name="Scan_Time" minOccurs="0"> <!--changed rna to Scan_Time -->
 						<xs:annotation>
 							<xs:documentation>not sure of unit</xs:documentation>
@@ -88,6 +79,24 @@
 						</xs:annotation>
 						<xs:simpleType>
 							<xs:restriction base="xs:double"/>
+						</xs:simpleType>
+					</xs:element>
+
+					<xs:element name="X_Dimension"> <!-- changed dna to X_Dimension -->
+						<xs:annotation>
+							<xs:documentation>for resolution: x axis dimension</xs:documentation>
+						</xs:annotation>
+						<xs:simpleType>
+							<xs:restriction base="xs:integer"/>
+						</xs:simpleType>
+					</xs:element>
+
+					<xs:element name="Y_Dimension">
+						<xs:annotation>
+							<xs:documentation>for resolution: x axis dimension</xs:documentation>
+						</xs:annotation>
+						<xs:simpleType>
+							<xs:restriction base="xs:integer"/>
 						</xs:simpleType>
 					</xs:element>
 
