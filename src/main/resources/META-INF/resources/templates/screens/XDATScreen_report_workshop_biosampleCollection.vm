@@ -184,6 +184,14 @@ $page.setVlinkColor($ui.vlink)
 
                 <tr>
                     <td>&nbsp;</td>
+                    #formLabel("Cerebrospinal Fluid Ratio")
+                    <td valign="top">
+                        $!item.getProperty("Cerebrospinal_Fluid_Ratio")
+                    </td>
+                </tr>  
+
+                <tr>
+                    <td>&nbsp;</td>
                     #formLabel("Plasma")
                     <td valign="top">
                         $!item.getProperty("Plasma")

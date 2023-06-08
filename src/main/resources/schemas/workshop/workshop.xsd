@@ -118,6 +118,15 @@
 						</xs:simpleType>
 					</xs:element>
 
+					<xs:element name="Cerebrospinal_Fluid_Ratio" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>cerebrospinal fluid ratio</xs:documentation>
+						</xs:annotation>
+						<xs:simpleType>
+							<xs:restriction base="xs:double"/>
+						</xs:simpleType>
+					</xs:element>
+
 					<xs:element name="plasma" minOccurs="0">
 						<xs:annotation>
 							<xs:documentation>infarction volumn, likely numeric</xs:documentation>
