@@ -149,7 +149,15 @@ $page.setVlinkColor($ui.vlink)
                         $!item.getProperty("DICOM_Pixel_Size_X")
                     </td>
                 </tr>
-                
+
+                <tr>
+                    <td>&nbsp;</td>
+                    #formLabel("DICOM Pixel Size Y")
+                    <td valign="top">
+                        $!item.getProperty("DICOM_Pixel_Size_Y")
+                    </td>
+                </tr>
+
                 <tr>
                     <td>&nbsp;</td>
                     #formLabel("Plasma")

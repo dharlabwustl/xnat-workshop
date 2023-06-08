@@ -114,6 +114,13 @@ window.currentLabel="$!om.getLabel()";
                          </tr>
 
                          <tr>
+                             #formLabel("DICOM Pixel Size Y")
+                             <td>
+                                  #xdatStringBox("workshop:biosampleCollection/dicom_pixel_size_y" $item $vr)
+                             </td>
+                         </tr>
+
+                         <tr>
                              #formLabel("Plasma")
                              <td>
                                   #xdatStringBox("workshop:biosampleCollection/Plasma" $item $vr)
