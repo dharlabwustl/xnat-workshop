@@ -63,6 +63,13 @@ window.currentLabel="$!om.getLabel()";
                         <tr>
                              <td colspan="2">Have the following stroke edema smaple be taken and stored as per protocol?</td>
                          </tr>
+                         
+                         <tr>
+                             #formLabel("Scan Date")
+                             <td>
+                                #xdatDateBox("workshop:biosampleCollection/Scan_Date" $item $vr)
+                             </td>
+                         </tr>
 
                          <tr>
                              #formLabel("DNA")

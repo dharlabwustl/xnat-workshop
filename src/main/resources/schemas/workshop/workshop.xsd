@@ -19,6 +19,14 @@
 			<xs:extension base="xnat:subjectAssessorData">
 				<xs:sequence>
 
+					<xs:element name="Scan_Date" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>scan date</xs:documentation>
+						</xs:annotation>
+						<xs:simpleType>
+							<xs:restriction base="xs:date"/>
+						</xs:simpleType>
+					</xs:element>
 
 					<xs:element name="dna">
 						<xs:annotation>
@@ -28,6 +36,7 @@
 							<xs:restriction base="xs:boolean"/>
 						</xs:simpleType>
 					</xs:element>
+
 					<xs:element name="rna" minOccurs="0">
 						<xs:annotation>
 							<xs:documentation>not sure of unit</xs:documentation>
@@ -36,6 +45,7 @@
 							<xs:restriction base="xs:time"/>
 						</xs:simpleType>
 					</xs:element>
+
 					<xs:element name="plasma" minOccurs="0">
 						<xs:annotation>
 							<xs:documentation>infarction volumn, likely numeric</xs:documentation>

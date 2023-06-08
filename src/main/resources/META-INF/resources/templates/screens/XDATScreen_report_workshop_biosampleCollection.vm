@@ -84,6 +84,14 @@ $page.setVlinkColor($ui.vlink)
 
                 <tr>
                     <td>&nbsp;</td>
+                    #formLabel("Scan Date")
+                    <td valign="top">
+                         $turbineUtils.formatDate($!item.getProperty("Scan_Date"),"yyyy-MM-dd")
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>&nbsp;</td>
                     #formLabel("DNA")
                     <td valign="top">
                         #showBoolean("workshop:biosampleCollection/dna" $item)
