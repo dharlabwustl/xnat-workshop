@@ -157,9 +157,9 @@ window.currentLabel="$!om.getLabel()";
                          </tr>
 
                          <tr>
-                             #formLabel("Plasma")
+                             #formLabel("Infarct Volumn") <!-- changed Plasama to Infarct Volumn -->
                              <td>
-                                  #xdatStringBox("workshop:biosampleCollection/Plasma" $item $vr)
+                                  #xdatStringBox("workshop:biosampleCollection/infarct_volumn" $item $vr) <!-- changed Plasma to infarct_volumn -->
                              </td>
                          </tr>
  

@@ -136,7 +136,7 @@
 						</xs:simpleType>
 					</xs:element>
 
-					<xs:element name="plasma" minOccurs="0">
+					<xs:element name="Infarct_Volumn" minOccurs="0"> <!-- changed plasma to Infarct_Volumn-->
 						<xs:annotation>
 							<xs:documentation>infarction volumn, likely numeric</xs:documentation>
 						</xs:annotation>

@@ -201,9 +201,9 @@ $page.setVlinkColor($ui.vlink)
 
                 <tr>
                     <td>&nbsp;</td>
-                    #formLabel("Plasma")
+                    #formLabel("Infraction Volumn") <!-- changed Plasma to Infraction Volumn -->
                     <td valign="top">
-                        $!item.getProperty("Plasma")
+                        $!item.getProperty("Infarct_Volumn") <!-- changed Plasma to Infarct_Volumn-->
                     </td>
                 </tr>               
 
