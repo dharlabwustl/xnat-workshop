@@ -97,6 +97,14 @@ $page.setVlinkColor($ui.vlink)
                         $!item.getProperty('Scan_Time')
                     </td>
                 </tr>
+                
+                <tr>
+                    <td>&nbsp;</td>
+                    #formLabel("Stroke Date")
+                    <td valign="top">
+                         $turbineUtils.formatDate($!item.getProperty("Stroke_Date"),"yyyy-MM-dd")
+                    </td>
+                </tr>
 
                 <tr>
                     <td>&nbsp;</td>
@@ -125,6 +133,22 @@ $page.setVlinkColor($ui.vlink)
                     #formLabel("CT Scanner")
                     <td valign="top">
                         #showString("workshop:biosampleCollection/ct_scanner" $item)
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>&nbsp;</td>
+                    #formLabel("Scan Description")
+                    <td valign="top">
+                        #showString("workshop:biosampleCollection/scan_description" $item)
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>&nbsp;</td>
+                    #formLabel("Scan Selected") <!-- changed DNA to X Dimension -->
+                    <td valign="top"> <!-- changed dna to x_dimension-->
+                        #showInteger("workshop:biosampleCollection/scan_selected" $item)
                     </td>
                 </tr>
 
@@ -184,7 +208,7 @@ $page.setVlinkColor($ui.vlink)
 
                 <tr>
                     <td>&nbsp;</td>
-                    #formLabel("Total Cerebrospinal Fluid Volume")
+                    #formLabel("Total CSF Volume")
                     <td valign="top">
                         $!item.getProperty("Total_Cerebrospinal_Fluid_Volume")
                     </td>
@@ -192,7 +216,7 @@ $page.setVlinkColor($ui.vlink)
 
                 <tr>
                     <td>&nbsp;</td>
-                    #formLabel("Cerebrospinal Fluid Ratio")
+                    #formLabel("CSF Ratio")
                     <td valign="top">
                         $!item.getProperty("Cerebrospinal_Fluid_Ratio")
                     </td>

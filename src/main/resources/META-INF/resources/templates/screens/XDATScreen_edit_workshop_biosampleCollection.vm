@@ -78,10 +78,10 @@ window.currentLabel="$!om.getLabel()";
                              </td>
                          </tr>
 
-                         <tr>
-                             #formLabel("CT Scanner")
+                        <tr>
+                             #formLabel("Stroke Date")
                              <td>
-                                 #xdatStringBox("workshop:biosampleCollection/ct_scanner" $item $vr)
+                                #xdatDateBox("workshop:biosampleCollection/Stroke_Date" $item $vr)
                              </td>
                          </tr>
 
@@ -96,6 +96,28 @@ window.currentLabel="$!om.getLabel()";
                              #formLabel("Elapsed From Stroke")
                              <td>
                                   #xdatStringBox("workshop:biosampleCollection/elapsed_from_stroke" $item $vr)
+                             </td>
+                         </tr>
+                        
+                        
+                        <tr>
+                             #formLabel("CT Scanner")
+                             <td>
+                                 #xdatStringBox("workshop:biosampleCollection/ct_scanner" $item $vr)
+                             </td>
+                         </tr>
+
+                         <tr>
+                             #formLabel("Scan Description")
+                             <td>
+                                 #xdatStringBox("workshop:biosampleCollection/scan_description" $item $vr)
+                             </td>
+                         </tr>
+
+                         <tr>
+                             #formLabel("Scan Selected")  
+                             <td>  
+                                 #xdatStringBox("workshop:biosampleCollection/scan_selected" $item $vr)
                              </td>
                          </tr>
 
@@ -143,14 +165,14 @@ window.currentLabel="$!om.getLabel()";
                          </tr>
 
                          <tr>
-                             #formLabel("Total Cerebrospinal Fluid Volume")
+                             #formLabel("Total CSF Volume")
                              <td>
                                   #xdatStringBox("workshop:biosampleCollection/total_cerebrospinal_fluid_volume" $item $vr)
                              </td>
                          </tr>
 
                         <tr>
-                             #formLabel("Cerebrospinal Fluid Ratio")
+                             #formLabel("CSF Ratio")
                              <td>
                                   #xdatStringBox("workshop:biosampleCollection/cerebrospinal_fluid_ratio" $item $vr)
                              </td>

@@ -37,12 +37,12 @@
 						</xs:simpleType>
 					</xs:element>
 
-					<xs:element name="CT_Scanner" minOccurs="0">
+                    <xs:element name="Stroke_Date" minOccurs="0">
 						<xs:annotation>
-							<xs:documentation>CT Scanner type, take note of the portable version</xs:documentation>
+							<xs:documentation>stroke date</xs:documentation>
 						</xs:annotation>
 						<xs:simpleType>
-							<xs:restriction base="xs:string"/>
+							<xs:restriction base="xs:date"/>
 						</xs:simpleType>
 					</xs:element>
 
@@ -61,6 +61,33 @@
 						</xs:annotation>
 						<xs:simpleType>
 							<xs:restriction base="xs:double"/>
+						</xs:simpleType>
+					</xs:element>
+
+                    <xs:element name="CT_Scanner" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>CT Scanner type, take note of the portable version</xs:documentation>
+						</xs:annotation>
+						<xs:simpleType>
+							<xs:restriction base="xs:string"/>
+						</xs:simpleType>
+					</xs:element>
+
+                    <xs:element name="Scan_Description" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>2-Z axial scan for all for now</xs:documentation>
+						</xs:annotation>
+						<xs:simpleType>
+							<xs:restriction base="xs:string"/>
+						</xs:simpleType>
+					</xs:element>
+
+                    <xs:element name="Scan_Selected"> <!-- changed dna to X_Dimension -->
+						<xs:annotation>
+							<xs:documentation>which axial brain used for analysis</xs:documentation>
+						</xs:annotation>
+						<xs:simpleType>
+							<xs:restriction base="xs:integer"/>
 						</xs:simpleType>
 					</xs:element>
 
