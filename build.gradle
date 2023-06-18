@@ -211,3 +211,7 @@ publishing.publications {
         }
     }
 }
+// may not work
+jar {
+    archiveFileName = 'xnat-workshop-stroke-plugin-1.0.0.jar'
+}
