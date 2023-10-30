@@ -7,7 +7,7 @@
  * Released under the Simplified BSD.
  */
 
-package org.nrg.xnat.workshop.subjectmapping.preferences;
+package org.nrg.xnat.workshop1.subjectmapping.preferences;
 
 import org.nrg.framework.configuration.ConfigPaths;
 import org.nrg.prefs.annotations.NrgPreference;

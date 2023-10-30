@@ -7,7 +7,7 @@
  * Released under the Simplified BSD.
  */
 
-package org.nrg.xnat.workshop.subjectmapping.entities;
+package org.nrg.xnat.workshop1.subjectmapping.entities;
 
 import org.nrg.framework.orm.hibernate.AbstractHibernateEntity;
 

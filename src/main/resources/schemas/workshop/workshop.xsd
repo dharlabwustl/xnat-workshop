@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-  ~ xnat-workshop: /Users/rherrick/Development/XNAT/1.7/plugins/xnat-workshop-plugin/src/main/resources/schemas/workshop/workshop.xsd
+  ~ xnat-workshop1: /Users/rherrick/Development/XNAT/1.7/plugins/xnat-workshop1-plugin/src/main/resources/schemas/workshop1/workshop1.xsd
   ~ XNAT http://www.xnat.org
   ~ Copyright (c) 2017, Washington University School of Medicine
   ~ All Rights Reserved
@@ -8,10 +8,10 @@
   ~ Released under the Simplified BSD.
   -->
 
-<xs:schema targetNamespace="http://nrg.wustl.edu/workshop" xmlns:workshop="http://nrg.wustl.edu/workshop" xmlns:xnat="http://nrg.wustl.edu/xnat" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+<xs:schema targetNamespace="http://nrg.wustl.edu/workshop1" xmlns:workshop1="http://nrg.wustl.edu/workshop1" xmlns:xnat="http://nrg.wustl.edu/xnat" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
 	<xs:import namespace="http://nrg.wustl.edu/xnat" schemaLocation="../xnat/xnat.xsd"/>
-	<xs:element name="BiosampleCollection" type="workshop:biosampleCollection"/>
-	<xs:complexType name="biosampleCollection">
+	<xs:element name="Biosample1Collection" type="workshop1:biosample1Collection"/>
+	<xs:complexType name="biosample1Collection">
 		<xs:annotation>
 			<xs:documentation>Indicates whether the required stroke edema collections have been acquired per study protocol.</xs:documentation>
 		</xs:annotation>

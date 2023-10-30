@@ -7,16 +7,16 @@
  * Released under the Simplified BSD.
  */
 
-package org.nrg.xnat.workshop.subjectmapping.rest;
+package org.nrg.xnat.workshop1.subjectmapping.rest;
 
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiResponse;
 import io.swagger.annotations.ApiResponses;
 import org.nrg.framework.annotations.XapiRestController;
-import org.nrg.xnat.workshop.subjectmapping.entities.SubjectMapping;
-import org.nrg.xnat.workshop.subjectmapping.preferences.SubjectMappingPreferencesBean;
-import org.nrg.xnat.workshop.subjectmapping.services.SubjectMappingService;
+import org.nrg.xnat.workshop1.subjectmapping.entities.SubjectMapping;
+import org.nrg.xnat.workshop1.subjectmapping.preferences.SubjectMappingPreferencesBean;
+import org.nrg.xnat.workshop1.subjectmapping.services.SubjectMappingService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;

@@ -7,10 +7,10 @@
  * Released under the Simplified BSD.
  */
 
-package org.nrg.xnat.workshop.subjectmapping.services;
+package org.nrg.xnat.workshop1.subjectmapping.services;
 
 import org.nrg.framework.orm.hibernate.BaseHibernateService;
-import org.nrg.xnat.workshop.subjectmapping.entities.SubjectMapping;
+import org.nrg.xnat.workshop1.subjectmapping.entities.SubjectMapping;
 
 import java.util.List;
 

@@ -21,17 +21,17 @@ window.currentLabel="$!om.getLabel()";
 #if ($data.message)
 <div class="error">$data.message</div>
 #end
-<div id="biosampleAssessmentFormDiv">
-<form ID="biosampleAssessmentForm" name="biosampleAssessmentForm" method="post" action="$link.setAction("ModifySubjectAssessorData")">
+<div id="biosample1AssessmentFormDiv">
+<form ID="biosample1AssessmentForm" name="biosample1AssessmentForm" method="post" action="$link.setAction("ModifySubjectAssessorData")">
     <input type="hidden" name="project" value="$!{project}">
     <input type="hidden" name="part_id" value="$!{subjectId}">
-    <input type='hidden' name='workshop:biosampleCollection/ID' value='$!item.getProperty("ID")'/>
-    <input type="hidden" name="workshop:biosampleCollection/project" value='$!{project}'/>
-    <input type='hidden' name='workshop:biosampleCollection/subject_ID' value='$!{subjectId}'/>
-    <input type='hidden' name='workshop:biosampleCollection/label' value='$!label'/>
-    <input type="hidden" name="workshop:biosampleCollection.date.month" id="workshop:biosampleCollection.date.month" value=""/>
-    <input type="hidden" name="workshop:biosampleCollection.date.date" id="workshop:biosampleCollection.date.date" value=""/>
-    <input type="hidden" name="workshop:biosampleCollection.date.year" id="workshop:biosampleCollection.date.year" value=""/>
+    <input type='hidden' name='workshop1:biosample1Collection/ID' value='$!item.getProperty("ID")'/>
+    <input type="hidden" name="workshop1:biosample1Collection/project" value='$!{project}'/>
+    <input type='hidden' name='workshop1:biosample1Collection/subject_ID' value='$!{subjectId}'/>
+    <input type='hidden' name='workshop1:biosample1Collection/label' value='$!label'/>
+    <input type="hidden" name="workshop1:biosample1Collection.date.month" id="workshop1:biosample1Collection.date.month" value=""/>
+    <input type="hidden" name="workshop1:biosample1Collection.date.date" id="workshop1:biosample1Collection.date.date" value=""/>
+    <input type="hidden" name="workshop1:biosample1Collection.date.year" id="workshop1:biosample1Collection.date.year" value=""/>
     <input type="hidden" name="$om.getXSIType()/ID" id="$om.getXSIType()/ID" value="$!om.getId()"/>
 
     #if($vr)
@@ -67,35 +67,35 @@ window.currentLabel="$!om.getLabel()";
                          <tr>
                              #formLabel("Scan Date")
                              <td>
-                                #xdatDateBox("workshop:biosampleCollection/Scan_Date" $item $vr)
+                                #xdatDateBox("workshop1:biosample1Collection/Scan_Date" $item $vr)
                              </td>
                          </tr>
 
                          <tr>
                              #formLabel("Scan Time") <!-- changed RNA to Scan Time -->
                              <td>
-                                 #xdatStringBox("workshop:biosampleCollection/scan_time" $item $vr) <!-- changed rna to scan_time -->
+                                 #xdatStringBox("workshop1:biosample1Collection/scan_time" $item $vr) <!-- changed rna to scan_time -->
                              </td>
                          </tr>
 
                         <tr>
                              #formLabel("Stroke Date")
                              <td>
-                                #xdatDateBox("workshop:biosampleCollection/Stroke_Date" $item $vr)
+                                #xdatDateBox("workshop1:biosample1Collection/Stroke_Date" $item $vr)
                              </td>
                          </tr>
 
                          <tr>
                              #formLabel("Stroke Time")  
                              <td>
-                                 #xdatStringBox("workshop:biosampleCollection/stroke_time" $item $vr) <!-- changed rna to scan_time -->
+                                 #xdatStringBox("workshop1:biosample1Collection/stroke_time" $item $vr) <!-- changed rna to scan_time -->
                              </td>
                          </tr>
 
                          <tr>
                              #formLabel("Elapsed From Stroke")
                              <td>
-                                  #xdatStringBox("workshop:biosampleCollection/elapsed_from_stroke" $item $vr)
+                                  #xdatStringBox("workshop1:biosample1Collection/elapsed_from_stroke" $item $vr)
                              </td>
                          </tr>
                         
@@ -103,56 +103,56 @@ window.currentLabel="$!om.getLabel()";
                         <tr>
                              #formLabel("CT Scanner")
                              <td>
-                                 #xdatStringBox("workshop:biosampleCollection/ct_scanner" $item $vr)
+                                 #xdatStringBox("workshop1:biosample1Collection/ct_scanner" $item $vr)
                              </td>
                          </tr>
 
                          <tr>
                              #formLabel("Scan Description")
                              <td>
-                                 #xdatStringBox("workshop:biosampleCollection/scan_description" $item $vr)
+                                 #xdatStringBox("workshop1:biosample1Collection/scan_description" $item $vr)
                              </td>
                          </tr>
 
                          <tr>
                              #formLabel("Scan Selected")  
                              <td>  
-                                 #xdatStringBox("workshop:biosampleCollection/scan_selected" $item $vr)
+                                 #xdatStringBox("workshop1:biosample1Collection/scan_selected" $item $vr)
                              </td>
                          </tr>
 
                          <tr>
                              #formLabel("DICOM Pixel Size X")
                              <td>
-                                  #xdatStringBox("workshop:biosampleCollection/dicom_pixel_size_x" $item $vr)
+                                  #xdatStringBox("workshop1:biosample1Collection/dicom_pixel_size_x" $item $vr)
                              </td>
                          </tr>
 
                          <tr>
                              #formLabel("DICOM Pixel Size Y")
                              <td>
-                                  #xdatStringBox("workshop:biosampleCollection/dicom_pixel_size_y" $item $vr)
+                                  #xdatStringBox("workshop1:biosample1Collection/dicom_pixel_size_y" $item $vr)
                              </td>
                          </tr>
 
                         <tr>
                              #formLabel("X Dimension") <!-- changed DNA to X Dimension -->
                              <td> <!-- changed dna to x_dimension -->
-                                 #xdatStringBox("workshop:biosampleCollection/x_dimension" $item $vr)
+                                 #xdatStringBox("workshop1:biosample1Collection/x_dimension" $item $vr)
                              </td>
                          </tr>
 
                          <tr>
                              #formLabel("Y Dimension")
                              <td>
-                                 #xdatStringBox("workshop:biosampleCollection/y_dimension" $item $vr)
+                                 #xdatStringBox("workshop1:biosample1Collection/y_dimension" $item $vr)
                              </td>
                          </tr>
 
                          <tr>
                              #formLabel("Z Dimension")
                              <td>
-                                  #xdatStringBox("workshop:biosampleCollection/z_dimension" $item $vr)
+                                  #xdatStringBox("workshop1:biosample1Collection/z_dimension" $item $vr)
                              </td>
                          </tr>
 
@@ -160,63 +160,63 @@ window.currentLabel="$!om.getLabel()";
                          <tr>
                              #formLabel("Scan Quality")
                              <td>
-                                 #xdatStringBox("workshop:biosampleCollection/scan_quality" $item $vr)
+                                 #xdatStringBox("workshop1:biosample1Collection/scan_quality" $item $vr)
                              </td>
                          </tr>
 
                          <tr>
                              #formLabel("Total CSF Volume")
                              <td>
-                                  #xdatStringBox("workshop:biosampleCollection/total_cerebrospinal_fluid_volume" $item $vr)
+                                  #xdatStringBox("workshop1:biosample1Collection/total_cerebrospinal_fluid_volume" $item $vr)
                              </td>
                          </tr>
 
                         <tr>
                              #formLabel("CSF Ratio")
                              <td>
-                                  #xdatStringBox("workshop:biosampleCollection/cerebrospinal_fluid_ratio" $item $vr)
+                                  #xdatStringBox("workshop1:biosample1Collection/cerebrospinal_fluid_ratio" $item $vr)
                              </td>
                          </tr>
 
                          <tr>
                              #formLabel("Net Water Uptake")
                              <td>
-                                  #xdatStringBox("workshop:biosampleCollection/net_water_uptake" $item $vr)
+                                  #xdatStringBox("workshop1:biosample1Collection/net_water_uptake" $item $vr)
                              </td>
                          </tr>
 
                          <tr>
                              #formLabel("Infarct Volumn") <!-- changed Plasama to Infarct Volumn -->
                              <td>
-                                  #xdatStringBox("workshop:biosampleCollection/infarct_volumn" $item $vr) <!-- changed Plasma to infarct_volumn -->
+                                  #xdatStringBox("workshop1:biosample1Collection/infarct_volumn" $item $vr) <!-- changed Plasma to infarct_volumn -->
                              </td>
                          </tr>
 
                         <tr>
                              #formLabel("Infarct Side")
                              <td>
-                                 #xdatStringBox("workshop:biosampleCollection/infarct_side" $item $vr)
+                                 #xdatStringBox("workshop1:biosample1Collection/infarct_side" $item $vr)
                              </td>
                          </tr>
 
                         <tr>
                              #formLabel("Date of Analysis")
                              <td>
-                                #xdatDateBox("workshop:biosampleCollection/analysis_date" $item $vr)
+                                #xdatDateBox("workshop1:biosample1Collection/analysis_date" $item $vr)
                              </td>
                          </tr>
 
                          <tr>
                              #formLabel("Version Date") <!-- changed Serum to Version Date -->
                              <td>  <!-- changed Serum to Version version_date -->
-                                #xdatDateBox("workshop:biosampleCollection/version_date" $item $vr)
+                                #xdatDateBox("workshop1:biosample1Collection/version_date" $item $vr)
                              </td>
                          </tr>
 
                          <tr>
                              #formLabel("Cerebral Edema Grade") <!-- changed CSF to Cerebral Edema Grade -->
                              <td> <!-- changed csf to Cerebral Edema Grade -->
-                                 #xdatStringBox("workshop:biosampleCollection/cerebral_edema_grade" $item $vr)
+                                 #xdatStringBox("workshop1:biosample1Collection/cerebral_edema_grade" $item $vr)
                              </td>
                          </tr>
 
@@ -244,11 +244,11 @@ window.currentLabel="$!om.getLabel()";
 <script type="text/javascript">
     function validateForm() {
         var today = new Date();
-        document.getElementById('workshop:biosampleCollection.date.month').value = today.getMonth();
-        document.getElementById('workshop:biosampleCollection.date.date').value = today.getDate();
-        document.getElementById('workshop:biosampleCollection.date.year').value = today.getFullYear();
+        document.getElementById('workshop1:biosample1Collection.date.month').value = today.getMonth();
+        document.getElementById('workshop1:biosample1Collection.date.date').value = today.getDate();
+        document.getElementById('workshop1:biosample1Collection.date.year').value = today.getFullYear();
 
-        document.biosampleAssessmentForm.submit();
+        document.biosample1AssessmentForm.submit();
         return true;
     }
 </script>

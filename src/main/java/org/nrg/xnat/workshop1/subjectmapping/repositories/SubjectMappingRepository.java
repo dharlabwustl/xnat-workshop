@@ -7,10 +7,10 @@
  * Released under the Simplified BSD.
  */
 
-package org.nrg.xnat.workshop.subjectmapping.repositories;
+package org.nrg.xnat.workshop1.subjectmapping.repositories;
 
 import org.nrg.framework.orm.hibernate.AbstractHibernateDAO;
-import org.nrg.xnat.workshop.subjectmapping.entities.SubjectMapping;
+import org.nrg.xnat.workshop1.subjectmapping.entities.SubjectMapping;
 import org.springframework.stereotype.Repository;
 
 @Repository
