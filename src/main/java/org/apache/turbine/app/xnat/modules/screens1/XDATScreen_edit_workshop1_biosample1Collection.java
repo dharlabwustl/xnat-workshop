@@ -7,7 +7,7 @@
  * Released under the Simplified BSD.
  */
 
-package org.apache.turbine.app.xnat.modules.screens;
+package org.apache.turbine.app.xnat.modules.screens1;
 
 import org.apache.turbine.util.RunData;
 import org.apache.velocity.context.Context;
